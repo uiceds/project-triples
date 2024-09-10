@@ -1,5 +1,5 @@
 ---
-title: Manuscript Title
+title: Flood Risk Prediction
 keywords:
 - markdown
 - publishing
@@ -7,8 +7,9 @@ keywords:
 lang: en-US
 date-meta: '2024-09-10'
 author-meta:
-- John Doe
-- Jane Roe
+- Shayan Bafandkar
+- Sofia Frenk
+- Supreme Pandey
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -16,26 +17,29 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="Flood Risk Prediction" />
+  <meta name="citation_title" content="Flood Risk Prediction" />
+  <meta property="og:title" content="Flood Risk Prediction" />
+  <meta property="twitter:title" content="Flood Risk Prediction" />
   <meta name="dc.date" content="2024-09-10" />
   <meta name="citation_publication_date" content="2024-09-10" />
   <meta property="article:published_time" content="2024-09-10" />
-  <meta name="dc.modified" content="2024-09-10T17:21:53+00:00" />
-  <meta property="article:modified_time" content="2024-09-10T17:21:53+00:00" />
+  <meta name="dc.modified" content="2024-09-10T17:59:03+00:00" />
+  <meta property="article:modified_time" content="2024-09-10T17:59:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="Shayan Bafandkar" />
+  <meta name="citation_author_institution" content="Department of Civil 7 Environmental Engineering, University of Illinois Urbana-Champaign" />
+  <meta name="citation_author_orcid" content="0009-0009-8172-5751" />
+  <meta name="citation_author" content="Sofia Frenk" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Supreme Pandey" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -45,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d42c993827bf8f17a3acfb2585dd2a63f82bd184/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d42c993827bf8f17a3acfb2585dd2a63f82bd184/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d42c993827bf8f17a3acfb2585dd2a63f82bd184/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6f88da9fe9d02417249de649f3640ed51b3b6873/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6f88da9fe9d02417249de649f3640ed51b3b6873/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6f88da9fe9d02417249de649f3640ed51b3b6873/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/d42c993827bf8f17a3acfb2585dd2a63f82bd184/))
+([permalink](https://uiceds.github.io/project-triples/v/6f88da9fe9d02417249de649f3640ed51b3b6873/))
 was automatically generated
-from [uiceds/project-triples@d42c993](https://github.com/uiceds/project-triples/tree/d42c993827bf8f17a3acfb2585dd2a63f82bd184)
+from [uiceds/project-triples@6f88da9](https://github.com/uiceds/project-triples/tree/6f88da9fe9d02417249de649f3640ed51b3b6873)
 on September 10, 2024.
 </em></small>
 
@@ -81,28 +85,35 @@ on September 10, 2024.
 
 
 
-+ **John Doe**
++ **Shayan Bafandkar**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0009-0009-8172-5751](https://orcid.org/0009-0009-8172-5751)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
-    [\@johndoe@mastodon.social](https://mastodon.social/@johndoe)
+    [sbafan](https://github.com/sbafan)
     <br>
   <small>
-     Department of Something, University of Whatever
+     Department of Civil 7 Environmental Engineering, University of Illinois Urbana-Champaign
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**
++ **Sofia Frenk**
   ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
+    [XXXX](https://github.com/XXXX)
+    <br>
+  <small>
+     Department of Something, University of Whatever; Department of Whatever, University of Something
+  </small>
+
++ **Supreme Pandey**
+  ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [XXXX](https://github.com/XXXX)
     <br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
@@ -112,7 +123,8 @@ on September 10, 2024.
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/uiceds/project-triples/issues)
 or email to
-Jane Roe \<jane.roe@whatever.edu\>.
+Sofia Frenk \<jane.roe@whatever.edu\>, 
+Supreme Pandey \<jane.roe@whatever.edu\>.
 
 
 :::
