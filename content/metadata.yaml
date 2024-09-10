@@ -9,26 +9,22 @@ lang: en-US
 authors:
   - github: sbafan
     name: Shayan Bafandkar
-    initials: -
     orcid: 0009-0009-8172-5751
-    twitter: -
-    mastodon: -
-    mastodon-server: -
     email: sbafan2@illinois.edu
     affiliations:
       - Department of Civil 7 Environmental Engineering, University of Illinois Urbana-Champaign
     funders:
       - Grant XXXXXXXX
-  - github: -
+  - github: XXXX
     name: Sofia Frenk
-    initials: -
+    initials: XXXX
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
     corresponding: true
-  - github: -
+  - github: XXXX
     name: Supreme Pandey
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
