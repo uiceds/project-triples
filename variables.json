@@ -13,7 +13,7 @@
       "Sofia Frenk",
       "Supreme Pandey"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Flood Risk Prediction\" />\n<meta name=\"citation_title\" content=\"Flood Risk Prediction\" />\n<meta property=\"og:title\" content=\"Flood Risk Prediction\" />\n<meta property=\"twitter:title\" content=\"Flood Risk Prediction\" />\n<meta name=\"dc.date\" content=\"2024-09-11\" />\n<meta name=\"citation_publication_date\" content=\"2024-09-11\" />\n<meta property=\"article:published_time\" content=\"2024-09-11\" />\n<meta name=\"dc.modified\" content=\"2024-09-11T03:15:18+00:00\" />\n<meta property=\"article:modified_time\" content=\"2024-09-11T03:15:18+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Shayan Bafandkar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0009-0009-8172-5751\" />\n<meta name=\"citation_author\" content=\"Sofia Frenk\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Supreme Pandey\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0775-6313\" />\n<link rel=\"canonical\" href=\"https://uiceds.github.io/project-triples/\" />\n<meta property=\"og:url\" content=\"https://uiceds.github.io/project-triples/\" />\n<meta property=\"twitter:url\" content=\"https://uiceds.github.io/project-triples/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://uiceds.github.io/project-triples/\" />\n<meta name=\"citation_pdf_url\" content=\"https://uiceds.github.io/project-triples/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://uiceds.github.io/project-triples/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://uiceds.github.io/project-triples/v/a877b3863636f3ec5e90a541b59a2d308638f28f/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://uiceds.github.io/project-triples/v/a877b3863636f3ec5e90a541b59a2d308638f28f/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://uiceds.github.io/project-triples/v/a877b3863636f3ec5e90a541b59a2d308638f28f/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Flood Risk Prediction\" />\n<meta name=\"citation_title\" content=\"Flood Risk Prediction\" />\n<meta property=\"og:title\" content=\"Flood Risk Prediction\" />\n<meta property=\"twitter:title\" content=\"Flood Risk Prediction\" />\n<meta name=\"dc.date\" content=\"2024-09-11\" />\n<meta name=\"citation_publication_date\" content=\"2024-09-11\" />\n<meta property=\"article:published_time\" content=\"2024-09-11\" />\n<meta name=\"dc.modified\" content=\"2024-09-11T06:10:28+00:00\" />\n<meta property=\"article:modified_time\" content=\"2024-09-11T06:10:28+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Shayan Bafandkar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0009-0009-8172-5751\" />\n<meta name=\"citation_author\" content=\"Sofia Frenk\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Supreme Pandey\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0775-6313\" />\n<link rel=\"canonical\" href=\"https://uiceds.github.io/project-triples/\" />\n<meta property=\"og:url\" content=\"https://uiceds.github.io/project-triples/\" />\n<meta property=\"twitter:url\" content=\"https://uiceds.github.io/project-triples/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://uiceds.github.io/project-triples/\" />\n<meta name=\"citation_pdf_url\" content=\"https://uiceds.github.io/project-triples/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://uiceds.github.io/project-triples/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -25,7 +25,7 @@
   "manubot": {
     "date": "2024-09-11",
     "date_long": "September 11, 2024",
-    "generated": "2024-09-11T03:15:18+00:00",
+    "generated": "2024-09-11T06:10:28+00:00",
     "generated_date_long": "September 11, 2024",
     "randomize_author_order": false,
     "authors": [
@@ -45,19 +45,17 @@
         ]
       },
       {
-        "github": "XXXX",
+        "github": "sofia-frenk",
         "name": "Sofia Frenk",
-        "initials": "XXXX",
+        "initials": "SF",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "email": "jane.roe@whatever.edu",
+        "email": "sofiaf6@illinois.edu",
         "affiliations": [
-          "Department of Something, University of Whatever",
-          "Department of Whatever, University of Something"
+          "Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign"
         ],
         "corresponding": true,
         "affiliation_numbers": [
-          2,
-          3
+          1
         ]
       },
       {
@@ -70,7 +68,7 @@
         ],
         "corresponding": true,
         "affiliation_numbers": [
-          4
+          2
         ]
       }
     ],
@@ -80,16 +78,8 @@
         "affiliation_number": 1
       },
       {
-        "affiliation": "Department of Something, University of Whatever",
-        "affiliation_number": 2
-      },
-      {
-        "affiliation": "Department of Whatever, University of Something",
-        "affiliation_number": 3
-      },
-      {
         "affiliation": "Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign",
-        "affiliation_number": 4
+        "affiliation_number": 2
       }
     ],
     "ci_source": {
@@ -97,15 +87,15 @@
       "repo_slug": "uiceds/project-triples",
       "repo_owner": "uiceds",
       "repo_name": "project-triples",
-      "commit": "a877b3863636f3ec5e90a541b59a2d308638f28f",
-      "triggering_commit": "a877b3863636f3ec5e90a541b59a2d308638f28f",
-      "build_url": "https://github.com/uiceds/project-triples/commit/a877b3863636f3ec5e90a541b59a2d308638f28f/checks",
-      "job_url": "https://github.com/uiceds/project-triples/actions/runs/10804342718"
+      "commit": "18e907f15f47e7855266ae2e8d80ee8fa47ed2fb",
+      "triggering_commit": "18e907f15f47e7855266ae2e8d80ee8fa47ed2fb",
+      "build_url": "https://github.com/uiceds/project-triples/commit/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/checks",
+      "job_url": "https://github.com/uiceds/project-triples/actions/runs/10805988887"
     },
     "html_url": "https://uiceds.github.io/project-triples/",
     "pdf_url": "https://uiceds.github.io/project-triples/manuscript.pdf",
-    "html_url_versioned": "https://uiceds.github.io/project-triples/v/a877b3863636f3ec5e90a541b59a2d308638f28f/",
-    "pdf_url_versioned": "https://uiceds.github.io/project-triples/v/a877b3863636f3ec5e90a541b59a2d308638f28f/manuscript.pdf",
+    "html_url_versioned": "https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/",
+    "pdf_url_versioned": "https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/manuscript.pdf",
     "manubot_version": "0.6.1",
     "rootstock_commit": null,
     "manuscript_stats": {
