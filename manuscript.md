@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-11" />
   <meta name="citation_publication_date" content="2024-09-11" />
   <meta property="article:published_time" content="2024-09-11" />
-  <meta name="dc.modified" content="2024-09-11T16:19:37+00:00" />
-  <meta property="article:modified_time" content="2024-09-11T16:19:37+00:00" />
+  <meta name="dc.modified" content="2024-09-11T16:37:54+00:00" />
+  <meta property="article:modified_time" content="2024-09-11T16:37:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e146f15d0a9c0628cce71307c7280c58ae462d79/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e146f15d0a9c0628cce71307c7280c58ae462d79/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e146f15d0a9c0628cce71307c7280c58ae462d79/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/))
+([permalink](https://uiceds.github.io/project-triples/v/e146f15d0a9c0628cce71307c7280c58ae462d79/))
 was automatically generated
-from [uiceds/project-triples@4e25267](https://github.com/uiceds/project-triples/tree/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78)
+from [uiceds/project-triples@e146f15](https://github.com/uiceds/project-triples/tree/e146f15d0a9c0628cce71307c7280c58ae462d79)
 on September 11, 2024.
 </em></small>
 
@@ -129,8 +129,10 @@ Sofia Frenk \<sofiaf6@illinois.edu\>.
 
 
 ## Abstract (This will be our abstract.)
-Our project aims to develop a machine learning model in Julia to predict the likelihood of floods based on the monthly and annual rainfall in Kerala, a flood-prone subdivision in India. By analyzing the dataset, we plan to build a regression model to estimate flood probability. This model can be used by policymakers and disaster management authorities to improve flood preparedness and mitigation strategies.
-The motivation behind this project is the increasing frequency and severity of floods due to climate change and urbanization. Accurate flood prediction models can help in reducing the adverse impacts of floods on human life, infrastructure, and the environment. By leveraging machine learning techniques, we aim to contribute to the development of more effective flood prediction and management systems.
+Our project aims to develop a machine learning model in Julia to predict the likelihood of floods based on the monthly and annual rainfall in Kerala, a flood-prone subdivision in India. Leveraging a publicly available dataset, we will analyze historical rainfall patterns and develop a robust regression model to estimate flood probabilities. This model has the potential to be a valuable tool for for policymakers, disaster management authorities, and local communities, providing timely insights to improve flood preparedness and mitigation strategies.
+The motivation behind this project lies in the increasing frequency and severity of floods, exacerbated by climate change and rapid urbanization. Kerala, in particular, has experienced devastating floods in recent years, making accurate flood prediction models critical for risk management. Our machine learning approach will incorporate rainfall data and the use of advanced regression techniques, allowing for a flexible and reliable flood forecasting tool.
+Emplyoying machine learning techniques, we aim to develop a model that can adapt to changing weather patterns, offering a flexible and reliable flood forecasting tool. Ultimately, our work seeks to contribute to the broader efforts of minimizing the human, infrastructural and environmental losses caused by floods. Ultimately, our aim is to contribute to the development of more effective flood prediction and management systems.
+
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.
