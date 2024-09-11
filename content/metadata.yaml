@@ -2,9 +2,11 @@
 title: "Flood Risk Prediction"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - Monthly Rainfall
+  - Flood Probability
+  - Prediction Model
+  - Climate Change
+  - Data Analysis
 lang: en-US
 authors:
   - github: sbafan
@@ -13,8 +15,6 @@ authors:
     email: sbafan2@illinois.edu
     affiliations:
       - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
-    funders:
-      - Grant XXXXXXXX
   - github: sofia-frenk
     name: Sofia Frenk
     initials: SF
@@ -29,4 +29,3 @@ authors:
     email: supreme2@illinois.edu
     affiliations:
       - Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign
-    corresponding: true
