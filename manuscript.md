@@ -1,9 +1,11 @@
 ---
 title: Flood Risk Prediction
 keywords:
-- markdown
-- publishing
-- manubot
+- Monthly Rainfall
+- Flood Probability
+- Prediction Model
+- Climate Change
+- Data Analysis
 lang: en-US
 date-meta: '2024-09-11'
 author-meta:
@@ -24,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-11" />
   <meta name="citation_publication_date" content="2024-09-11" />
   <meta property="article:published_time" content="2024-09-11" />
-  <meta name="dc.modified" content="2024-09-11T06:10:28+00:00" />
-  <meta property="article:modified_time" content="2024-09-11T06:10:28+00:00" />
+  <meta name="dc.modified" content="2024-09-11T15:05:55+00:00" />
+  <meta property="article:modified_time" content="2024-09-11T15:05:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb/))
+([permalink](https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/))
 was automatically generated
-from [uiceds/project-triples@18e907f](https://github.com/uiceds/project-triples/tree/18e907f15f47e7855266ae2e8d80ee8fa47ed2fb)
+from [uiceds/project-triples@5f0867b](https://github.com/uiceds/project-triples/tree/5f0867b065957e1012d4368b53a7aeffcd01f662)
 on September 11, 2024.
 </em></small>
 
@@ -92,7 +94,6 @@ on September 11, 2024.
     <br>
   <small>
      Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
-     · Funded by Grant XXXXXXXX
   </small>
 
 + **Sofia Frenk**
@@ -107,7 +108,7 @@ on September 11, 2024.
   </small>
 
 + **Supreme Pandey**
-  ^[✉](#correspondence)^<br>
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-0775-6313](https://orcid.org/0000-0003-0775-6313)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -121,17 +122,15 @@ on September 11, 2024.
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/uiceds/project-triples/issues)
 or email to
-Sofia Frenk \<sofiaf6@illinois.edu\>, 
-Supreme Pandey \<supreme2@illinois.edu\>.
+Sofia Frenk \<sofiaf6@illinois.edu\>.
 
 
 :::
 
 
 ## Abstract (This will be our abstract.)
-
-
-
+Our project aims to develop a machine learning model in Julia to predict the likelihood of floods based on the monthly and annual rainfall in Kerala, a flood-prone subdivision in India. By analyzing the dataset, we plan to build a regression model to estimate flood probability. This model can be used by policymakers and disaster management authorities to improve flood preparedness and mitigation strategies.
+The motivation behind this project is the increasing frequency and severity of floods due to climate change and urbanization. Accurate flood prediction models can help in reducing the adverse impacts of floods on human life, infrastructure, and the environment. By leveraging machine learning techniques, we aim to contribute to the development of more effective flood prediction and management systems.
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.
