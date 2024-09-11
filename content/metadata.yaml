@@ -15,14 +15,13 @@ authors:
       - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
     funders:
       - Grant XXXXXXXX
-  - github: XXXX
+  - github: sofia-frenk
     name: Sofia Frenk
-    initials: XXXX
+    initials: SF
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    email: sofiaf6@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
     corresponding: true
   - github: supremepandey
     name: Supreme Pandey
