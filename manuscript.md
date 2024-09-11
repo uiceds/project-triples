@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-11" />
   <meta name="citation_publication_date" content="2024-09-11" />
   <meta property="article:published_time" content="2024-09-11" />
-  <meta name="dc.modified" content="2024-09-11T15:05:55+00:00" />
-  <meta property="article:modified_time" content="2024-09-11T15:05:55+00:00" />
+  <meta name="dc.modified" content="2024-09-11T16:19:37+00:00" />
+  <meta property="article:modified_time" content="2024-09-11T16:19:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -39,7 +39,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="0009-0009-8172-5751" />
   <meta name="citation_author" content="Sofia Frenk" />
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0009-0001-8099-4900" />
   <meta name="citation_author" content="Supreme Pandey" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign" />
   <meta name="citation_author_orcid" content="0000-0003-0775-6313" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/5f0867b065957e1012d4368b53a7aeffcd01f662/))
+([permalink](https://uiceds.github.io/project-triples/v/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78/))
 was automatically generated
-from [uiceds/project-triples@5f0867b](https://github.com/uiceds/project-triples/tree/5f0867b065957e1012d4368b53a7aeffcd01f662)
+from [uiceds/project-triples@4e25267](https://github.com/uiceds/project-triples/tree/4e25267ce8f2aa35cb9b4bef27e5bab8dcc23f78)
 on September 11, 2024.
 </em></small>
 
@@ -99,7 +99,7 @@ on September 11, 2024.
 + **Sofia Frenk**
   ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0009-0001-8099-4900](https://orcid.org/0009-0001-8099-4900)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [sofia-frenk](https://github.com/sofia-frenk)
     <br>

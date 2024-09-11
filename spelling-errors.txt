@@ -22,7 +22,7 @@ enim
 esse
 Excepteur
 exercitation
-Frenk
+frenk
 fugiat
 incididunt
 ipsum
@@ -57,4 +57,3 @@ Urbana
 velit
 veniam
 voluptate
-XXXX
