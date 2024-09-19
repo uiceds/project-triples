@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-19" />
   <meta name="citation_publication_date" content="2024-09-19" />
   <meta property="article:published_time" content="2024-09-19" />
-  <meta name="dc.modified" content="2024-09-19T13:23:01+00:00" />
-  <meta property="article:modified_time" content="2024-09-19T13:23:01+00:00" />
+  <meta name="dc.modified" content="2024-09-19T16:23:15+00:00" />
+  <meta property="article:modified_time" content="2024-09-19T16:23:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/7ddecd5e60983836c3a316677bd4b51cd1ce6f99/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/7ddecd5e60983836c3a316677bd4b51cd1ce6f99/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/7ddecd5e60983836c3a316677bd4b51cd1ce6f99/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/7ddecd5e60983836c3a316677bd4b51cd1ce6f99/))
+([permalink](https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/))
 was automatically generated
-from [uiceds/project-triples@7ddecd5](https://github.com/uiceds/project-triples/tree/7ddecd5e60983836c3a316677bd4b51cd1ce6f99)
+from [uiceds/project-triples@d3a46f3](https://github.com/uiceds/project-triples/tree/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3)
 on September 19, 2024.
 </em></small>
 
@@ -128,7 +128,7 @@ Sofia Frenk \<sofiaf6@illinois.edu\>.
 :::
 
 
-## Abstract (This will be our abstract.)
+## Abstract
 Our project aims to develop a machine learning model in Julia to predict the likelihood of floods based on the monthly and annual rainfall in Kerala, a flood-prone subdivision in India. Leveraging a publicly available dataset, we will analyze historical rainfall patterns and develop a robust regression model to estimate flood probabilities. This model has the potential to be a valuable tool for for policymakers, disaster management authorities, and local communities, providing timely insights to improve flood preparedness and mitigation strategies.
 The motivation behind this project lies in the increasing frequency and severity of floods, exacerbated by climate change and rapid urbanization. Kerala, in particular, has experienced devastating floods in recent years, making accurate flood prediction models critical for risk management. Our machine learning approach will incorporate rainfall data and the use of advanced regression techniques, allowing for a flexible and reliable flood forecasting tool.
 Employing machine learning techniques, we aim to develop a model that can adapt to changing weather patterns, offering a flexible and reliable flood forecasting tool. Ultimately, our aim is to contribute to the development of more effective flood prediction and management systems, minimizing the human, infrastructural, and environmental losses caused by floods.
