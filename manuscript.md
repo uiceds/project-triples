@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-19" />
   <meta name="citation_publication_date" content="2024-09-19" />
   <meta property="article:published_time" content="2024-09-19" />
-  <meta name="dc.modified" content="2024-09-19T16:23:15+00:00" />
-  <meta property="article:modified_time" content="2024-09-19T16:23:15+00:00" />
+  <meta name="dc.modified" content="2024-09-19T16:36:50+00:00" />
+  <meta property="article:modified_time" content="2024-09-19T16:36:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3/))
+([permalink](https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/))
 was automatically generated
-from [uiceds/project-triples@d3a46f3](https://github.com/uiceds/project-triples/tree/d3a46f3115ea75b4483ab8186a23ecb7f02f3dc3)
+from [uiceds/project-triples@b31b2b2](https://github.com/uiceds/project-triples/tree/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6)
 on September 19, 2024.
 </em></small>
 
@@ -142,14 +142,13 @@ Employing machine learning techniques, we aim to develop a model that can adapt 
   - Contents: 
     The columns of the dataset cover parameters typically used to forecast flood situations, and the dataset serves as a basis for training machine learning models in flood prediction.
     More specifically, the dataset includes the following columns:
-    1) Rainfall (mm): Represents the amount of rainfall in millimeters. This is a key factor in flood prediction models.
-    2) Temperature (°C): Indicates the temperature in degrees Celsius.
-    3) Humidity (%): Provides the humidity level in percentage, which can influence weather conditions and potential flood situations.
-    4) Flood (0/1): A binary indicator where '0' signifies no flood, and '1' indicates a flood event.
+    1) Monthly Rainfall (mm): Represents the amount of rainfall in millimeters. This is a key factor in flood prediction models.
+    2) Yearly Rainfall (mm): Represents the total amount of rainfall in a year in millimeters, ie, a summation of all monthly rainfall.
+    3) Flood (0/1): A binary indicator where '0' signifies no flood, and '1' indicates a flood event.
 
 ## Proposal
 Our team plans to use the Kaggle flood prediction dataset to develop a machine learning model in Julia that predicts the likelihood of floods in Kerala, India. 
-We will analyze the historical monthly rainfall, temperature, and humidity data in the dataset to identify patterns correlated with flood occurrences. 
+We will analyze the historical monthly rainfall, total annual rainfall, and ocurrance of flooding (boolean yes/no) data in the dataset to identify patterns correlated with flood occurrences. 
 By applying regression techniques, we aim to create a model that estimates flood probabilities accurately, providing a valuable tool for disaster management authorities and local communities.
 
 The motivation behind this project stems from the increasing frequency of floods due to climate change, particularly in Kerala. 
