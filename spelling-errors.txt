@@ -13,7 +13,7 @@ consequat
 CSV
 culpa
 cupidatat
-dataset
+Dataset
 deserunt
 dolore
 Duis
@@ -23,7 +23,7 @@ enim
 esse
 Excepteur
 exercitation
-Frenk
+frenk
 fugiat
 incididunt
 ipsum
