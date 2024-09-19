@@ -10,6 +10,7 @@ cillum
 commodo
 consectetur
 consequat
+CSV
 culpa
 cupidatat
 dataset
@@ -22,11 +23,12 @@ enim
 esse
 Excepteur
 exercitation
-frenk
+Frenk
 fugiat
 incididunt
 ipsum
 irure
+Kaggle
 Kerala
 labore
 laboris

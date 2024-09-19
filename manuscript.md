@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-19" />
   <meta name="citation_publication_date" content="2024-09-19" />
   <meta property="article:published_time" content="2024-09-19" />
-  <meta name="dc.modified" content="2024-09-19T03:37:25+00:00" />
-  <meta property="article:modified_time" content="2024-09-19T03:37:25+00:00" />
+  <meta name="dc.modified" content="2024-09-19T03:55:54+00:00" />
+  <meta property="article:modified_time" content="2024-09-19T03:55:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f54c73338c0f1bb514fe54051155afe90b7b5e49/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f54c73338c0f1bb514fe54051155afe90b7b5e49/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f54c73338c0f1bb514fe54051155afe90b7b5e49/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e6988b65dde08793e0b5b6ddb88c563883a10da4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e6988b65dde08793e0b5b6ddb88c563883a10da4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e6988b65dde08793e0b5b6ddb88c563883a10da4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/f54c73338c0f1bb514fe54051155afe90b7b5e49/))
+([permalink](https://uiceds.github.io/project-triples/v/e6988b65dde08793e0b5b6ddb88c563883a10da4/))
 was automatically generated
-from [uiceds/project-triples@f54c733](https://github.com/uiceds/project-triples/tree/f54c73338c0f1bb514fe54051155afe90b7b5e49)
+from [uiceds/project-triples@e6988b6](https://github.com/uiceds/project-triples/tree/e6988b65dde08793e0b5b6ddb88c563883a10da4)
 on September 19, 2024.
 </em></small>
 
@@ -430,6 +430,28 @@ useful for *important information* - [manubot.org](https://manubot.org/)
 useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
 
+
+## Dataset Description 
+  - Source: 
+  This dataset can be found on Kaggle, at this link: https://www.kaggle.com/code/mukulthakur177/flood-prediction-model. 
+  It was generated to help build a predictive model for flood occurrences using meteorological and environmental factors.
+  - Format: The dataset is in CSV format, which is commonly used for tabular data storage. Each row represents a specific data point, with columns detailing various features that might impact flood conditions.
+  - Contents: 
+    The columns of the dataset cover parameters typically used to forecast flood situations, and the dataset serves as a basis for training machine learning models in flood prediction.
+    More specifically, the dataset includes the following columns:
+    1) Rainfall (mm): Represents the amount of rainfall in millimeters. This is a key factor in flood prediction models.
+    2) Temperature (°C): Indicates the temperature in degrees Celsius.
+    3) Humidity (%): Provides the humidity level in percentage, which can influence weather conditions and potential flood situations.
+    4) Flood (0/1): A binary indicator where '0' signifies no flood, and '1' indicates a flood event.
+
+## Proposal
+Our team plans to use the Kaggle flood prediction dataset to develop a machine learning model in Julia that predicts the likelihood of floods in Kerala, India. 
+We will analyze the historical monthly rainfall, temperature, and humidity data in the dataset to identify patterns correlated with flood occurrences. 
+By applying regression techniques, we aim to create a model that estimates flood probabilities accurately, providing a valuable tool for disaster management authorities and local communities.
+
+The motivation behind this project stems from the increasing frequency of floods due to climate change, particularly in Kerala. 
+Accurate prediction models are crucial for improving flood preparedness and risk mitigation strategies. 
+Our model will offer timely insights, ultimately contributing to reducing the human, infrastructural, and environmental losses caused by floods in this region.
 
 ## References {.page_break_before}
 
