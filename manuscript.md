@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-09-23" />
   <meta name="citation_publication_date" content="2024-09-23" />
   <meta property="article:published_time" content="2024-09-23" />
-  <meta name="dc.modified" content="2024-09-23T17:57:04+00:00" />
-  <meta property="article:modified_time" content="2024-09-23T17:57:04+00:00" />
+  <meta name="dc.modified" content="2024-09-23T22:36:15+00:00" />
+  <meta property="article:modified_time" content="2024-09-23T22:36:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,15 +46,16 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0003-0775-6313" />
   <meta name="citation_author" content="Brandy Diggs-McGee" />
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign" />
+  <meta name="citation_author_orcid" content="0000-0003-2052-0946" />
   <link rel="canonical" href="https://uiceds.github.io/project-triples/" />
   <meta property="og:url" content="https://uiceds.github.io/project-triples/" />
   <meta property="twitter:url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/5563419d04ac76fd8418747effbbe413a528556e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/5563419d04ac76fd8418747effbbe413a528556e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/5563419d04ac76fd8418747effbbe413a528556e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/5563419d04ac76fd8418747effbbe413a528556e/))
+([permalink](https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/))
 was automatically generated
-from [uiceds/project-triples@5563419](https://github.com/uiceds/project-triples/tree/5563419d04ac76fd8418747effbbe413a528556e)
+from [uiceds/project-triples@5630144](https://github.com/uiceds/project-triples/tree/56301447a87f92667d88a75240406c916efed168)
 on September 23, 2024.
 </em></small>
 
@@ -123,6 +124,11 @@ on September 23, 2024.
 
 + **Brandy Diggs-McGee**
   <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-2052-0946](https://orcid.org/0000-0003-2052-0946)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [iloveheat](https://github.com/iloveheat)
+    <br>
   <small>
      Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
   </small>
