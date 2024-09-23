@@ -7,11 +7,9 @@ keywords:
 - Climate Change
 - Data Analysis
 lang: en-US
-date-meta: '2024-09-19'
+date-meta: '2024-09-23'
 author-meta:
-- Shayan Bafandkar
-- Sofia Frenk
-- Supreme Pandey
+- Brandy Diggs-McGee
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,35 +21,28 @@ header-includes: |
   <meta name="citation_title" content="Flood Risk Prediction" />
   <meta property="og:title" content="Flood Risk Prediction" />
   <meta property="twitter:title" content="Flood Risk Prediction" />
-  <meta name="dc.date" content="2024-09-19" />
-  <meta name="citation_publication_date" content="2024-09-19" />
-  <meta property="article:published_time" content="2024-09-19" />
-  <meta name="dc.modified" content="2024-09-19T16:36:50+00:00" />
-  <meta property="article:modified_time" content="2024-09-19T16:36:50+00:00" />
+  <meta name="dc.date" content="2024-09-23" />
+  <meta name="citation_publication_date" content="2024-09-23" />
+  <meta property="article:published_time" content="2024-09-23" />
+  <meta name="dc.modified" content="2024-09-23T17:53:18+00:00" />
+  <meta property="article:modified_time" content="2024-09-23T17:53:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Shayan Bafandkar" />
+  <meta name="citation_author" content="Brandy Diggs-McGee" />
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="0009-0009-8172-5751" />
-  <meta name="citation_author" content="Sofia Frenk" />
-  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="0009-0001-8099-4900" />
-  <meta name="citation_author" content="Supreme Pandey" />
-  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="0000-0003-0775-6313" />
   <link rel="canonical" href="https://uiceds.github.io/project-triples/" />
   <meta property="og:url" content="https://uiceds.github.io/project-triples/" />
   <meta property="twitter:url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/658e4b7e1ba1b00f3797a42548ddd5a5235c8bc2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/658e4b7e1ba1b00f3797a42548ddd5a5235c8bc2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/658e4b7e1ba1b00f3797a42548ddd5a5235c8bc2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +64,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6/))
+([permalink](https://uiceds.github.io/project-triples/v/658e4b7e1ba1b00f3797a42548ddd5a5235c8bc2/))
 was automatically generated
-from [uiceds/project-triples@b31b2b2](https://github.com/uiceds/project-triples/tree/b31b2b2047e5ecbdd244046802fd1e2d47b6e9c6)
-on September 19, 2024.
+from [uiceds/project-triples@658e4b7](https://github.com/uiceds/project-triples/tree/658e4b7e1ba1b00f3797a42548ddd5a5235c8bc2)
+on September 23, 2024.
 </em></small>
 
 
@@ -85,45 +76,15 @@ on September 19, 2024.
 
 
 
-+ **Shayan Bafandkar**
++ **Brandy Diggs-McGee**
   <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0009-8172-5751](https://orcid.org/0009-0009-8172-5751)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [sbafan](https://github.com/sbafan)
-    <br>
   <small>
      Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
-  </small>
-
-+ **Sofia Frenk**
-  ^[✉](#correspondence)^<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0001-8099-4900](https://orcid.org/0009-0001-8099-4900)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [sofia-frenk](https://github.com/sofia-frenk)
-    <br>
-  <small>
-     Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
-  </small>
-
-+ **Supreme Pandey**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0003-0775-6313](https://orcid.org/0000-0003-0775-6313)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [supremepandey](https://github.com/supremepandey)
-    <br>
-  <small>
-     Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign
   </small>
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/uiceds/project-triples/issues)
-or email to
-Sofia Frenk \<sofiaf6@illinois.edu\>.
-
 
 :::
 
