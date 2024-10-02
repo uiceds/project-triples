@@ -7,7 +7,7 @@ keywords:
 - Climate Change
 - Data Analysis
 lang: en-US
-date-meta: '2024-09-23'
+date-meta: '2024-10-02'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flood Risk Prediction" />
   <meta property="og:title" content="Flood Risk Prediction" />
   <meta property="twitter:title" content="Flood Risk Prediction" />
-  <meta name="dc.date" content="2024-09-23" />
-  <meta name="citation_publication_date" content="2024-09-23" />
-  <meta property="article:published_time" content="2024-09-23" />
-  <meta name="dc.modified" content="2024-09-23T22:36:15+00:00" />
-  <meta property="article:modified_time" content="2024-09-23T22:36:15+00:00" />
+  <meta name="dc.date" content="2024-10-02" />
+  <meta name="citation_publication_date" content="2024-10-02" />
+  <meta property="article:published_time" content="2024-10-02" />
+  <meta name="dc.modified" content="2024-10-02T00:01:53+00:00" />
+  <meta property="article:modified_time" content="2024-10-02T00:01:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,6 +46,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0003-0775-6313" />
   <meta name="citation_author" content="Brandy Diggs-McGee" />
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign" />
+  <meta name="citation_author_institution" content="USACE ERDC CERL, Illinois" />
   <meta name="citation_author_orcid" content="0000-0003-2052-0946" />
   <link rel="canonical" href="https://uiceds.github.io/project-triples/" />
   <meta property="og:url" content="https://uiceds.github.io/project-triples/" />
@@ -53,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/473a8593b315d342e38788f1b05df1fb49965f7d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/473a8593b315d342e38788f1b05df1fb49965f7d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/473a8593b315d342e38788f1b05df1fb49965f7d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/56301447a87f92667d88a75240406c916efed168/))
+([permalink](https://uiceds.github.io/project-triples/v/473a8593b315d342e38788f1b05df1fb49965f7d/))
 was automatically generated
-from [uiceds/project-triples@5630144](https://github.com/uiceds/project-triples/tree/56301447a87f92667d88a75240406c916efed168)
-on September 23, 2024.
+from [uiceds/project-triples@473a859](https://github.com/uiceds/project-triples/tree/473a8593b315d342e38788f1b05df1fb49965f7d)
+on October 2, 2024.
 </em></small>
 
 
@@ -130,7 +131,7 @@ on September 23, 2024.
     [iloveheat](https://github.com/iloveheat)
     <br>
   <small>
-     Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
+     Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign; USACE ERDC CERL, Illinois
   </small>
 
 
