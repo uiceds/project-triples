@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-05" />
   <meta name="citation_publication_date" content="2024-10-05" />
   <meta property="article:published_time" content="2024-10-05" />
-  <meta name="dc.modified" content="2024-10-05T22:20:43+00:00" />
-  <meta property="article:modified_time" content="2024-10-05T22:20:43+00:00" />
+  <meta name="dc.modified" content="2024-10-05T22:26:48+00:00" />
+  <meta property="article:modified_time" content="2024-10-05T22:26:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/))
+([permalink](https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/))
 was automatically generated
-from [uiceds/project-triples@f23cb88](https://github.com/uiceds/project-triples/tree/f23cb88333bdb42318a6300d1f757022378ea932)
+from [uiceds/project-triples@1ef551f](https://github.com/uiceds/project-triples/tree/1ef551fa4ab984fdea13ce5b6536a05d4b963099)
 on October 5, 2024.
 </em></small>
 
@@ -189,13 +189,15 @@ We explored possible correlations between variables in the dataset. One expected
 
 The chart depicted in **Figure 1** illustrates that most flights in the dataset have ticket prices below 10,000 Rupees.
 
-![Figure 1: Distribution of Flight Prices](iamges/price_trend.png "Distribution of Flight Prices")
+![Figure 1: Distribution of Flight Prices](images/Dist-of-Flight-Prices.png "Distribution of Flight Prices")
+**Figure 1**: Distribution of Flight Prices.
 
 ### Seasonal Price Variations:
 To analyze seasonal price variations, we created a new column, `Adjusted-Date`, by combining the values from the `Date`, `Month`, and `Year` columns into a single date format. We then plotted the mean price over time using this adjusted date.
 As shown in **Figure 2**, flight prices fluctuate significantly over time, with notable peaks around the major Indian holidays.
 
-![Figure 2: Flight Price Trends](iamges/AvePrice_Date.png "Flight Price Trends Over Time")
+![Figure 2: Flight Price Trends](images/AvePrice-Date.png "Flight Price Trends Over Time")
+**Figure 2**: Flight Price Trends Over Time.
 
 These price variations can be correlated with the seasonal demand and cultural events during this period. Upon reviewing the price fluctuations, we explored the major holidays in India during this period to identify possible correlations between price peaks and holidays. Interestingly, many of the price peaks align with Indian holidays. For example:
 - In March, price spikes around March 4th and 21st coincide with **Maha Shivaratri** and **Holi**, respectively.
