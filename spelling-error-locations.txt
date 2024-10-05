@@ -16,3 +16,36 @@ content/04.proposal.md:2:Kerala
 content/04.proposal.md:3:dataset
 content/04.proposal.md:3:ocurrance
 content/04.proposal.md:6:Kerala
+content/05.Data Analysis.md:3:dataset
+content/05.Data Analysis.md:3:dataset
+content/05.Data Analysis.md:3:dataset
+content/05.Data Analysis.md:5:Dataset
+content/05.Data Analysis.md:15:dataset
+content/05.Data Analysis.md:17:dataset
+content/05.Data Analysis.md:23:Holi
+content/05.Data Analysis.md:23:Maha
+content/05.Data Analysis.md:23:Shivaratri
+content/05.Data Analysis.md:24:Baisakhi
+content/05.Data Analysis.md:24:Navami
+content/05.Data Analysis.md:24:Vishu
+content/05.Data Analysis.md:25:Purnima
+content/05.Data Analysis.md:26:Dussehra
+content/05.Data Analysis.md:26:Eid
+content/05.Data Analysis.md:26:Fitr
+content/05.Data Analysis.md:26:Ganga
+content/05.Data Analysis.md:40:Kolkata
+content/05.Data Analysis.md:50:Kolkata
+content/05.Data Analysis.md:54:Kolkata
+content/05.Data Analysis.md:64:INR
+content/05.Data Analysis.md:71:Vistara
+content/05.Data Analysis.md:72:Vistara
+content/05.Data Analysis.md:73:GoAir
+content/05.Data Analysis.md:76:SpiceJet
+content/05.Data Analysis.md:77:Trujet
+content/05.Data Analysis.md:80:dataset
+content/05.Data Analysis.md:90:SpiceJet
+content/05.Data Analysis.md:91:Vistara
+content/05.Data Analysis.md:93:GoAir
+content/05.Data Analysis.md:96:Vistara
+content/05.Data Analysis.md:97:Trujet
+content/05.Data Analysis.md:110:Vistara
