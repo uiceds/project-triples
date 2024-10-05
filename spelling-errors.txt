@@ -2,10 +2,10 @@ Bafandkar
 CERL
 Champaign
 CSV
-Dataset
+dataset
 Diggs
 ERDC
-Frenk
+frenk
 iloveheat
 Kaggle
 Kerala
