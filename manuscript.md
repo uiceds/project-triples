@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-05" />
   <meta name="citation_publication_date" content="2024-10-05" />
   <meta property="article:published_time" content="2024-10-05" />
-  <meta name="dc.modified" content="2024-10-05T22:15:05+00:00" />
-  <meta property="article:modified_time" content="2024-10-05T22:15:05+00:00" />
+  <meta name="dc.modified" content="2024-10-05T22:20:43+00:00" />
+  <meta property="article:modified_time" content="2024-10-05T22:20:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/3edd1c4bceac388331f372a60a39843667525fc2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/3edd1c4bceac388331f372a60a39843667525fc2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/3edd1c4bceac388331f372a60a39843667525fc2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/3edd1c4bceac388331f372a60a39843667525fc2/))
+([permalink](https://uiceds.github.io/project-triples/v/f23cb88333bdb42318a6300d1f757022378ea932/))
 was automatically generated
-from [uiceds/project-triples@3edd1c4](https://github.com/uiceds/project-triples/tree/3edd1c4bceac388331f372a60a39843667525fc2)
+from [uiceds/project-triples@f23cb88](https://github.com/uiceds/project-triples/tree/f23cb88333bdb42318a6300d1f757022378ea932)
 on October 5, 2024.
 </em></small>
 
@@ -187,12 +187,17 @@ The dataset includes domestic flights of Indian airlines from March 2019 to June
 ### Correlation Analysis:
 We explored possible correlations between variables in the dataset. One expected correlation is between flight price and flight duration. Using the `cor` function in Julia, we found a positive correlation of **0.51** between these two variables. Similarly, the correlation between the number of stops and price is **0.60**. It makes sense that as the number of stops increases, the flight distance and, consequently, the price also increase.
 
-The chart below illustrates that most flights in the dataset have ticket prices below 10,000 Rupees.
+The chart depicted in **Figure 1** illustrates that most flights in the dataset have ticket prices below 10,000 Rupees.
+
+![Figure 1: Distribution of Flight Prices](iamges/price_trend.png "Distribution of Flight Prices")
 
 ### Seasonal Price Variations:
 To analyze seasonal price variations, we created a new column, `Adjusted-Date`, by combining the values from the `Date`, `Month`, and `Year` columns into a single date format. We then plotted the mean price over time using this adjusted date.
+As shown in **Figure 2**, flight prices fluctuate significantly over time, with notable peaks around the major Indian holidays.
 
-Upon reviewing the price fluctuations, we explored the major holidays in India during this period to identify possible correlations between price peaks and holidays. Interestingly, many of the price peaks align with Indian holidays. For example:
+![Figure 2: Flight Price Trends](iamges/AvePrice_Date.png "Flight Price Trends Over Time")
+
+These price variations can be correlated with the seasonal demand and cultural events during this period. Upon reviewing the price fluctuations, we explored the major holidays in India during this period to identify possible correlations between price peaks and holidays. Interestingly, many of the price peaks align with Indian holidays. For example:
 - In March, price spikes around March 4th and 21st coincide with **Maha Shivaratri** and **Holi**, respectively.
 - In April, a price increase occurs around April 13th and 14th, aligning with **Ram Navami**, **Baisakhi**, and **Tamil New Year/Vishu**.
 - In May, a price increase is observed around May 1st (coinciding with **May Day**) and May 18th (coinciding with **Buddha Purnima**).
@@ -230,7 +235,7 @@ We also identified the most frequent origin-destination pairs, as shown in **Tab
 Our analysis of the airlines provided the following insights:
 
 #### 1. Mean Price by Airline:
-The table below (**Table 3**) shows the mean flight price for each airline, sorted from highest to lowest.
+(**Table 3**) shows the mean flight price for each airline, sorted from highest to lowest.
 
 **Table 3: Mean Price by Airline**
 
@@ -250,7 +255,7 @@ The table below (**Table 3**) shows the mean flight price for each airline, sort
 | 12   | Trujet                        | 4,140            |
 
 #### 2. Airlines with the Most Number of Flights:
-The table below (**Table 4**) lists the airlines with the most flights in the dataset.
+(**Table 4**) lists the airlines with the most flights in the dataset.
 
 **Table 4: Airlines with the Most Number of Flights**
 
@@ -270,7 +275,7 @@ The table below (**Table 4**) lists the airlines with the most flights in the da
 | 12   | Trujet                        | 1                 |
 
 #### 3. Airlines Frequently Used in Long-Haul Flights:
-The table below (**Table 5**) lists the airlines frequently used for long-haul flights (flights with a duration greater than 10 hours).
+(**Table 5**) lists the airlines frequently used for long-haul flights (flights with a duration greater than 10 hours).
 
 **Table 5: Airlines Frequently Used in Long-Haul Flights**
 
