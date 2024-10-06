@@ -3,7 +3,7 @@ Baisakhi
 CERL
 Champaign
 CSV
-Dataset
+dataset
 Diggs
 Dussehra
 Eid

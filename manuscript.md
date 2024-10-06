@@ -1,5 +1,5 @@
 ---
-title: Flood Risk Prediction
+title: Flight Price Prediction and Carbon Emission Visualization
 keywords:
 - Monthly Rainfall
 - Flood Probability
@@ -7,7 +7,7 @@ keywords:
 - Climate Change
 - Data Analysis
 lang: en-US
-date-meta: '2024-10-05'
+date-meta: '2024-10-06'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -20,15 +20,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Flood Risk Prediction" />
-  <meta name="citation_title" content="Flood Risk Prediction" />
-  <meta property="og:title" content="Flood Risk Prediction" />
-  <meta property="twitter:title" content="Flood Risk Prediction" />
-  <meta name="dc.date" content="2024-10-05" />
-  <meta name="citation_publication_date" content="2024-10-05" />
-  <meta property="article:published_time" content="2024-10-05" />
-  <meta name="dc.modified" content="2024-10-05T22:26:48+00:00" />
-  <meta property="article:modified_time" content="2024-10-05T22:26:48+00:00" />
+  <meta name="dc.title" content="Flight Price Prediction and Carbon Emission Visualization" />
+  <meta name="citation_title" content="Flight Price Prediction and Carbon Emission Visualization" />
+  <meta property="og:title" content="Flight Price Prediction and Carbon Emission Visualization" />
+  <meta property="twitter:title" content="Flight Price Prediction and Carbon Emission Visualization" />
+  <meta name="dc.date" content="2024-10-06" />
+  <meta name="citation_publication_date" content="2024-10-06" />
+  <meta property="article:published_time" content="2024-10-06" />
+  <meta name="dc.modified" content="2024-10-06T01:52:37+00:00" />
+  <meta property="article:modified_time" content="2024-10-06T01:52:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ecaf6484275d077de82fd5a3627224b58c0ecfcb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ecaf6484275d077de82fd5a3627224b58c0ecfcb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ecaf6484275d077de82fd5a3627224b58c0ecfcb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/1ef551fa4ab984fdea13ce5b6536a05d4b963099/))
+([permalink](https://uiceds.github.io/project-triples/v/ecaf6484275d077de82fd5a3627224b58c0ecfcb/))
 was automatically generated
-from [uiceds/project-triples@1ef551f](https://github.com/uiceds/project-triples/tree/1ef551fa4ab984fdea13ce5b6536a05d4b963099)
-on October 5, 2024.
+from [uiceds/project-triples@ecaf648](https://github.com/uiceds/project-triples/tree/ecaf6484275d077de82fd5a3627224b58c0ecfcb)
+on October 6, 2024.
 </em></small>
 
 
