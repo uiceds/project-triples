@@ -1,11 +1,11 @@
 ---
-title: "Flood Risk Prediction"
+title: "Flight Price Predictions"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
-  - Monthly Rainfall
-  - Flood Probability
+  - Flight Price
   - Prediction Model
-  - Climate Change
+  - Future Trends
+  - Emissions
   - Data Analysis
 lang: en-US
 authors:
@@ -28,3 +28,10 @@ authors:
     email: supreme2@illinois.edu
     affiliations:
       - Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign
+  - github: iloveheat
+    name: Brandy Diggs-McGee
+    orcid: 0000-0003-2052-0946
+    email: Brandyd2@illinois.edu
+    affiliations:
+      - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
+      - USACE ERDC CERL, Illinois
