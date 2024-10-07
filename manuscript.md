@@ -1,17 +1,18 @@
 ---
-title: Flood Risk Prediction
+title: Flight Price Predictions
 keywords:
-- Monthly Rainfall
-- Flood Probability
+- Flight Price
 - Prediction Model
-- Climate Change
+- Future Trends
+- Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-10-06'
+date-meta: '2024-10-07'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
 - Supreme Pandey
+- Brandy Diggs-McGee
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -19,15 +20,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Flood Risk Prediction" />
-  <meta name="citation_title" content="Flood Risk Prediction" />
-  <meta property="og:title" content="Flood Risk Prediction" />
-  <meta property="twitter:title" content="Flood Risk Prediction" />
-  <meta name="dc.date" content="2024-10-06" />
-  <meta name="citation_publication_date" content="2024-10-06" />
-  <meta property="article:published_time" content="2024-10-06" />
-  <meta name="dc.modified" content="2024-10-06T03:21:16+00:00" />
-  <meta property="article:modified_time" content="2024-10-06T03:21:16+00:00" />
+  <meta name="dc.title" content="Flight Price Predictions" />
+  <meta name="citation_title" content="Flight Price Predictions" />
+  <meta property="og:title" content="Flight Price Predictions" />
+  <meta property="twitter:title" content="Flight Price Predictions" />
+  <meta name="dc.date" content="2024-10-07" />
+  <meta name="citation_publication_date" content="2024-10-07" />
+  <meta property="article:published_time" content="2024-10-07" />
+  <meta name="dc.modified" content="2024-10-07T20:08:52+00:00" />
+  <meta property="article:modified_time" content="2024-10-07T20:08:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,15 +44,19 @@ header-includes: |
   <meta name="citation_author" content="Supreme Pandey" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign" />
   <meta name="citation_author_orcid" content="0000-0003-0775-6313" />
+  <meta name="citation_author" content="Brandy Diggs-McGee" />
+  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois Urbana-Champaign" />
+  <meta name="citation_author_institution" content="USACE ERDC CERL, Illinois" />
+  <meta name="citation_author_orcid" content="0000-0003-2052-0946" />
   <link rel="canonical" href="https://uiceds.github.io/project-triples/" />
   <meta property="og:url" content="https://uiceds.github.io/project-triples/" />
   <meta property="twitter:url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/c8df0a3ed35e7dfb030fbf5f39c94387a52a1f71/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/c8df0a3ed35e7dfb030fbf5f39c94387a52a1f71/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/c8df0a3ed35e7dfb030fbf5f39c94387a52a1f71/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ae582993c8c5c5663d14f975b8928d14ae0b1a2a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ae582993c8c5c5663d14f975b8928d14ae0b1a2a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ae582993c8c5c5663d14f975b8928d14ae0b1a2a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/c8df0a3ed35e7dfb030fbf5f39c94387a52a1f71/))
+([permalink](https://uiceds.github.io/project-triples/v/ae582993c8c5c5663d14f975b8928d14ae0b1a2a/))
 was automatically generated
-from [uiceds/project-triples@c8df0a3](https://github.com/uiceds/project-triples/tree/c8df0a3ed35e7dfb030fbf5f39c94387a52a1f71)
-on October 6, 2024.
+from [uiceds/project-triples@ae58299](https://github.com/uiceds/project-triples/tree/ae582993c8c5c5663d14f975b8928d14ae0b1a2a)
+on October 7, 2024.
 </em></small>
 
 
@@ -116,6 +121,17 @@ on October 6, 2024.
     <br>
   <small>
      Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign
+  </small>
+
++ **Brandy Diggs-McGee**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-2052-0946](https://orcid.org/0000-0003-2052-0946)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [iloveheat](https://github.com/iloveheat)
+    <br>
+  <small>
+     Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign; USACE ERDC CERL, Illinois
   </small>
 
 
