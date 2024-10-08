@@ -3,14 +3,14 @@ Baisakhi
 CERL
 Champaign
 CSV
-Dataset
+dataset
 Dep
 Diggs
 Dussehra
 Eid
 ERDC
 Fitr
-frenk
+Frenk
 Ganga
 GoAir
 Holi

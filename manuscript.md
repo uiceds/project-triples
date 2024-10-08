@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-08" />
   <meta name="citation_publication_date" content="2024-10-08" />
   <meta property="article:published_time" content="2024-10-08" />
-  <meta name="dc.modified" content="2024-10-08T03:17:53+00:00" />
-  <meta property="article:modified_time" content="2024-10-08T03:17:53+00:00" />
+  <meta name="dc.modified" content="2024-10-08T03:27:42+00:00" />
+  <meta property="article:modified_time" content="2024-10-08T03:27:42+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/01bfd6d2c1e00ff3d33d725bbaf56f169d6a7835/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/01bfd6d2c1e00ff3d33d725bbaf56f169d6a7835/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/01bfd6d2c1e00ff3d33d725bbaf56f169d6a7835/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/01bfd6d2c1e00ff3d33d725bbaf56f169d6a7835/))
+([permalink](https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/))
 was automatically generated
-from [uiceds/project-triples@01bfd6d](https://github.com/uiceds/project-triples/tree/01bfd6d2c1e00ff3d33d725bbaf56f169d6a7835)
+from [uiceds/project-triples@e4623ab](https://github.com/uiceds/project-triples/tree/e4623ab878ffb9f26873207caf456dd854d66ec5)
 on October 8, 2024.
 </em></small>
 
@@ -216,6 +216,8 @@ These price variations can be correlated with the seasonal demand and cultural e
 ### Destination Analysis:
 We reviewed **10,684** flights during this period. **Cochin**, **Bangalore**, and **Delhi** were the top destinations, with Cochin being the most attractive, receiving the highest number of flights. The details of the top destinations are shown in **Table 1**.
 
+<div style="text-align: center;">
+
 **Table 1: Top Flight Destinations**
 
 | Rank | Destination | Count |
@@ -227,8 +229,12 @@ We reviewed **10,684** flights during this period. **Cochin**, **Bangalore**, an
 | 5    | Hyderabad   | 697   |
 | 6    | Kolkata     | 381   |
 
+</div>
+
 ### Origin-Destination (O/D) Pair Analysis:
 We also identified the most frequent origin-destination pairs, as shown in **Table 2**.
+
+<div style="text-align: center;">
 
 **Table 2: Most Frequent Origin-Destination Pairs**
 
@@ -241,11 +247,15 @@ We also identified the most frequent origin-destination pairs, as shown in **Tab
 | 5    | Mumbai   | Hyderabad   | 697   |
 | 6    | Chennai  | Kolkata     | 381   |
 
+</div>
+
 ### Airline Insights:
 Our analysis of the airlines provided the following insights:
 
 #### 1. Mean Price by Airline:
 The table below (**Table 3**) shows the mean flight price for each airline, sorted from highest to lowest.
+
+<div style="text-align: center;">
 
 **Table 3: Mean Price by Airline**
 
@@ -264,8 +274,12 @@ The table below (**Table 3**) shows the mean flight price for each airline, sort
 | 11   | SpiceJet                      | 4,338            |
 | 12   | Trujet                        | 4,140            |
 
+</div>
+
 #### 2. Airlines with the Most Number of Flights:
 The table below (**Table 4**) lists the airlines with the most flights in the dataset.
+
+<div style="text-align: center;">
 
 **Table 4: Airlines with the Most Number of Flights**
 
@@ -284,8 +298,12 @@ The table below (**Table 4**) lists the airlines with the most flights in the da
 | 11   | Vistara Premium Economy       | 3                 |
 | 12   | Trujet                        | 1                 |
 
+</div>
+
 #### 3. Airlines Frequently Used in Long-Haul Flights:
 The table below (**Table 5**) lists the airlines frequently used for long-haul flights (flights with a duration greater than 10 hours).
+
+<div style="text-align: center;">
 
 **Table 5: Airlines Frequently Used in Long-Haul Flights**
 
@@ -296,6 +314,8 @@ The table below (**Table 5**) lists the airlines frequently used for long-haul f
 | 3    | Multiple Carriers             | 625               |
 | 4    | IndiGo                        | 231               |
 | 5    | Vistara                       | 197               |
+
+</div>
 
 It is worth noting that there is limited data available for multiple-carrier flights, so further analysis of these flights is not possible.
 
