@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-08" />
   <meta name="citation_publication_date" content="2024-10-08" />
   <meta property="article:published_time" content="2024-10-08" />
-  <meta name="dc.modified" content="2024-10-08T03:27:42+00:00" />
-  <meta property="article:modified_time" content="2024-10-08T03:27:42+00:00" />
+  <meta name="dc.modified" content="2024-10-08T03:29:29+00:00" />
+  <meta property="article:modified_time" content="2024-10-08T03:29:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/e4623ab878ffb9f26873207caf456dd854d66ec5/))
+([permalink](https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/))
 was automatically generated
-from [uiceds/project-triples@e4623ab](https://github.com/uiceds/project-triples/tree/e4623ab878ffb9f26873207caf456dd854d66ec5)
+from [uiceds/project-triples@6a8b925](https://github.com/uiceds/project-triples/tree/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28)
 on October 8, 2024.
 </em></small>
 
@@ -152,7 +152,8 @@ The aviation industry is a critical component of the global transportation netwo
 
 ## Proposal
 Our team plans to use a Kaggle flight prediction dataset to develop a machine learning model in Julia that predicts future flight prices for domestic routes in India. The primary goal is to build a machine learning model that can estimate changes in future flight prices based on historical data, using regression techniques. We will investigate how factors such as time of departure, number of stops, the choice of airline, among others, influence flight prices. The secondary objective is to analyze if certain trends can be linked to broader environmental or policy factors.
-While predicting flight prices may seem primarily economic, it intersects with transport engineering by optimizing air traffic and scheduling. Additionally, these predictions could indirectly inform decisions aimed at reducing the environmental impact of flights. By better understanding pricing trends, stakeholders can implement dynamic pricing strategies that encourage sustainable travel, such as offering discounts for off-peak flights or promoting direct routes to cut down on fuel consumption.
+While predicting flight prices may seem primarily economic, it intersects with transportation engineering by optimizing air traffic and scheduling. Additionally, these predictions could indirectly inform decisions aimed at reducing the environmental impact of flights. By better understanding pricing trends, stakeholders can implement dynamic pricing strategies that encourage sustainable travel, such as offering discounts for off-peak flights or promoting direct routes to cut down on fuel consumption.
+
 
 ## Dataset Description 
   - Source: 
