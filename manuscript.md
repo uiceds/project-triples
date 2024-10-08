@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-08" />
   <meta name="citation_publication_date" content="2024-10-08" />
   <meta property="article:published_time" content="2024-10-08" />
-  <meta name="dc.modified" content="2024-10-08T03:10:38+00:00" />
-  <meta property="article:modified_time" content="2024-10-08T03:10:38+00:00" />
+  <meta name="dc.modified" content="2024-10-08T03:13:56+00:00" />
+  <meta property="article:modified_time" content="2024-10-08T03:13:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/b9fa6d4975c2c327877f606fc4550c6cb92fc974/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/b9fa6d4975c2c327877f606fc4550c6cb92fc974/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/b9fa6d4975c2c327877f606fc4550c6cb92fc974/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/))
+([permalink](https://uiceds.github.io/project-triples/v/b9fa6d4975c2c327877f606fc4550c6cb92fc974/))
 was automatically generated
-from [uiceds/project-triples@f001014](https://github.com/uiceds/project-triples/tree/f001014e23c8cc7006c820e550d0f9eb832e5ca0)
+from [uiceds/project-triples@b9fa6d4](https://github.com/uiceds/project-triples/tree/b9fa6d4975c2c327877f606fc4550c6cb92fc974)
 on October 8, 2024.
 </em></small>
 
@@ -449,7 +449,7 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 
 ## Exploratory Data Analysis of Indian Domestic Flights (March - June 2019)
 
-The dataset includes domestic flights of Indian airlines from March 2019 to June 2019. Each column in the dataset corresponds to a specific variable, and each row represents an observation. The dataset is clean, with consistent measurement units and no missing values.
+The dataset includes domestic flights of Indian airlines from March 2019 to June 2019, and is derived from [Kaggle](https://www.kaggle.com/datasets/viveksharmar/flight-price-data/). Each column in the dataset corresponds to a specific variable, and each row represents an observation. The dataset is clean, with consistent measurement units and no missing values.
 
 ### Dataset Variables:
 - **Airlines**: The name of the airline operating the flight.
