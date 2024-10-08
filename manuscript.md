@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-08" />
   <meta name="citation_publication_date" content="2024-10-08" />
   <meta property="article:published_time" content="2024-10-08" />
-  <meta name="dc.modified" content="2024-10-08T03:09:31+00:00" />
-  <meta property="article:modified_time" content="2024-10-08T03:09:31+00:00" />
+  <meta name="dc.modified" content="2024-10-08T03:10:38+00:00" />
+  <meta property="article:modified_time" content="2024-10-08T03:10:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/0d07a98f2a764027ece4512be88ed7a727e69365/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/0d07a98f2a764027ece4512be88ed7a727e69365/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/0d07a98f2a764027ece4512be88ed7a727e69365/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/0d07a98f2a764027ece4512be88ed7a727e69365/))
+([permalink](https://uiceds.github.io/project-triples/v/f001014e23c8cc7006c820e550d0f9eb832e5ca0/))
 was automatically generated
-from [uiceds/project-triples@0d07a98](https://github.com/uiceds/project-triples/tree/0d07a98f2a764027ece4512be88ed7a727e69365)
+from [uiceds/project-triples@f001014](https://github.com/uiceds/project-triples/tree/f001014e23c8cc7006c820e550d0f9eb832e5ca0)
 on October 8, 2024.
 </em></small>
 
@@ -466,7 +466,7 @@ We explored possible correlations between variables in the dataset. One expected
 The chart depicted in **Figure 1** illustrates that most flights in the dataset have ticket prices below 10,000 Rupees.
 
 <p align="center">
-  <img src="figures/Dist-of-Flight-Prices.png" alt="Flight Price Trends" width="600px">
+  <img src="images/Dist-of-Flight-Prices.png" alt="Flight Price Trends" width="600px">
   <br>
   <strong>Figure 1:</strong> Distribution of Flight Prices (Positive Skew).
 </p>
@@ -476,7 +476,7 @@ To analyze seasonal price variations, we created a new column, `Adjusted-Date`, 
 As shown in **Figure 2**, flight prices fluctuate significantly over time, with notable peaks around the major Indian holidays.
 
 <p align="center">
-  <img src="figures/AvePrice-Date.png" alt="Flight Price Trends" width="600px">
+  <img src="images/AvePrice-Date.png" alt="Flight Price Trends" width="600px">
   <br>
   <strong>Figure 2:</strong> Flight price trends over time.
 </p>
