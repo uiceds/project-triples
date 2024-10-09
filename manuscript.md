@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-09" />
   <meta name="citation_publication_date" content="2024-10-09" />
   <meta property="article:published_time" content="2024-10-09" />
-  <meta name="dc.modified" content="2024-10-09T19:19:17+00:00" />
-  <meta property="article:modified_time" content="2024-10-09T19:19:17+00:00" />
+  <meta name="dc.modified" content="2024-10-09T19:20:06+00:00" />
+  <meta property="article:modified_time" content="2024-10-09T19:20:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/bbac35caacc5d1a54deda70873b245c9fba309df/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/bbac35caacc5d1a54deda70873b245c9fba309df/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/bbac35caacc5d1a54deda70873b245c9fba309df/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/bbac35caacc5d1a54deda70873b245c9fba309df/))
+([permalink](https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/))
 was automatically generated
-from [uiceds/project-triples@bbac35c](https://github.com/uiceds/project-triples/tree/bbac35caacc5d1a54deda70873b245c9fba309df)
+from [uiceds/project-triples@9e5b892](https://github.com/uiceds/project-triples/tree/9e5b892fb068ed1b57f5ef86207de98ee0521054)
 on October 9, 2024.
 </em></small>
 
@@ -145,7 +145,7 @@ Sofia Frenk \<sofiaf6@illinois.edu\>.
 
 
 ## Abstract
-Th primary goal of our project is to build a machine learning model that can estimate changes in future flight prices based on historical data by using regression techniques. We will investigate how factors such as time of departure, number of stops, and the choice of airline influence flight prices. The secondary objective is to analyze if certain trends can be linked to broader environmental, economic and/or policy factors.
+The primary goal of our project is to build a machine learning model that can estimate changes in future flight prices based on historical data by using regression techniques. We will investigate how factors such as time of departure, number of stops, and the choice of airline influence flight prices. The secondary objective is to analyze if certain trends can be linked to broader environmental, economic and/or policy factors.
 The dataset includes columns for departure and destination locations, total stops, travel duration, and price information. The model will be trained using machine learning techniques, with a focus on determining which features contribute most to price variations. 
 The aviation industry is a critical component of the global transportation network, impacting not only the economy but also the environment due to its significant carbon footprint. By developing accurate flight price prediction models, we can contribute to better planning and optimization of air travel routes, which is essential for both transportation engineering and environmental sustainability. If airlines and passengers can anticipate future price trends, it enables more efficient scheduling, potentially increasing the efficiency of flight operation and possibly minimizing unnecessary emissions.
 
