@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-10-08'
+date-meta: '2024-10-09'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-10-08" />
-  <meta name="citation_publication_date" content="2024-10-08" />
-  <meta property="article:published_time" content="2024-10-08" />
-  <meta name="dc.modified" content="2024-10-08T03:29:29+00:00" />
-  <meta property="article:modified_time" content="2024-10-08T03:29:29+00:00" />
+  <meta name="dc.date" content="2024-10-09" />
+  <meta name="citation_publication_date" content="2024-10-09" />
+  <meta property="article:published_time" content="2024-10-09" />
+  <meta name="dc.modified" content="2024-10-09T15:32:23+00:00" />
+  <meta property="article:modified_time" content="2024-10-09T15:32:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/dada91256991c1906504cb0141dc635c85e4c7bd/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/dada91256991c1906504cb0141dc635c85e4c7bd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/dada91256991c1906504cb0141dc635c85e4c7bd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28/))
+([permalink](https://uiceds.github.io/project-triples/v/dada91256991c1906504cb0141dc635c85e4c7bd/))
 was automatically generated
-from [uiceds/project-triples@6a8b925](https://github.com/uiceds/project-triples/tree/6a8b925e4ff150fbae4e0f5dd27d9e684d757f28)
-on October 8, 2024.
+from [uiceds/project-triples@dada912](https://github.com/uiceds/project-triples/tree/dada91256991c1906504cb0141dc635c85e4c7bd)
+on October 9, 2024.
 </em></small>
 
 
@@ -145,7 +145,7 @@ Sofia Frenk \<sofiaf6@illinois.edu\>.
 
 
 ## Abstract
-The primary goal of our project is to build a machine learning model that can estimate changes in future flight prices based on historical data by using regression techniques. We will investigate how factors such as time of departure, number of stops, and the choice of airline influence flight prices. The secondary objective is to analyze if certain trends can be linked to broader environmental, economic and/or policy factors.
+Th primary goal of our project is to build a machine learning model that can estimate changes in future flight prices based on historical data by using regression techniques. We will investigate how factors such as time of departure, number of stops, and the choice of airline influence flight prices. The secondary objective is to analyze if certain trends can be linked to broader environmental, economic and/or policy factors.
 The dataset includes columns for departure and destination locations, total stops, travel duration, and price information. The model will be trained using machine learning techniques, with a focus on determining which features contribute most to price variations. 
 The aviation industry is a critical component of the global transportation network, impacting not only the economy but also the environment due to its significant carbon footprint. By developing accurate flight price prediction models, we can contribute to better planning and optimization of air travel routes, which is essential for both transportation engineering and environmental sustainability. If airlines and passengers can anticipate future price trends, it enables more efficient scheduling, potentially increasing the efficiency of flight operation and possibly minimizing unnecessary emissions.
 
