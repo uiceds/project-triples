@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-10-09'
+date-meta: '2024-10-10'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-10-09" />
-  <meta name="citation_publication_date" content="2024-10-09" />
-  <meta property="article:published_time" content="2024-10-09" />
-  <meta name="dc.modified" content="2024-10-09T19:20:06+00:00" />
-  <meta property="article:modified_time" content="2024-10-09T19:20:06+00:00" />
+  <meta name="dc.date" content="2024-10-10" />
+  <meta name="citation_publication_date" content="2024-10-10" />
+  <meta property="article:published_time" content="2024-10-10" />
+  <meta name="dc.modified" content="2024-10-10T05:24:04+00:00" />
+  <meta property="article:modified_time" content="2024-10-10T05:24:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f7b2dafd220ad178af633eb12286a2d7afcd5c24/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f7b2dafd220ad178af633eb12286a2d7afcd5c24/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f7b2dafd220ad178af633eb12286a2d7afcd5c24/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/9e5b892fb068ed1b57f5ef86207de98ee0521054/))
+([permalink](https://uiceds.github.io/project-triples/v/f7b2dafd220ad178af633eb12286a2d7afcd5c24/))
 was automatically generated
-from [uiceds/project-triples@9e5b892](https://github.com/uiceds/project-triples/tree/9e5b892fb068ed1b57f5ef86207de98ee0521054)
-on October 9, 2024.
+from [uiceds/project-triples@f7b2daf](https://github.com/uiceds/project-triples/tree/f7b2dafd220ad178af633eb12286a2d7afcd5c24)
+on October 10, 2024.
 </em></small>
 
 
@@ -319,6 +319,24 @@ The table below (**Table 5**) lists the airlines frequently used for long-haul f
 </div>
 
 It is worth noting that there is limited data available for multiple-carrier flights, so further analysis of these flights is not possible.
+
+
+## Introduction
+_The dynamics of flight price predictions_
+
+Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [1]. As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [1–4]. Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [2]. In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [5–7]. For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
+
+_The importance of predicting flight prices_
+
+Accurately predicting flight prices has significant implications for multiple stakeholders. For consumers, anticipating price trends helps optimize travel costs, allowing for better budgeting and planning [3, 4, 8]. Airlines, on the other hand, can improve their revenue management strategies through dynamic pricing, ensuring that flights operate closer to capacity while adjusting pricing to meet seasonal demand shifts and market competition [2, 4, 8]. Additionally, by integrating environmental factors such as carbon emissions into the pricing model, this research can help airlines design more sustainable routes, potentially leading to fewer emissions through better traffic management and efficient flight operations [1, 3, 8, 9]. The aviation industry contributes significantly to the global economy but also poses challenges due to its substantial carbon footprint [10].
+
+_Methodological approach and dataset_
+
+This project utilizes a Kaggle dataset on domestic flights in India, covering variables such as airline name, total stops, departure and destination locations, and flight prices [3–5, 8]. Using regression techniques within a machine learning framework, the researchers aim to identify which variables most significantly impact flight prices. Initial findings suggest that factors such as the number of stops, flight duration, and seasonal demand (correlating with major holidays in India) are key drivers of price variation. For instance, a notable spike in flight prices is observed around holidays in India, are insights that not only advance knowledge in transportation economics but also serve as a crucial decision-making tool for airline pricing strategies [1, 3, 4, 8]. 
+
+_Multidisciplinary implications_
+
+By developing this predictive model, the research bridges the gap between economics, machine learning, and environmental sustainability. Future applications of this work could extend beyond pricing into areas like route optimization and emission reduction strategies [3]. As flight prices are a key variable in both economic and environmental calculations, understanding their underlying dynamics can contribute to more sustainable and cost-effective air travel in the future [2, 3, 8].
 
 
 ## References {.page_break_before}
