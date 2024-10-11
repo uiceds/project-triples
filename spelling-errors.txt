@@ -5,14 +5,14 @@ borenstein
 CERL
 Champaign
 CSV
-Dataset
+dataset
 Dep
 Diggs
 Dussehra
 Eid
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 gillen
 GoAir
