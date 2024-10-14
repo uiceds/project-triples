@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import pandas as pd
+import numpy as np
 
 # Load the dataset
 file_path = 'path_to_your_flight_dataset.csv'  
@@ -80,7 +80,7 @@ print(long_haul_by_airline)
 
 #SVD and PCA analysis of data to extract patterns
 
-#1 handling categorical variables with one-hot encoding
+#1. handling categorical variables with one-hot encoding
 #using DataFrames, CategoricalArrays, MLJ
 #df[:Airline] = categorical(df[:Airline])
 #X_encoded = MLJ.OneHotEncoder() |> fit_transform(df)
@@ -97,7 +97,7 @@ print(df[['Airline_Air India',
        'Destination_Delhi', 'Destination_Hyderabad', 'Destination_Kolkata',
        'Destination_New Delhi']].head())
 
-#2 normalizing numerical values
+#2. normalizing numerical values
 #X_encoded[:, :Price] = (X_encoded[:, :Price] .- mean(X_encoded[:, :Price]))
 #X_encoded[:, :Fuel_Consumption_Rate] = (X_encoded[:, :Fuel_Consumption_Rate (liters/hr)] .- mean(X_encoded[:, :Fuel_Consumption_Rate (liters/hr)]))
 #X_encoded[:, :CO2_Emitted] = (X_encoded[:, :CO2_Emitted (US Ton)] .- mean(X_encoded[:, :CO2_Emitted (US Ton)]))
@@ -107,4 +107,35 @@ df['Fuel_Consumption_normalized'] = df['Fuel_Consumption_Rate (liters/hr)'] - df
 df['CO2_Emitted_normalized'] = df['CO2_Emitted (US Ton)'] - df['CO2_Emitted (US Ton)'].mean()
 
 print("PROCESSED NUMERICAL DATA:")
-print(df[['Price_normalized', 'Fuel_Consumption_normalized', 'CO2_Emitted_normalized']].head())
+normalized_data_df = df[['Price_normalized', 'Fuel_Consumption_normalized', 'CO2_Emitted_normalized']]
+print(normalized_data_df.head())
+
+ax = normalized_data_df.hist(bins=20, figsize=(10, 6), range=(-6000, 20000))
+ax[0, 0].set_title('Price Normalized')
+ax[0, 1].set_title('Fuel Consumption Normalized')
+ax[1, 0].set_title('CO2 Emitted Normalized')
+plt.suptitle('Normalized Numerical Data', fontsize=16)
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
+
+#3. SVD of normalized numerical data
+#using LinearAlgebra
+#F=svd(normalized_data_df)
+numpy_numerical_data = normalized_data_df.to_numpy()
+U, Sigma, Vt = np.linalg.svd(numpy_numerical_data)
+
+
+#singular_values_plot = plot(F.S, yaxis=log, xlabel = "singular value number", ylabel = "square root of variance")
+singular_values_plot = plt.plot(Sigma, marker = 'o')
+plt.yscale('log')
+plt.xlabel('Singular Value Number')
+plt.ylabel('Square Root of Variance')
+plt.title('Singular Values Plot')
+
+plt.show()
+
+#4. examination of variance of first few singular values to see if the data is compressible
+#ie, to see if we can reduce the number of variables/dimensions and only focus on those
+fraction_of_variance = np.sum(Sigma[:3] ** 2)/np.sum(Sigma ** 2)
+print(f"Fraction of variance captured by the first 3 singular values: {fraction_of_variance:.4f}")
+print("The output of this fraction is 1.000, indicating that the number of variables in our dataset is sufficiently small.")
