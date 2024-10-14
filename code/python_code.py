@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.decomposition import PCA
 
 # Load the dataset
 file_path = 'path_to_your_flight_dataset.csv'  
@@ -139,3 +140,29 @@ plt.show()
 fraction_of_variance = np.sum(Sigma[:3] ** 2)/np.sum(Sigma ** 2)
 print(f"Fraction of variance captured by the first 3 singular values: {fraction_of_variance:.4f}")
 print("The output of this fraction is 1.000, indicating that the number of variables in our dataset is sufficiently small.")
+
+#5. PCA analysis
+pca = PCA(n_components=3)
+data_pca = pca.fit_transform(numpy_numerical_data)
+
+#extract the principal component loadings
+print("Table of principal components")
+loadings = pca.components_
+variables = ['Price_normalized', 'Fuel_Consumption_normalized', 'CO2_Emitted_normalized']
+loadings_df = pd.DataFrame(loadings, columns=variables)
+print(loadings_df.head())
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(data_pca[:, 0], data_pca[:, 1], data_pca[:, 2], alpha=0.6)
+ax.set_xlabel('First Principal Component')
+ax.set_ylabel('Second Principal Component')
+ax.set_zlabel('Third Principal Component')
+plt.title('PCA: First, Second, and Third Principal Components')
+plt.show()
+explained_variance = pca.explained_variance_ratio_
+print(f"Explained variance by component: {explained_variance}")
+#most of the data points are concentrated in a dense cluster along the first principal component, with less variation along the second and third.
+#The concentration along PC1 suggests that the majority of the variance in the data is captured by the first principal component
+#PCA is not the best method since the largest loading is price. Since price dominates PC1, we are essentially reducing the dimensionality while still heavily relying on the same variable (Price) that we're trying to predict
+#If we use PCA, especially if we rely mostly on PC1, we might lose valuable information from other features like Fuel Consumption and CO2 Emissions
