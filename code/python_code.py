@@ -99,22 +99,19 @@ print(df[['Airline_Air India',
        'Destination_New Delhi']].head())
 
 #2. normalizing numerical values
-#X_encoded[:, :Price] = (X_encoded[:, :Price] .- mean(X_encoded[:, :Price]))
 #X_encoded[:, :Fuel_Consumption_Rate] = (X_encoded[:, :Fuel_Consumption_Rate (liters/hr)] .- mean(X_encoded[:, :Fuel_Consumption_Rate (liters/hr)]))
 #X_encoded[:, :CO2_Emitted] = (X_encoded[:, :CO2_Emitted (US Ton)] .- mean(X_encoded[:, :CO2_Emitted (US Ton)]))
 
-df['Price_normalized'] = df['Price'] - df['Price'].mean()
 df['Fuel_Consumption_normalized'] = df['Fuel_Consumption_Rate (liters/hr)'] - df['Fuel_Consumption_Rate (liters/hr)'].mean()
 df['CO2_Emitted_normalized'] = df['CO2_Emitted (US Ton)'] - df['CO2_Emitted (US Ton)'].mean()
 
 print("PROCESSED NUMERICAL DATA:")
-normalized_data_df = df[['Price_normalized', 'Fuel_Consumption_normalized', 'CO2_Emitted_normalized']]
+normalized_data_df = df[['Fuel_Consumption_normalized', 'CO2_Emitted_normalized']]
 print(normalized_data_df.head())
 
-ax = normalized_data_df.hist(bins=20, figsize=(10, 6), range=(-6000, 20000))
-ax[0, 0].set_title('Price Normalized')
-ax[0, 1].set_title('Fuel Consumption Normalized')
-ax[1, 0].set_title('CO2 Emitted Normalized')
+ax = normalized_data_df.hist(bins=20, figsize=(10, 6))
+ax[0, 0].set_title('Fuel Consumption Normalized')
+ax[0, 1].set_title('CO2 Emitted Normalized')
 plt.suptitle('Normalized Numerical Data', fontsize=16)
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.show()
@@ -137,32 +134,29 @@ plt.show()
 
 #4. examination of variance of first few singular values to see if the data is compressible
 #ie, to see if we can reduce the number of variables/dimensions and only focus on those
-fraction_of_variance = np.sum(Sigma[:3] ** 2)/np.sum(Sigma ** 2)
+fraction_of_variance = np.sum(Sigma[:2] ** 2)/np.sum(Sigma ** 2)
 print(f"Fraction of variance captured by the first 3 singular values: {fraction_of_variance:.4f}")
 print("The output of this fraction is 1.000, indicating that the number of variables in our dataset is sufficiently small.")
 
 #5. PCA analysis
-pca = PCA(n_components=3)
+pca = PCA(n_components=2)
 data_pca = pca.fit_transform(numpy_numerical_data)
 
 #extract the principal component loadings
 print("Table of principal components")
 loadings = pca.components_
-variables = ['Price_normalized', 'Fuel_Consumption_normalized', 'CO2_Emitted_normalized']
+variables = ['Fuel_Consumption_normalized', 'CO2_Emitted_normalized']
 loadings_df = pd.DataFrame(loadings, columns=variables)
 print(loadings_df.head())
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-ax.scatter(data_pca[:, 0], data_pca[:, 1], data_pca[:, 2], alpha=0.6)
+ax.scatter(data_pca[:, 0], data_pca[:, 1], alpha=0.6)
 ax.set_xlabel('First Principal Component')
 ax.set_ylabel('Second Principal Component')
-ax.set_zlabel('Third Principal Component')
 plt.title('PCA: First, Second, and Third Principal Components')
 plt.show()
 explained_variance = pca.explained_variance_ratio_
 print(f"Explained variance by component: {explained_variance}")
-#most of the data points are concentrated in a dense cluster along the first principal component, with less variation along the second and third.
-#The concentration along PC1 suggests that the majority of the variance in the data is captured by the first principal component
-#PCA is not the best method since the largest loading is price. Since price dominates PC1, we are essentially reducing the dimensionality while still heavily relying on the same variable (Price) that we're trying to predict
-#If we use PCA, especially if we rely mostly on PC1, we might lose valuable information from other features like Fuel Consumption and CO2 Emissions
+#We only have two numerical variables, so it makes sense that most of the data points are concentrated around the second and third principal components, because they correspond to the two numerical variables.
+#If we use PCA, we might lose valuable information from other features like Fuel Consumption and CO2 Emissions
