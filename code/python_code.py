@@ -135,7 +135,7 @@ plt.show()
 #4. examination of variance of first few singular values to see if the data is compressible
 #ie, to see if we can reduce the number of variables/dimensions and only focus on those
 fraction_of_variance = np.sum(Sigma[:2] ** 2)/np.sum(Sigma ** 2)
-print(f"Fraction of variance captured by the first 3 singular values: {fraction_of_variance:.4f}")
+print(f"Fraction of variance captured by the first 2 singular values: {fraction_of_variance:.4f}")
 print("The output of this fraction is 1.000, indicating that the number of variables in our dataset is sufficiently small.")
 
 #5. PCA analysis
@@ -154,7 +154,7 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(data_pca[:, 0], data_pca[:, 1], alpha=0.6)
 ax.set_xlabel('First Principal Component')
 ax.set_ylabel('Second Principal Component')
-plt.title('PCA: First, Second, and Third Principal Components')
+plt.title('PCA: First and Second Principal Components')
 plt.show()
 explained_variance = pca.explained_variance_ratio_
 print(f"Explained variance by component: {explained_variance}")
