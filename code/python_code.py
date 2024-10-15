@@ -158,5 +158,5 @@ plt.title('PCA: First, Second, and Third Principal Components')
 plt.show()
 explained_variance = pca.explained_variance_ratio_
 print(f"Explained variance by component: {explained_variance}")
-#We only have two numerical variables, so it makes sense that most of the data points are concentrated around the second and third principal components, because they correspond to the two numerical variables.
+#We only have 2 numerical variables, so it makes sense that most of the data points are concentrated around the second and third principal components, because they correspond to the two numerical variables.
 #If we use PCA, we might lose valuable information from other features like Fuel Consumption and CO2 Emissions
