@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-22" />
   <meta name="citation_publication_date" content="2024-10-22" />
   <meta property="article:published_time" content="2024-10-22" />
-  <meta name="dc.modified" content="2024-10-22T05:39:32+00:00" />
-  <meta property="article:modified_time" content="2024-10-22T05:39:32+00:00" />
+  <meta name="dc.modified" content="2024-10-22T05:40:12+00:00" />
+  <meta property="article:modified_time" content="2024-10-22T05:40:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/efc3ff8fe256ea529b78dbf3a4f7ec1ecc28c93c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/efc3ff8fe256ea529b78dbf3a4f7ec1ecc28c93c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/efc3ff8fe256ea529b78dbf3a4f7ec1ecc28c93c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ba47d4df6d413353eed4587268c4e049063091dc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ba47d4df6d413353eed4587268c4e049063091dc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ba47d4df6d413353eed4587268c4e049063091dc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/efc3ff8fe256ea529b78dbf3a4f7ec1ecc28c93c/))
+([permalink](https://uiceds.github.io/project-triples/v/ba47d4df6d413353eed4587268c4e049063091dc/))
 was automatically generated
-from [uiceds/project-triples@efc3ff8](https://github.com/uiceds/project-triples/tree/efc3ff8fe256ea529b78dbf3a4f7ec1ecc28c93c)
+from [uiceds/project-triples@ba47d4d](https://github.com/uiceds/project-triples/tree/ba47d4df6d413353eed4587268c4e049063091dc)
 on October 22, 2024.
 </em></small>
 
@@ -341,7 +341,7 @@ It is worth noting that there is limited data available for multiple-carrier fli
 
 ### Singular Value Decomposition (SVD) and Principal Components Analysis (PCA):
 <p align="center">
-  <img src="content/images/Normalized_numerical_data.png" alt="Normalized Numerical Data" width="600px">
+  <img src="../content/images/Normalized_numerical_data.png" alt="Normalized Numerical Data" width="600px">
   <br>
   <strong>Figure 3:</strong> Bar chat showing the normalization of our two numerical variables.
 </p>
