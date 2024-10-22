@@ -5,7 +5,7 @@ borenstein
 CERL
 Champaign
 CSV
-Dataset
+dataset
 Dep
 Diggs
 Dussehra
@@ -25,6 +25,7 @@ Kolkata
 Maha
 Navami
 Pandey
+PCA
 predicion
 presententing
 Purnima
@@ -34,6 +35,7 @@ Shivaratri
 SpiceJet
 stopd
 supremepandey
+SVD
 Trujet
 Urbana
 USACE

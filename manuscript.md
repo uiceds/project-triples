@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-22" />
   <meta name="citation_publication_date" content="2024-10-22" />
   <meta property="article:published_time" content="2024-10-22" />
-  <meta name="dc.modified" content="2024-10-22T05:17:35+00:00" />
-  <meta property="article:modified_time" content="2024-10-22T05:17:35+00:00" />
+  <meta name="dc.modified" content="2024-10-22T05:35:44+00:00" />
+  <meta property="article:modified_time" content="2024-10-22T05:35:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/7cea1990eca6069f1a20578b6fa64f14780d5c92/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/7cea1990eca6069f1a20578b6fa64f14780d5c92/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/7cea1990eca6069f1a20578b6fa64f14780d5c92/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6d2d10bd78be91ecc7c69714e9a65a5639757910/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6d2d10bd78be91ecc7c69714e9a65a5639757910/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6d2d10bd78be91ecc7c69714e9a65a5639757910/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/7cea1990eca6069f1a20578b6fa64f14780d5c92/))
+([permalink](https://uiceds.github.io/project-triples/v/6d2d10bd78be91ecc7c69714e9a65a5639757910/))
 was automatically generated
-from [uiceds/project-triples@7cea199](https://github.com/uiceds/project-triples/tree/7cea1990eca6069f1a20578b6fa64f14780d5c92)
+from [uiceds/project-triples@6d2d10b](https://github.com/uiceds/project-triples/tree/6d2d10bd78be91ecc7c69714e9a65a5639757910)
 on October 22, 2024.
 </em></small>
 
@@ -338,6 +338,31 @@ The table below (**Table 5**) lists the airlines frequently used for long-haul f
 
 It is worth noting that there is limited data available for multiple-carrier flights, so further analysis of these flights is not possible.
 
+
+### Singular Value Decomposition (SVD) and Principal Components Analysis (PCA):
+<p align="center">
+  <img src="Normalized_numerical_data.png" alt="Normalized Numerical Data" width="600px">
+  <br>
+  <strong>Figure 3:</strong> Bar chat showing the normalization of our two numerical variables.
+</p>
+
+Before beginning with SVD or even PCA, we must normalize the data. Since most of out variables are categorical, only two variables needed to be normalized. These two variables are Fuel_Consumption_normalized and CO2_Emitted_normalized. This provided a preview that perhaps SVD and PCA would not be needed, given the small number of numerical variables. 
+
+<p align="center">
+  <img src="Singular_values_plot.png" alt="Plot of Singular Values" width="600px">
+  <br>
+  <strong>Figure 4:</strong> Line plot with two points representing two singular values.
+</p>
+
+Since there are only two numerical variables to be analysed in this dataset, only two singular values were created.
+
+<p align="center">
+  <img src="First_second_PCA.png" alt="PCA Plot" width="600px">
+  <br>
+  <strong>Figure 5:</strong> First and second principal components.
+</p>
+
+As we only have 2 numerical variables, it makes sense that most of the data points are concentrated around the first and second principal components, because they correspond to the two numerical variables. Of course, there are the only two principal components. Because we have such few numerical variables, if we were to use PCA, we might lose valuable information. Hence, we will proceed with regression analysis in the next section of our project. 
 
 ## References {.page_break_before}
 
