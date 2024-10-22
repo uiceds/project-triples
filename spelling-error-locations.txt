@@ -51,10 +51,10 @@ content/05.data-analysis.md:124:Trujet
 content/05.data-analysis.md:141:Vistara
 content/05.data-analysis.md:148:PCA
 content/05.data-analysis.md:148:SVD
-content/05.data-analysis.md:155:PCA
-content/05.data-analysis.md:155:PCA
-content/05.data-analysis.md:155:SVD
-content/05.data-analysis.md:155:SVD
-content/05.data-analysis.md:163:dataset
+content/05.data-analysis.md:150:PCA
+content/05.data-analysis.md:150:PCA
+content/05.data-analysis.md:150:SVD
+content/05.data-analysis.md:150:SVD
+content/05.data-analysis.md:158:dataset
 content/05.data-analysis.md:166:PCA
-content/05.data-analysis.md:171:PCA
+content/05.data-analysis.md:169:PCA
