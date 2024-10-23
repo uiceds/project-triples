@@ -364,7 +364,8 @@ As we only have 2 numerical variables, it makes sense that most of the data poin
   <br>
   <strong>Figure 5:</strong> First and second principal components.
 </p>
-#### Predictive model planning
+#### Predictive model planning:
+
 This project's goal is to build a Machine learning-based predictive model. Linear regression will be used to establish the relationship between the datasets' features and price. Gradient boosting algorithm of XGBoost Regressor or/and Random Forest Regressor will be used for capturing complex patterns and the predictive tasks. In the case of non-linearity and high interactions neural network will be used to enhance the performance. To measure the difference between actual and predicted price, RMSE (Root Mean Square Error) will be used. R-Squared (R2- Coefficient of determination – measure of goodness-of-fit of regression) will evaluate how well independent variable explains the variance in the flight prices. To build this model, we will be using the packages such as DataFrame.jl, StatsPlots.jl, Statistics.jl, MLJ.jl,etc from Julia library. If needed, ScikitLearn.jl (access to python's Scikit-learn models in julia) will be implemented.
 Our model will be able to predict the seasonal spikes in flight prices because of the factors such as festivals, holidays or high demand periods so that airlines can adjust the pricing and offer more competitive pricing. Additionally, Expensive (with higher mean ticket prices) airlines can be benefited by understanding the price elasticity and regulating accordingly. Furthermore, we can explore the environmental sustainability factors such as carbon emission by adopting environmentally sustainable options like fewer layover routes, energy efficient airlines, etc.
 
