@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-23" />
   <meta name="citation_publication_date" content="2024-10-23" />
   <meta property="article:published_time" content="2024-10-23" />
-  <meta name="dc.modified" content="2024-10-23T05:51:18+00:00" />
-  <meta property="article:modified_time" content="2024-10-23T05:51:18+00:00" />
+  <meta name="dc.modified" content="2024-10-23T05:57:53+00:00" />
+  <meta property="article:modified_time" content="2024-10-23T05:57:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ddc0dcd630c10ca899cffe3989c6339c1d9716b1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ddc0dcd630c10ca899cffe3989c6339c1d9716b1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ddc0dcd630c10ca899cffe3989c6339c1d9716b1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/22b08a7066ca0b6e7ac326b05808b3071fe36da7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/22b08a7066ca0b6e7ac326b05808b3071fe36da7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/22b08a7066ca0b6e7ac326b05808b3071fe36da7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/ddc0dcd630c10ca899cffe3989c6339c1d9716b1/))
+([permalink](https://uiceds.github.io/project-triples/v/22b08a7066ca0b6e7ac326b05808b3071fe36da7/))
 was automatically generated
-from [uiceds/project-triples@ddc0dcd](https://github.com/uiceds/project-triples/tree/ddc0dcd630c10ca899cffe3989c6339c1d9716b1)
+from [uiceds/project-triples@22b08a7](https://github.com/uiceds/project-triples/tree/22b08a7066ca0b6e7ac326b05808b3071fe36da7)
 on October 23, 2024.
 </em></small>
 
@@ -356,17 +356,13 @@ Since there are only two numerical variables to be analysed in this dataset, onl
   <br>
   <strong>Figure 4:</strong> Line plot with two points representing two singular values.
 </p>
-
+  <br>
 As we only have 2 numerical variables, it makes sense that most of the data points are concentrated around the first and second principal components, because they correspond to the two numerical variables. This can be seen below in **Figure 5**. Of course, there are the only two principal components. Because we have such few numerical variables, if we were to use PCA, we might lose valuable information. Hence, we will proceed with regression analysis in the next section of our project. 
 
 <p align="center">
   <img src="images/First_second_PCA.png" alt="PCA Plot" width="600px">
-    <br>
   <strong>Figure 5:</strong> First and second principal components.
 </p>
-
-
- <div style="page-break-before: always;"></div>
 
 
 ## Predictive Model Planning
