@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-10-22'
+date-meta: '2024-10-23'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-10-22" />
-  <meta name="citation_publication_date" content="2024-10-22" />
-  <meta property="article:published_time" content="2024-10-22" />
-  <meta name="dc.modified" content="2024-10-22T16:59:31+00:00" />
-  <meta property="article:modified_time" content="2024-10-22T16:59:31+00:00" />
+  <meta name="dc.date" content="2024-10-23" />
+  <meta name="citation_publication_date" content="2024-10-23" />
+  <meta property="article:published_time" content="2024-10-23" />
+  <meta name="dc.modified" content="2024-10-23T04:24:20+00:00" />
+  <meta property="article:modified_time" content="2024-10-23T04:24:20+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/a78658db98f92f2c415d5c34e1e08816e8b2293b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/a78658db98f92f2c415d5c34e1e08816e8b2293b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/a78658db98f92f2c415d5c34e1e08816e8b2293b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d488cb9dbc091ac26a66ab72da6fee62ff6f6f05/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d488cb9dbc091ac26a66ab72da6fee62ff6f6f05/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d488cb9dbc091ac26a66ab72da6fee62ff6f6f05/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/a78658db98f92f2c415d5c34e1e08816e8b2293b/))
+([permalink](https://uiceds.github.io/project-triples/v/d488cb9dbc091ac26a66ab72da6fee62ff6f6f05/))
 was automatically generated
-from [uiceds/project-triples@a78658d](https://github.com/uiceds/project-triples/tree/a78658db98f92f2c415d5c34e1e08816e8b2293b)
-on October 22, 2024.
+from [uiceds/project-triples@d488cb9](https://github.com/uiceds/project-triples/tree/d488cb9dbc091ac26a66ab72da6fee62ff6f6f05)
+on October 23, 2024.
 </em></small>
 
 
@@ -364,9 +364,11 @@ As we only have 2 numerical variables, it makes sense that most of the data poin
   <br>
   <strong>Figure 5:</strong> First and second principal components.
 </p>
-#### Predictive Model Planning
 
-This project's goal is to build a Machine learning-based predictive model. Linear regression will be used to establish the relationship between the datasets' features and price. Gradient boosting algorithm of XGBoost Regressor or/and Random Forest Regressor will be used for capturing complex patterns and the predictive tasks. In the case of non-linearity and high interactions PCA (Principal Component Analysis) and neural network will be used to enhance the performance. To measure the difference between actual and predicted price, RMSE (Root Mean Square Error) or MSE (Mean Square Error) will be used. R-Squared (R2- Coefficient of determination – measure of goodness-of-fit of regression) will evaluate how well independent variable explains the variance in the flight prices. While building this model, we will be using the packages such as DataFrame.jl, StatsPlots.jl, Statistics.jl, MLJ.jl,etc from Julia library. If needed, ScikitLearn.jl (access to python's Scikit-learn models in julia) will be implemented.
+
+
+Predictive modeling planning
+This project's goal is to build a Machine learning-based predictive model. Linear regression will be used to establish the relationship between the datasets' features and price. Gradient boosting algorithm of XGBoost Regressor or/and Random Forest Regressor will be used for capturing complex patterns and the predictive tasks. In the case of non-linearity and high interactions neural network will be used to enhance the performance. To measure the difference between actual and predicted price, RMSE (Root Mean Square Error) will be used. R-Squared (R2- Coefficient of determination – measure of goodness-of-fit of regression) will evaluate how well independent variable explains the variance in the flight prices. To build this model, we will be using the packages such as DataFrame.jl, StatsPlots.jl, Statistics.jl, MLJ.jl,etc from Julia library. If needed, ScikitLearn.jl (access to python's Scikit-learn models in julia) will be implemented.
 Our model will be able to predict the seasonal spikes in flight prices because of the factors such as festivals, holidays or high demand periods so that airlines can adjust the pricing and offer more competitive pricing. Additionally, Expensive (with higher mean ticket prices) airlines can be benefited by understanding the price elasticity and regulating accordingly. Furthermore, we can explore the environmental sustainability factors such as carbon emission by adopting environmentally sustainable options like fewer layover routes, energy efficient airlines, etc.
 
 

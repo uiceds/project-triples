@@ -3,6 +3,7 @@ content/02.proposal.md:2:dataset
 content/02.proposal.md:2:Kaggle
 content/03.dataset_description.md:1:Dataset
 content/03.dataset_description.md:3:dataset
+content/03.dataset_description.md:3:datasets
 content/03.dataset_description.md:3:kaggle
 content/03.dataset_description.md:3:Kaggle
 content/03.dataset_description.md:5:CSV
@@ -17,6 +18,7 @@ content/04.introduction.md:12:Kaggle
 content/05.data-analysis.md:3:dataset
 content/05.data-analysis.md:3:dataset
 content/05.data-analysis.md:3:dataset
+content/05.data-analysis.md:3:datasets
 content/05.data-analysis.md:3:kaggle
 content/05.data-analysis.md:3:Kaggle
 content/05.data-analysis.md:5:Dataset
@@ -58,3 +60,18 @@ content/05.data-analysis.md:150:SVD
 content/05.data-analysis.md:158:dataset
 content/05.data-analysis.md:166:PCA
 content/05.data-analysis.md:169:PCA
+content/06.Predictive_Model_planning.md:2:DataFrame
+content/06.Predictive_Model_planning.md:2:datasets
+content/06.Predictive_Model_planning.md:2:jl
+content/06.Predictive_Model_planning.md:2:jl
+content/06.Predictive_Model_planning.md:2:jl
+content/06.Predictive_Model_planning.md:2:jl
+content/06.Predictive_Model_planning.md:2:jl
+content/06.Predictive_Model_planning.md:2:MLJ
+content/06.Predictive_Model_planning.md:2:Regressor
+content/06.Predictive_Model_planning.md:2:Regressor
+content/06.Predictive_Model_planning.md:2:RMSE
+content/06.Predictive_Model_planning.md:2:Scikit
+content/06.Predictive_Model_planning.md:2:ScikitLearn
+content/06.Predictive_Model_planning.md:2:StatsPlots
+content/06.Predictive_Model_planning.md:2:XGBoost
