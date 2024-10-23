@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-23" />
   <meta name="citation_publication_date" content="2024-10-23" />
   <meta property="article:published_time" content="2024-10-23" />
-  <meta name="dc.modified" content="2024-10-23T05:09:48+00:00" />
-  <meta property="article:modified_time" content="2024-10-23T05:09:48+00:00" />
+  <meta name="dc.modified" content="2024-10-23T05:20:11+00:00" />
+  <meta property="article:modified_time" content="2024-10-23T05:20:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/276134bc2010523d309de82563c173d242583ecc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/276134bc2010523d309de82563c173d242583ecc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/276134bc2010523d309de82563c173d242583ecc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/27a89182a1a4e76cdb0e2021d211ffd861f356a8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/27a89182a1a4e76cdb0e2021d211ffd861f356a8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/27a89182a1a4e76cdb0e2021d211ffd861f356a8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/276134bc2010523d309de82563c173d242583ecc/))
+([permalink](https://uiceds.github.io/project-triples/v/27a89182a1a4e76cdb0e2021d211ffd861f356a8/))
 was automatically generated
-from [uiceds/project-triples@276134b](https://github.com/uiceds/project-triples/tree/276134bc2010523d309de82563c173d242583ecc)
+from [uiceds/project-triples@27a8918](https://github.com/uiceds/project-triples/tree/27a89182a1a4e76cdb0e2021d211ffd861f356a8)
 on October 23, 2024.
 </em></small>
 
@@ -363,6 +363,8 @@ As we only have 2 numerical variables, it makes sense that most of the data poin
   <img src="images/First_second_PCA.png" alt="PCA Plot" width="600px">
   <br>
   <strong>Figure 5:</strong> First and second principal components.
+
+   <div style="page-break-before: always;"></div>
 </p>
 
 
