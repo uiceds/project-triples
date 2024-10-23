@@ -68,6 +68,8 @@ content/06.Predictive_Model_planning.md:3:jl
 content/06.Predictive_Model_planning.md:3:jl
 content/06.Predictive_Model_planning.md:3:jl
 content/06.Predictive_Model_planning.md:3:MLJ
+content/06.Predictive_Model_planning.md:3:MSE
+content/06.Predictive_Model_planning.md:3:PCA
 content/06.Predictive_Model_planning.md:3:Regressor
 content/06.Predictive_Model_planning.md:3:Regressor
 content/06.Predictive_Model_planning.md:3:RMSE

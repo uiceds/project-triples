@@ -6,7 +6,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 datasets
 Dep
 Diggs
@@ -27,6 +27,7 @@ kalampokas
 Kolkata
 Maha
 MLJ
+MSE
 Navami
 Pandey
 PCA
