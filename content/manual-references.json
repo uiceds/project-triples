@@ -169,4 +169,12 @@
     },
     "publisher": "Elsevier"
   }
+  {
+    "ide": "scikit-learn-ols",
+    "author": "scikit-learn developers",
+    "title":  "Ordinary Least Squares",
+    "howpublished": "\url{https://scikit-learn.org/stable/modules/linear_model.html\#ordinary-least-squares}",
+    "note":        "Accessed: October 30, 2024",
+    "year":         "2023"
+  }
 ]
