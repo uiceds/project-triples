@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-30" />
   <meta name="citation_publication_date" content="2024-10-30" />
   <meta property="article:published_time" content="2024-10-30" />
-  <meta name="dc.modified" content="2024-10-30T17:03:35+00:00" />
-  <meta property="article:modified_time" content="2024-10-30T17:03:35+00:00" />
+  <meta name="dc.modified" content="2024-10-30T17:11:03+00:00" />
+  <meta property="article:modified_time" content="2024-10-30T17:11:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/446b4d3289b4232c0eb79d61e0c54073e97c3c31/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/446b4d3289b4232c0eb79d61e0c54073e97c3c31/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/446b4d3289b4232c0eb79d61e0c54073e97c3c31/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/))
+([permalink](https://uiceds.github.io/project-triples/v/446b4d3289b4232c0eb79d61e0c54073e97c3c31/))
 was automatically generated
-from [uiceds/project-triples@11f4574](https://github.com/uiceds/project-triples/tree/11f45742493742662ee0868daf24009d842693bd)
+from [uiceds/project-triples@446b4d3](https://github.com/uiceds/project-triples/tree/446b4d3289b4232c0eb79d61e0c54073e97c3c31)
 on October 30, 2024.
 </em></small>
 
@@ -380,7 +380,7 @@ Our model will be able to predict the seasonal spikes in flight prices because o
 
 In this section, we first implemented a simple linear regression model for price prediction based on our dataset, to better understand the independent variables and their influence on the results. Then, we proceeded to enhance the model based on our findings.
 
-To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients \( $$w = (w_1, \ldots, w_p)$$ \) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1). [@scikit-learn-ols]
+To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients (w = (w_1, ..., w_p)) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1). [@scikit-learn-ols]
 
 **Equation (1):**
 $$\min_w\|\| Xw - y\|\|_2^2 $$
@@ -388,21 +388,21 @@ $$\min_w\|\| Xw - y\|\|_2^2 $$
 Based on our exploratory analysis, we chose the number of stops as an independent variable, as this variable has a 60\% correlation with price. For simplicity, we did not use cross-validation in our first step and simply divided the data into 75\% for training and 25\% for testing. This resulted in the model shown in Equation (2):
 
 **Equation (2):** 
-$$\text{Price} = 5669.74 + 4150.40 \times \text{Total\ Stops}$$
+$$\text{Price} = 5669.74 + 4150.40 \times \text{Total Stops}$$
 
-To evaluate the performance of the model, we calculated three different metrics: root mean squared error (RMSE), mean squared error (MSE), and \( $$R^2$$ \) coefficient, which were 3613.11, \( 1.3 $$e+07$$), and 0.36, respectively. As you can see, the model's performance is poor.
+To evaluate the performance of the model, we calculated three different metrics: root mean squared error (RMSE), mean squared error (MSE), and \( R^2 \) coefficient, which were 3613.11, \( 1.3 e+07), and 0.36, respectively. As you can see, the model's performance is poor.
 
-To enhance the model, we added another independent variable, flight duration in minutes, as this variable has a 50\% correlation with price. This resulted in the model formulated in Equation (3), with RMSE, MSE, and \( $$R^2$$ \) metrics of 3586.91, \( 1.28 $$e+07$$), and 0.37, respectively.
+To enhance the model, we added another independent variable, flight duration in minutes, as this variable has a 50\% correlation with price. This resulted in the model formulated in Equation (3), with RMSE, MSE, and \( R\^2 \) metrics of 3586.91, \( 1.28 e+07), and 0.37, respectively.
 
 **Equation (3):**
-$$\text{Price} = 5447.66 + 3496.11 \times \text{Total\ Stops} + 1.19 \times \text{Flight\ Duration}$$
+$$\text{Price} = 5447.66 + 3496.11 \times \text{Total Stops} + 1.19 \times \text{Flight Duration}$$
 
 Although the second model performs slightly better than the first one, it is still not satisfactory. Therefore, we adjusted the dataset to consider holidays as well. We added a binary variable named `Holiday` to the dataset, which equals 1 when the flight is on the following dates: Maha Shivaratri (March 4), Holi (March 21), Ram Navami (April 13), Baisakhi (April 14), May Day (May 1), Buddha Purnima (May 18), Eid-ul-Fitr (June 4), and Ganga Dussehra (June 12). In this way, we reached the model presented in Equation (4):
 
 **Equation (4):**
-$$\text{Price} = 5534.45 + 3455.92 \times \text{Total\ Stops} + 1.17 \times \text{Flight\ Duration} - 2212.58 \times \text{Holiday}$$
+$$\text{Price} = 5534.45 + 3455.92 \times \text{Total Stops} + 1.17 \times \text{Flight Duration} - 2212.58 \times \text{Holiday}$$
 
-The RMSE, MSE, and \( $$R^2$$ \) metric values for this model are 3571.72, \( 1.27 $$e+07$$ \), and 0.38, respectively. As you may notice from the above results and also **Figure 6**, all of the models are unable to provide good estimations of the price, and their performance is poor. This may be the result of not using cross-validation or the linear regression model being unsuitable for our purpose.
+The RMSE, MSE, and \( R^2 \) metric values for this model are 3571.72, \( 1.27 e+07 \), and 0.38, respectively. As you may notice from the above results and also **Figure 6**, all of the models are unable to provide good estimations of the price, and their performance is poor. This may be the result of not using cross-validation or the linear regression model being unsuitable for our purpose.
 
 <p align="center">
   <img src="images/output-predictivemodel123.png" alt="Performance of models 1(a), 2(b), and 3(c)" width="600px">
