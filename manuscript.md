@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-10-30" />
   <meta name="citation_publication_date" content="2024-10-30" />
   <meta property="article:published_time" content="2024-10-30" />
-  <meta name="dc.modified" content="2024-10-30T17:01:56+00:00" />
-  <meta property="article:modified_time" content="2024-10-30T17:01:56+00:00" />
+  <meta name="dc.modified" content="2024-10-30T17:03:35+00:00" />
+  <meta property="article:modified_time" content="2024-10-30T17:03:35+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6bae57253f0851606900d31a33d0b6c09cef68ac/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6bae57253f0851606900d31a33d0b6c09cef68ac/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6bae57253f0851606900d31a33d0b6c09cef68ac/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/6bae57253f0851606900d31a33d0b6c09cef68ac/))
+([permalink](https://uiceds.github.io/project-triples/v/11f45742493742662ee0868daf24009d842693bd/))
 was automatically generated
-from [uiceds/project-triples@6bae572](https://github.com/uiceds/project-triples/tree/6bae57253f0851606900d31a33d0b6c09cef68ac)
+from [uiceds/project-triples@11f4574](https://github.com/uiceds/project-triples/tree/11f45742493742662ee0868daf24009d842693bd)
 on October 30, 2024.
 </em></small>
 
@@ -380,7 +380,7 @@ Our model will be able to predict the seasonal spikes in flight prices because o
 
 In this section, we first implemented a simple linear regression model for price prediction based on our dataset, to better understand the independent variables and their influence on the results. Then, we proceeded to enhance the model based on our findings.
 
-To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients \( $$w = (w_1, \ldots, w_p)$$ \) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1). [^1]
+To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients \( $$w = (w_1, \ldots, w_p)$$ \) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1). [@scikit-learn-ols]
 
 **Equation (1):**
 $$\min_w\|\| Xw - y\|\|_2^2 $$
