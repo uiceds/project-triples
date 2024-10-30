@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-10-23'
+date-meta: '2024-10-30'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-10-23" />
-  <meta name="citation_publication_date" content="2024-10-23" />
-  <meta property="article:published_time" content="2024-10-23" />
-  <meta name="dc.modified" content="2024-10-23T06:03:31+00:00" />
-  <meta property="article:modified_time" content="2024-10-23T06:03:31+00:00" />
+  <meta name="dc.date" content="2024-10-30" />
+  <meta name="citation_publication_date" content="2024-10-30" />
+  <meta property="article:published_time" content="2024-10-30" />
+  <meta name="dc.modified" content="2024-10-30T16:39:10+00:00" />
+  <meta property="article:modified_time" content="2024-10-30T16:39:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/2355559cf4c9fd16ca8fa4176355fb55be3c5619/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/2355559cf4c9fd16ca8fa4176355fb55be3c5619/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/2355559cf4c9fd16ca8fa4176355fb55be3c5619/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/c402d747df6a285d13273a26427388c3f8f59ae5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/c402d747df6a285d13273a26427388c3f8f59ae5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/c402d747df6a285d13273a26427388c3f8f59ae5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/2355559cf4c9fd16ca8fa4176355fb55be3c5619/))
+([permalink](https://uiceds.github.io/project-triples/v/c402d747df6a285d13273a26427388c3f8f59ae5/))
 was automatically generated
-from [uiceds/project-triples@2355559](https://github.com/uiceds/project-triples/tree/2355559cf4c9fd16ca8fa4176355fb55be3c5619)
-on October 23, 2024.
+from [uiceds/project-triples@c402d74](https://github.com/uiceds/project-triples/tree/c402d747df6a285d13273a26427388c3f8f59ae5)
+on October 30, 2024.
 </em></small>
 
 
@@ -374,6 +374,75 @@ Our model will be able to predict the seasonal spikes in flight prices because o
  <div style="page-break-before: always;"></div>
 
 
+
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+\begin{document}
+
+In this section, we first implemented a simple linear regression model for price prediction based on our dataset, to better understand the independent variables and their influence on the results. Then, we proceeded to enhance the model based on our findings.
+
+To begin with, we developed a simple linear regression model using the \texttt{LinearRegression} module from the \texttt{scikit-learn} package. This package fits a linear model with coefficients \( w = (w_1, \ldots, w_p) \) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1).\cite{ref}
+
+\begin{equation}
+\min_w \| X w - y \|_2^2
+\end{equation}
+
+Based on our exploratory analysis, we chose the number of stops as an independent variable, as this variable has a 60\% correlation with price. For simplicity, we did not use cross-validation in our first step and simply divided the data into 75\% for training and 25\% for testing. This resulted in the model shown in Equation (2):
+
+\begin{equation}
+\text{Price} = 5669.74 + 4150.40 \times \text{Total\_Stops}
+\end{equation}
+
+To evaluate the performance of the model, we calculated three different metrics: root mean squared error (RMSE), mean squared error (MSE), and \( R^2 \) coefficient, which were 3613.11, \( 1.3 \times 10^7 \), and 0.36, respectively. As you can see, the model's performance is poor.
+
+To enhance the model, we added another independent variable, flight duration in minutes, as this variable has a 50\% correlation with price. This resulted in the model formulated in Equation (3), with RMSE, MSE, and \( R^2 \) metrics of 3586.91, \( 1.28 \times 10^7 \), and 0.37, respectively.
+
+\begin{equation}
+\text{Price} = 5447.66 + 3496.11 \times \text{Total\_Stops} + 1.19 \times \text{Flight\_Duration}
+\end{equation}
+
+Although the second model performs slightly better than the first one, it is still not satisfactory. Therefore, we adjusted the dataset to consider holidays as well. We added a binary variable named \textit{Holiday} to the dataset, which equals 1 when the flight is on the following dates: Maha Shivaratri (March 4), Holi (March 21), Ram Navami (April 13), Baisakhi (April 14), May Day (May 1), Buddha Purnima (May 18), Eid-ul-Fitr (June 4), and Ganga Dussehra (June 12). In this way, we reached the model presented in Equation (4):
+
+\begin{equation}
+\text{Price} = 5534.45 + 3455.92 \times \text{Total\_Stops} + 1.17 \times \text{Flight\_Duration} - 2212.58 \times \text{Holiday}
+\end{equation}
+
+The RMSE, MSE, and \( R^2 \) metric values for this model are 3571.72, \( 1.27 \times 10^7 \), and 0.38, respectively. As you may notice from the above results and also Figure~\ref{fig:performance}, all of the models are unable to provide good estimations of the price, and their performance is poor. This may be the result of not using cross-validation or the linear regression model being unsuitable for our purpose.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figure6.png}
+\caption{Performance of models 1(a), 2(b), and 3(c).}
+\label{fig:performance}
+\end{figure}
+
+To test these theories, we first implemented cross-validation with 5 folds, as this is common and ensures both computational efficiency and performance balance. We used the third model, the best one we had so far. This led to a slight improvement in the results. The metrics are presented in Table~\ref{table:metrics}.
+
+\begin{table}[h]
+\centering
+\caption{Performance metrics for Model 4}
+\label{table:metrics}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Metric} & \textbf{Fold Values} & \textbf{Mean Value} & \textbf{SD} \\
+\midrule
+RMSE & [3731.48, 3732.26, 3636.08, 3468.79, 3627.01] & 3639.12 & 96.31 \\
+MSE & [13,923,954.82, 13,929,781.75, 13,221,049.43, 12,032,485.40, 13,155,213.99] & 13,252,497.08 & 694,039.12 \\
+\( R^2 \) & [0.378, 0.369, 0.377, 0.380, 0.379] & 0.377 & 0.004 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, we implemented Decision Trees, Ensemble Methods, and Neural Networks to develop a more suitable model.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
 
 
 ## References {.page_break_before}
