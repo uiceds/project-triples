@@ -14,7 +14,7 @@ Dussehra
 Eid
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 gillen
 GoAir
@@ -55,4 +55,3 @@ Vistara
 XGBoost
 xiong
 xu
-Xw
