@@ -6,7 +6,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 datasets
 Dep
 Diggs
@@ -29,6 +29,7 @@ Maha
 MLJ
 MSE
 Navami
+OLS
 Pandey
 PCA
 predicion
@@ -54,3 +55,4 @@ Vistara
 XGBoost
 xiong
 xu
+Xw
