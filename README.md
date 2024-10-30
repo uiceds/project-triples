@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/uiceds/project-triples/tree/gh-pages) branch hosts the contents of this directory at <https://uiceds.github.io/project-triples/>.
-The permalink for this webpage version is <https://uiceds.github.io/project-triples/v/c402d747df6a285d13273a26427388c3f8f59ae5/>.
+The permalink for this webpage version is <https://uiceds.github.io/project-triples/v/7a41be8195fb8db40bbdf49ddb1dbec544db5373/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://uiceds.github.io/project-triples/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c402d747df6a285d13273a26427388c3f8f59ae5`](https://github.com/uiceds/project-triples/commit/c402d747df6a285d13273a26427388c3f8f59ae5).
+[`7a41be8195fb8db40bbdf49ddb1dbec544db5373`](https://github.com/uiceds/project-triples/commit/7a41be8195fb8db40bbdf49ddb1dbec544db5373).
