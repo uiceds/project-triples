@@ -90,15 +90,17 @@ print(long_haul_by_airline)
 #X_encoded[:, :CO2_Emitted] = (X_encoded[:, :CO2_Emitted (US Ton)] .- mean(X_encoded[:, :CO2_Emitted (US Ton)]))
 
 df['Fuel_Consumption_normalized'] = df['Fuel_Consumption_Rate (liters/hr)'] - df['Fuel_Consumption_Rate (liters/hr)'].mean()
-df['CO2_Emitted_normalized'] = df['CO2_Emitted (US Ton)'] - df['CO2_Emitted (US Ton)'].mean()
+df['Total_Duration'] = df['Duration_hours'] + df['Duration_min'] / 60 
+df['Total_Duration_normalized'] = df['Total_Duration'] - df['Total_Duration'].mean()
+
 
 print("PROCESSED NUMERICAL DATA:")
-normalized_data_df = df[['Fuel_Consumption_normalized', 'CO2_Emitted_normalized']]
+normalized_data_df = df[['Fuel_Consumption_normalized', 'Total_Duration_normalized']]
 print(normalized_data_df.head())
 
 ax = normalized_data_df.hist(bins=20, figsize=(10, 6))
 ax[0, 0].set_title('Fuel Consumption Normalized')
-ax[0, 1].set_title('CO2 Emitted Normalized')
+ax[0, 1].set_title('Total Duration Normalized')
 plt.suptitle('Normalized Numerical Data', fontsize=16)
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.show()
@@ -132,7 +134,7 @@ data_pca = pca.fit_transform(numpy_numerical_data)
 #extract the principal component loadings
 print("Table of principal components")
 loadings = pca.components_
-variables = ['Fuel_Consumption_normalized', 'CO2_Emitted_normalized']
+variables = ['Fuel_Consumption_normalized', 'Total_Duration_normalized']
 loadings_df = pd.DataFrame(loadings, columns=variables)
 print(loadings_df.head())
 
@@ -154,17 +156,36 @@ print(f"Explained variance by component: {explained_variance}")
 #df[:Airline] = categorical(df[:Airline])
 #X_encoded = MLJ.OneHotEncoder() |> fit_transform(df)
 
-print("PROCESSED CATEGORICAL DATA:")
-df = pd.get_dummies(df, columns=['Airline'], drop_first=True)
-print(df[['Airline_Air India',
-       'Airline_GoAir', 'Airline_IndiGo', 'Airline_Jet Airways',
-       'Airline_Jet Airways Business', 'Airline_Multiple carriers',
-       'Airline_Multiple carriers Premium economy', 'Airline_SpiceJet',
-       'Airline_Trujet', 'Airline_Vistara', 'Airline_Vistara Premium economy']].head())
+print("PROCESSED CATEGORICAL DATA IN df_modified:")
+
+#copy df into df_modified:
+df_modified = df.copy()
+df_modified.drop(columns=['Fuel_Consumption_normalized', 'Total_Duration_normalized'], inplace=True)
+
+#replace duriation in hours and minutes to total duration in hours
+df_modified['Total_Duration'] = df_modified['Duration_hours'] + df_modified['Duration_min'] / 60
+df_modified.drop(columns=['Duration_hours', 'Duration_min'], inplace=True)
+
+#create binary variable - 1 for cities if they appear in Table 2, 0 if they dont
+frequent_routes = set((row['Source'], row['Destination']) for _, row in od_pairs.iterrows())
+df_modified['Frequent_Route'] = df_modified.apply(lambda row: 1 if (row['Source'], row['Destination']) in frequent_routes else 0, axis=1)
+df_modified.drop(columns=['Source', 'Destination', 'Adjusted_Date'], inplace=True)
+
+#one-hot encoding of 'Airline'
+df_modified = pd.get_dummies(df_modified, columns=['Airline', 'Fleet'], drop_first=True)
+airline_columns = [value for value in df_modified.columns if 'Airline_' in value]
+fleet_columns = [value for value in df_modified.columns if 'Fleet_' in value]
+
+print("Airline columns after one-hot encoding:", airline_columns)
+print("Fleet columns after one-hot encoding:", fleet_columns)
+
+print("df_modified:")
+print(df_modified.head())
+
 
 #drop the CO2_Emitted (US Ton) column so it can be used as the independent variable
-X = df.drop(columns=['CO2_Emitted (US Ton)'])
-y = df['CO2_Emitted (US Ton)']
+X = df_modified.drop(columns=['CO2_Emitted (US Ton)'])
+y = df_modified['CO2_Emitted (US Ton)']
 
 print("Verify data types in X:")
 print(X.dtypes)
@@ -177,17 +198,17 @@ X_train, X_test, y_train, y_test =  train_test_split(X, y, test_size=0.2, random
 tree_model = DecisionTreeRegressor(criterion="squared_error", random_state=42)
 
 #train the model
-#tree_model.fit(X_train, y_train)
+tree_model.fit(X_train, y_train)
 
 #generate predictions
-#y_pred = tree_model.predict(X_test)
+y_pred = tree_model.predict(X_test)
 
 #evaluate the model
-#mse = mean_squared_error(y_test, y_pred)
-#rmse = np.sqrt(mse)  
-#r2 = r2_score(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+rmse = np.sqrt(mse)  
+r2 = r2_score(y_test, y_pred)
 
-#print(f"Root Mean Squared Error (RMSE): {rmse}")
-#print(f"R^2 Score: {r2}")
+print(f"Root Mean Squared Error (RMSE): {rmse}")
+print(f"R^2 Score: {r2}")
 
 
