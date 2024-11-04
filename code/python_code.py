@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 from sklearn.decomposition import PCA
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
@@ -149,7 +150,6 @@ explained_variance = pca.explained_variance_ratio_
 print(f"Explained variance by component: {explained_variance}")
 #We only have 2 numerical variables, so it makes sense that most of the data points are concentrated around the second and third principal components, because they correspond to the two numerical variables.
 #If we use PCA, we might lose valuable information from other features like Fuel Consumption and CO2 Emissions
-<<<<<<< Updated upstream
 
 
 #handling categorical variables with one-hot encoding
@@ -210,9 +210,16 @@ rmse = np.sqrt(mse)
 r2 = r2_score(y_test, y_pred)
 
 print(f"Root Mean Squared Error (RMSE): {rmse}")
-print(f"R^2 Score: {r2}")
+print(f"R^2 Score: {r2}") #The R^2 value is suspiciosly perfect, let's check if any variables are correlated
 
+#correlation matrix for variables
+corr_matrix = X.corr()
 
-=======
-print(df['Airlines'].unique())
->>>>>>> Stashed changes
+# Plot the heatmap
+plt.figure(figsize=(12, 8))
+sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("Correlation Matrix of Features")
+plt.show()
+
+#there is a definite correlation among several variables, especially among the one-hot-encoded fleet values. 
+#I will conduct PCA on all variables except the binary variable Frequent_Route
