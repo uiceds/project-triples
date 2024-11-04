@@ -2,6 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.decomposition import PCA
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
+
 
 # Load the dataset
 file_path = 'path_to_your_flight_dataset.csv'  
@@ -81,24 +85,7 @@ print(long_haul_by_airline)
 
 #SVD and PCA analysis of data to extract patterns
 
-#1. handling categorical variables with one-hot encoding
-#using DataFrames, CategoricalArrays, MLJ
-#df[:Airline] = categorical(df[:Airline])
-#X_encoded = MLJ.OneHotEncoder() |> fit_transform(df)
-
-print("PROCESSED CATEGORICAL DATA:")
-df = pd.get_dummies(df, columns=['Airline', 'Fleet', 'Source', 'Destination'], drop_first=True)
-print(df[['Airline_Air India',
-       'Airline_GoAir', 'Airline_IndiGo', 'Airline_Jet Airways',
-       'Airline_Jet Airways Business', 'Airline_Multiple carriers',
-       'Airline_Multiple carriers Premium economy', 'Airline_SpiceJet',
-       'Airline_Trujet', 'Airline_Vistara', 'Airline_Vistara Premium economy',
-       'Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Source_Chennai',
-       'Source_Delhi', 'Source_Kolkata', 'Source_Mumbai', 'Destination_Cochin',
-       'Destination_Delhi', 'Destination_Hyderabad', 'Destination_Kolkata',
-       'Destination_New Delhi']].head())
-
-#2. normalizing numerical values
+#1. normalizing numerical values
 #X_encoded[:, :Fuel_Consumption_Rate] = (X_encoded[:, :Fuel_Consumption_Rate (liters/hr)] .- mean(X_encoded[:, :Fuel_Consumption_Rate (liters/hr)]))
 #X_encoded[:, :CO2_Emitted] = (X_encoded[:, :CO2_Emitted (US Ton)] .- mean(X_encoded[:, :CO2_Emitted (US Ton)]))
 
@@ -116,7 +103,7 @@ plt.suptitle('Normalized Numerical Data', fontsize=16)
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.show()
 
-#3. SVD of normalized numerical data
+#2. SVD of normalized numerical data
 #using LinearAlgebra
 #F=svd(normalized_data_df)
 numpy_numerical_data = normalized_data_df.to_numpy()
@@ -132,13 +119,13 @@ plt.title('Singular Values Plot')
 
 plt.show()
 
-#4. examination of variance of first few singular values to see if the data is compressible
+#3. examination of variance of first few singular values to see if the data is compressible
 #ie, to see if we can reduce the number of variables/dimensions and only focus on those
 fraction_of_variance = np.sum(Sigma[:2] ** 2)/np.sum(Sigma ** 2)
 print(f"Fraction of variance captured by the first 2 singular values: {fraction_of_variance:.4f}")
 print("The output of this fraction is 1.000, indicating that the number of variables in our dataset is sufficiently small.")
 
-#5. PCA analysis
+#4. PCA analysis
 pca = PCA(n_components=2)
 data_pca = pca.fit_transform(numpy_numerical_data)
 
@@ -160,3 +147,47 @@ explained_variance = pca.explained_variance_ratio_
 print(f"Explained variance by component: {explained_variance}")
 #We only have 2 numerical variables, so it makes sense that most of the data points are concentrated around the second and third principal components, because they correspond to the two numerical variables.
 #If we use PCA, we might lose valuable information from other features like Fuel Consumption and CO2 Emissions
+
+
+#handling categorical variables with one-hot encoding
+#using DataFrames, CategoricalArrays, MLJ
+#df[:Airline] = categorical(df[:Airline])
+#X_encoded = MLJ.OneHotEncoder() |> fit_transform(df)
+
+print("PROCESSED CATEGORICAL DATA:")
+df = pd.get_dummies(df, columns=['Airline'], drop_first=True)
+print(df[['Airline_Air India',
+       'Airline_GoAir', 'Airline_IndiGo', 'Airline_Jet Airways',
+       'Airline_Jet Airways Business', 'Airline_Multiple carriers',
+       'Airline_Multiple carriers Premium economy', 'Airline_SpiceJet',
+       'Airline_Trujet', 'Airline_Vistara', 'Airline_Vistara Premium economy']].head())
+
+#drop the CO2_Emitted (US Ton) column so it can be used as the independent variable
+X = df.drop(columns=['CO2_Emitted (US Ton)'])
+y = df['CO2_Emitted (US Ton)']
+
+print("Verify data types in X:")
+print(X.dtypes)
+
+
+#split the data into training and testing
+X_train, X_test, y_train, y_test =  train_test_split(X, y, test_size=0.2, random_state=42)
+
+#initialize decision tree regressor
+tree_model = DecisionTreeRegressor(criterion="squared_error", random_state=42)
+
+#train the model
+#tree_model.fit(X_train, y_train)
+
+#generate predictions
+#y_pred = tree_model.predict(X_test)
+
+#evaluate the model
+#mse = mean_squared_error(y_test, y_pred)
+#rmse = np.sqrt(mse)  
+#r2 = r2_score(y_test, y_pred)
+
+#print(f"Root Mean Squared Error (RMSE): {rmse}")
+#print(f"R^2 Score: {r2}")
+
+
