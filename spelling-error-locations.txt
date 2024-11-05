@@ -57,8 +57,11 @@ content/05.data-analysis.md:150:PCA
 content/05.data-analysis.md:150:PCA
 content/05.data-analysis.md:150:SVD
 content/05.data-analysis.md:150:SVD
+content/05.data-analysis.md:153:PCA
 content/05.data-analysis.md:158:dataset
+content/05.data-analysis.md:161:PCA
 content/05.data-analysis.md:165:PCA
+content/05.data-analysis.md:168:PCA
 content/05.data-analysis.md:168:PCA
 content/06.Predictive_Model_planning.md:3:DataFrame
 content/06.Predictive_Model_planning.md:3:datasets
