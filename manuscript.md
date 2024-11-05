@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-05" />
   <meta name="citation_publication_date" content="2024-11-05" />
   <meta property="article:published_time" content="2024-11-05" />
-  <meta name="dc.modified" content="2024-11-05T06:51:36+00:00" />
-  <meta property="article:modified_time" content="2024-11-05T06:51:36+00:00" />
+  <meta name="dc.modified" content="2024-11-05T07:12:30+00:00" />
+  <meta property="article:modified_time" content="2024-11-05T07:12:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ea468401c2f4b0beb8da12ed7661b070c71caa0c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ea468401c2f4b0beb8da12ed7661b070c71caa0c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ea468401c2f4b0beb8da12ed7661b070c71caa0c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/))
+([permalink](https://uiceds.github.io/project-triples/v/ea468401c2f4b0beb8da12ed7661b070c71caa0c/))
 was automatically generated
-from [uiceds/project-triples@f86f640](https://github.com/uiceds/project-triples/tree/f86f640ee0223789fdf58241b939ad9cf079243d)
+from [uiceds/project-triples@ea46840](https://github.com/uiceds/project-triples/tree/ea468401c2f4b0beb8da12ed7661b070c71caa0c)
 on November 5, 2024.
 </em></small>
 
@@ -424,6 +424,18 @@ The relatively low performance of linear models suggests that the relationships 
 
 
 
+# Implementing Decision Tree Regressor Model for CO_2 Emission Prediction
+In this subsequent section, because the dependent variable is numerical and not categorical, we implemented a regression tree rather than a decision tree. 
+We began with processing the independent variables that were categorical by using one-hot-encoding, as we did for the Fleet and Airline variables, and by creating a binary variable, as we did for Frequent_Route where city names received a 1 if they appear in Table 2 and a 0 if they do not.
+Once the data was processes satisfactorily, the dataset was divided into 80% for training and 20% for testing, and the regression tree was created. However, the $R^2$ value was suspicioulsly close to perfect with a value of 0.9999. To target this, we firstly analysed a correlation plot, which is shown in the figure below.
+
+<p align="center">
+  <img src="images/correlation-plot.png" alt="Correlation Plot" width="600px">
+  <br>
+  <strong>Figure 6:</strong> Correlation plot for all independent variables.
+</p>
+
+From the correlation plot above, one can note that several of the independent variables are correlated. This is likely causing multicollinearity, which accounts for the suspiciously high $R^2$ value.  
 
 
 ## References {.page_break_before}

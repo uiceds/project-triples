@@ -107,3 +107,7 @@ content/07.preliminary_predictive_modeling.md:27:RMSE
 content/07.preliminary_predictive_modeling.md:41:RMSE
 content/07.preliminary_predictive_modeling.md:42:MSE
 content/07.preliminary_predictive_modeling.md:45:dataset
+content/08.decision_tree.md:1:Regressor
+content/08.decision_tree.md:4:dataset
+content/08.decision_tree.md:4:suspicioulsly
+content/08.decision_tree.md:12:multicollinearity

@@ -28,6 +28,7 @@ Kolkata
 Maha
 MLJ
 MSE
+multicollinearity
 Navami
 OLS
 Pandey
@@ -46,6 +47,7 @@ SpiceJet
 StatsPlots
 stopd
 supremepandey
+suspicioulsly
 SVD
 Trujet
 Urbana
