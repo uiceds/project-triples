@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-05" />
   <meta name="citation_publication_date" content="2024-11-05" />
   <meta property="article:published_time" content="2024-11-05" />
-  <meta name="dc.modified" content="2024-11-05T06:49:05+00:00" />
-  <meta property="article:modified_time" content="2024-11-05T06:49:05+00:00" />
+  <meta name="dc.modified" content="2024-11-05T06:51:36+00:00" />
+  <meta property="article:modified_time" content="2024-11-05T06:51:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/82ad406631611b0efede91d3786468a2f1d37222/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/82ad406631611b0efede91d3786468a2f1d37222/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/82ad406631611b0efede91d3786468a2f1d37222/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/82ad406631611b0efede91d3786468a2f1d37222/))
+([permalink](https://uiceds.github.io/project-triples/v/f86f640ee0223789fdf58241b939ad9cf079243d/))
 was automatically generated
-from [uiceds/project-triples@82ad406](https://github.com/uiceds/project-triples/tree/82ad406631611b0efede91d3786468a2f1d37222)
+from [uiceds/project-triples@f86f640](https://github.com/uiceds/project-triples/tree/f86f640ee0223789fdf58241b939ad9cf079243d)
 on November 5, 2024.
 </em></small>
 
@@ -421,6 +421,8 @@ To test these theories, we first implemented cross-validation with 5 folds, as t
 | \( R^2 \)  | [0.378, 0.369, 0.377, 0.380, 0.379]                                                                      | 0.377            | 0.004        |
 
 The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, we implemented Decision Trees, Ensemble Methods, and Neural Networks to develop a more suitable model.
+
+
 
 
 
