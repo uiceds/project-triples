@@ -184,6 +184,14 @@ print("Fleet columns after one-hot encoding:", fleet_columns)
 print("df_modified:")
 print(df_modified.head())
 
+X_for_corrplot = df_modified.drop(columns=['Fleet', 'Frequent_Route'])
+#correlation matrix for variables to get a visual on correlation among variables before applying decision trees
+corr_matrix = X_for_corrplot.corr()
+# Plot the heatmap
+plt.figure(figsize=(12, 8))
+sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("Correlation Matrix of Features")
+plt.show()
 
 #drop the CO2_Emitted (US Ton) column so it can be used as the independent variable
 X_original = df_modified.drop(columns=['CO2_Emitted (US Ton)'])
@@ -213,15 +221,8 @@ r2 = r2_score(y_original_test, y_original_pred)
 print(f"Original Root Mean Squared Error (RMSE): {rmse}")
 print(f"Original R^2 Score: {r2}") #The R^2 value is suspiciosly perfect, let's check if any variables are correlated
 
-#correlation matrix for variables
-corr_matrix = X_original.corr()
 
-# Plot the heatmap
-plt.figure(figsize=(12, 8))
-sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Correlation Matrix of Features")
-plt.show()
-
+#CHANGE
 #there is a definite correlation among several variables, especially among the one-hot-encoded fleet values. 
 #I will conduct PCA on all variables except the binary variable Frequent_Route
 X_df = df_modified.drop(columns=['CO2_Emitted (US Ton)', 'Frequent_Route'])
