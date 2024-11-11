@@ -18,9 +18,9 @@ Eid
 Elsevier
 ERDC
 Fitr
-frenk
+Frenk
 Ganga
-gillen
+Gillen
 GoAir
 Guo
 Holi
@@ -29,7 +29,7 @@ iloveheat
 INR
 jl
 Kaggle
-kalampokas
+Kalampokas
 Kaygorodova
 Kolkata
 Maha
