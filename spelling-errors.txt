@@ -2,14 +2,14 @@ Abreu
 Bafandkar
 Baisakhi
 Barnhart
-Belobaba
+belobaba
 Borenstein
 Brueckner
 CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 datasets
 Dep
 Diggs
@@ -18,7 +18,7 @@ Eid
 Elsevier
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 gillen
 GoAir
@@ -29,7 +29,7 @@ iloveheat
 INR
 jl
 Kaggle
-Kalampokas
+kalampokas
 Kaygorodova
 Kolkata
 Maha
@@ -74,6 +74,6 @@ Vrochidou
 Wandelt
 XGBoost
 Xiong
-xu
+Xu
 Zhang
 Zheng
