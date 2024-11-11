@@ -162,11 +162,15 @@ print("PROCESSED CATEGORICAL DATA IN df_modified:")
 
 #copy df into df_modified:
 df_modified = df.copy()
+
+print("df_modified:")
+print(df_modified.head())
+
 df_modified.drop(columns=['Fuel_Consumption_normalized', 'Total_Duration_normalized'], inplace=True)
 
 #replace duriation in hours and minutes to total duration in hours
 df_modified['Total_Duration'] = df_modified['Duration_hours'] + df_modified['Duration_min'] / 60
-df_modified.drop(columns=['Duration_hours', 'Duration_min'], inplace=True)
+df_modified.drop(columns=['Duration_hours', 'Duration_min', 'Dep_hours', 'Dep_min', 'Arrival_hours', 'Arrival_min', 'Day', 'Month', 'Year'], inplace=True)
 
 #create binary variable - 1 for cities if they appear in Table 2, 0 if they dont
 frequent_routes = set((row['Source'], row['Destination']) for _, row in od_pairs.iterrows())
@@ -184,7 +188,8 @@ print("Fleet columns after one-hot encoding:", fleet_columns)
 print("df_modified:")
 print(df_modified.head())
 
-X_for_corrplot = df_modified.drop(columns=['Fleet', 'Frequent_Route'])
+#remove data that is binary value 
+X_for_corrplot = df_modified.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
 #correlation matrix for variables to get a visual on correlation among variables before applying decision trees
 corr_matrix = X_for_corrplot.corr()
 # Plot the heatmap
@@ -198,7 +203,7 @@ X_original = df_modified.drop(columns=['CO2_Emitted (US Ton)'])
 y_original = df_modified['CO2_Emitted (US Ton)']
 
 print("Verify data types in X_original:")
-print(X_original.dtypes)
+print(X_original.dtypes) ###
 
 
 #split the data into training and testing
@@ -222,14 +227,82 @@ print(f"Original Root Mean Squared Error (RMSE): {rmse}")
 print(f"Original R^2 Score: {r2}") #The R^2 value is suspiciosly perfect, let's check if any variables are correlated
 
 
-#CHANGE
-#there is a definite correlation among several variables, especially among the one-hot-encoded fleet values. 
-#I will conduct PCA on all variables except the binary variable Frequent_Route
-X_df = df_modified.drop(columns=['CO2_Emitted (US Ton)', 'Frequent_Route'])
-X_df = X_df.astype(np.float64)
+#first plots:
+#scatter plot
+plt.figure(figsize=(10,6))
+plt.scatter(y_original_test, y_original_pred, alpha=0.6)
+plt.plot([y_original_test.min(), y_original_test.max()], [y_original_test.min(), y_original_test.max()], 'r--')
+plt.xlabel('Actual Values')
+plt.ylabel('Predicted Values')
+plt.title('Actual vs Predicted Values')
+plt.show()
 
-X_df = X_df.fillna(X_df.mean())
-X = X_df.values
+#residuals plot
+residuals = y_original_test - y_original_pred
+plt.figure(figsize=(10, 6))
+plt.scatter(y_original_pred, residuals, alpha=0.6)
+plt.axhline(y=0, color='r', linestyle='--')
+plt.xlabel('Predicted Values')
+plt.ylabel('Residuals')
+plt.title('Residual Plot')
+plt.show()
+
+#histogram
+plt.figure(figsize=(10, 6))
+plt.hist(residuals, bins=30, color='skyblue', edgecolor='black')
+plt.xlabel('Residuals')
+plt.ylabel('Frequency')
+plt.title('Distribution of Residuals')
+plt.show()
+
+#CO2 EMITTED / TOTAL DURATION -- BINOMIAL DISTRIBUTION
+#there is a definite correlation between CO2 emitted and total duration of flight, which would be obvious because the longer the flight is, the more CO2 it will emit. 
+#Hence, we will transform the dependent variable, CO2 Emmitted (US Ton) to CO2 Emitted/Hour by dividing CO2 Emmitted (US Ton) by Total Duration (hours)
+#I will conduct PCA on all variables except the binary variable Frequent_Route
+
+#TO DO:
+#bring back 0/1 values and use random forest package (feature explanation -- which indep variable most useful for prediction)
+
+df_modified2 = df_modified.copy()
+df_modified2['CO2_Emitted/Hour'] = df_modified2['CO2_Emitted (US Ton)'] / df_modified2['Total_Duration']
+df_modified2 = df_modified2.drop(columns=['CO2_Emitted (US Ton)', 'Total_Duration'])
+
+#X_for_corrplot2 = df_modified2.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
+#correlation matrix for variables to get a visual on correlation among variables before applying decision trees
+#corr_matrix = X_for_corrplot2.corr()
+
+corr_matrix = df_modified2.corr()
+# Plot the heatmap
+plt.figure(figsize=(12, 8))
+sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("Correlation Matrix of Features 2")
+plt.show()
+
+print("df_modified2 head:")
+df_modified2.head()
+
+print(df_modified2[['CO2_Emitted/Hour', 'Fuel_Consumption_Rate (liters/hr)']].head())
+
+plt.figure(figsize=(10, 5))
+plt.hist(df_modified2['CO2_Emitted/Hour'], bins=30, color='skyblue', edgecolor='black')
+plt.xlabel('Transformed CO2_Emitted/Hour')
+plt.ylabel('Frequency')
+plt.title('Distribution of Transformed CO2_Emitted/Hour')
+plt.show()
+
+plt.figure(figsize=(10, 5))
+plt.hist(df_modified2['Fuel_Consumption_Rate (liters/hr)'], bins=30, color='salmon', edgecolor='black')
+plt.xlabel('Transformed Fuel Consumption Rate (liters/hr)')
+plt.ylabel('Frequency')
+plt.title('Distribution of Transformed Fuel Consumption Rate')
+plt.show()
+
+X_df = df_modified2.drop(columns=['CO2_Emitted/Hour'])
+#X_df = X_df.astype(np.float64) #might need to get rid of
+
+#X_df = X_df.fillna(X_df.mean())
+print(X_df.dtypes)
+'''X = X_df.values
 std_dev = X.std(axis=0)
 zero_std_columns = (std_dev == 0)
 
@@ -238,14 +311,16 @@ print("Standard deviation of each column in X:", std_dev)
 print("Columns with zero standard deviation:", zero_std_columns)
 
 # Remove columns with zero standard deviation from X
-X_reduced = X[:, ~zero_std_columns]
+X_reduced = X[:, ~zero_std_columns]'''
 
-y = df_modified['CO2_Emitted (US Ton)'].values
+y = df_modified2['CO2_Emitted/Hour'].values
 
 #split the data
-X_train, X_test, y_train, y_test = train_test_split(X_reduced, y, test_size=0.2, random_state=42)
-X_train = X_train.astype(np.float64)
+X_train, X_test, y_train, y_test = train_test_split(X_df, y, test_size=0.2, random_state=42)
+#X_train = X_train.astype(np.float64)
+print(X_train.dtypes)
 
+'''
 #normalize data
 X_train_norm = (X_train - X_train.mean(axis=0)) / X_train.std(axis=0)
 X_test_norm = (X_test - X_train.mean(axis=0)) / X_train.std(axis=0)
@@ -269,19 +344,33 @@ U_reduced = U[:, :num_components]
 Sigma_reduced = np.diag(Sigma[:num_components])
 Vt_reduced = Vt[:num_components, :]
 X_train_pca = X_train_norm @ Vt_reduced.T
-X_test_pca = X_test_norm @ Vt_reduced.T
+X_test_pca = X_test_norm @ Vt_reduced.T'''
 
 #train the Decision Tree Regressor on the transformed training data
-tree_model = DecisionTreeRegressor(criterion="squared_error", random_state=42)
-tree_model.fit(X_train_pca, y_train)
+tree_model2 = DecisionTreeRegressor(criterion="squared_error", random_state=42)
+'''param_grid = {
+    'max_depth': [5, 10, 15, 20, 25, None],
+    'min_samples_split': [2, 5, 10, 20]
+}
+grid_search = GridSearchCV(estimator=tree_model2, param_grid=param_grid, scoring='neg_mean_squared_error', cv=5, n_jobs=-1)
 
-#generate predictions and evaluate the model
-y_pred = tree_model.predict(X_test_pca)
+grid_search.fit(X_train, y_train)
 
+# Get the best parameters and best score
+best_params = grid_search.best_params_
+best_score = np.sqrt(-grid_search.best_score_)
+
+tree_model2 = DecisionTreeRegressor(**best_params, random_state=42)'''
+tree_model2.fit(X_train, y_train)
+
+# Generate predictions
+y_pred = tree_model2.predict(X_test)
+
+# Calculate and print RMSE and R^2 Score on test data
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
-print(f"RMSE: {rmse}")
-print(f"R^2 Score: {r2}")
+print(f"Tuned RMSE on Test Set: {rmse}")
+print(f"Tuned R^2 Score on Test Set: {r2}")
 
 #PLOTS TO VISUALIZE THE OUTCOME
 
@@ -307,6 +396,76 @@ plt.show()
 #histogram
 plt.figure(figsize=(10, 6))
 plt.hist(residuals, bins=30, color='skyblue', edgecolor='black')
+plt.xlabel('Residuals')
+plt.ylabel('Frequency')
+plt.title('Distribution of Residuals')
+plt.show()
+
+#EMISSIONS PER FUEL USAGE RATE -- NON BINOMIAL
+df_modified3 = df_modified.copy()
+df_modified3['CO2_Emitted/Fuel_Usage_Rate'] = df_modified3['CO2_Emitted (US Ton)'] / df_modified3['Fuel_Consumption_Rate (liters/hr)']
+df_modified2 = df_modified3.drop(columns=['CO2_Emitted (US Ton)', 'Fuel_Consumption_Rate (liters/hr)']) #, 'Total_Duration'
+
+corr_matrix = df_modified3.corr()
+# Plot the heatmap
+plt.figure(figsize=(12, 8))
+sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("Correlation Matrix of Features 3")
+plt.show()
+
+plt.figure(figsize=(10, 5))
+plt.hist(df_modified3['CO2_Emitted/Fuel_Usage_Rate'], bins=30, color='skyblue', edgecolor='black')
+plt.xlabel('Transformed CO2_Emitted/Fuel_Usage_Rate')
+plt.ylabel('Frequency')
+plt.title('Distribution of Transformed CO2_Emitted/Fuel_Usage_Rate')
+plt.show()
+
+plt.figure(figsize=(10, 5))
+plt.hist(df_modified3['Total_Duration'], bins=30, color='salmon', edgecolor='black')
+plt.xlabel('Transformed Total_Duration')
+plt.ylabel('Frequency')
+plt.title('Distribution of Total_Duration')
+plt.show()
+
+X_df2 = df_modified3.drop(columns=['CO2_Emitted/Fuel_Usage_Rate'])
+y2 = df_modified3['CO2_Emitted/Fuel_Usage_Rate'].values
+X_train2, X_test2, y_train2, y_test2 = train_test_split(X_df2, y2, test_size=0.2, random_state=42)
+tree_model3 = DecisionTreeRegressor(criterion="squared_error", random_state=42)
+tree_model3.fit(X_train2, y_train2)
+
+# Generate predictions
+y_pred2 = tree_model3.predict(X_test2)
+
+# Calculate and print RMSE and R^2 Score on test data
+rmse = np.sqrt(mean_squared_error(y_test2, y_pred2))
+r2 = r2_score(y_test2, y_pred2)
+print(f"Tuned RMSE on Test Set: {rmse}")
+print(f"Tuned R^2 Score on Test Set: {r2}")
+
+#PLOTS TO VISUALIZE THE OUTCOME
+
+#scatter plot
+plt.figure(figsize=(10,6))
+plt.scatter(y_test2, y_pred2, alpha=0.6)
+plt.plot([y_test2.min(), y_test2.max()], [y_test2.min(), y_test2.max()], 'r--')
+plt.xlabel('Actual Values')
+plt.ylabel('Predicted Values')
+plt.title('Actual vs Predicted Values')
+plt.show()
+
+#residuals plot
+residuals2 = y_test2 - y_pred2
+plt.figure(figsize=(10, 6))
+plt.scatter(y_pred2, residuals, alpha=0.6)
+plt.axhline(y=0, color='r', linestyle='--')
+plt.xlabel('Predicted Values')
+plt.ylabel('Residuals')
+plt.title('Residual Plot')
+plt.show()
+
+#histogram
+plt.figure(figsize=(10, 6))
+plt.hist(residuals2, bins=30, color='skyblue', edgecolor='black')
 plt.xlabel('Residuals')
 plt.ylabel('Frequency')
 plt.title('Distribution of Residuals')
