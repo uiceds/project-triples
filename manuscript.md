@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-11" />
   <meta name="citation_publication_date" content="2024-11-11" />
   <meta property="article:published_time" content="2024-11-11" />
-  <meta name="dc.modified" content="2024-11-11T02:41:56+00:00" />
-  <meta property="article:modified_time" content="2024-11-11T02:41:56+00:00" />
+  <meta name="dc.modified" content="2024-11-11T02:47:21+00:00" />
+  <meta property="article:modified_time" content="2024-11-11T02:47:21+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e478c08613db1483c547408d3f997de0bad5c48d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e478c08613db1483c547408d3f997de0bad5c48d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e478c08613db1483c547408d3f997de0bad5c48d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e6858d521a11f5101f5f0c3085edb43b749f41d7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e6858d521a11f5101f5f0c3085edb43b749f41d7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e6858d521a11f5101f5f0c3085edb43b749f41d7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/e478c08613db1483c547408d3f997de0bad5c48d/))
+([permalink](https://uiceds.github.io/project-triples/v/e6858d521a11f5101f5f0c3085edb43b749f41d7/))
 was automatically generated
-from [uiceds/project-triples@e478c08](https://github.com/uiceds/project-triples/tree/e478c08613db1483c547408d3f997de0bad5c48d)
+from [uiceds/project-triples@e6858d5](https://github.com/uiceds/project-triples/tree/e6858d521a11f5101f5f0c3085edb43b749f41d7)
 on November 11, 2024.
 </em></small>
 
@@ -441,4 +441,25 @@ From the correlation plot above, one can note that several of the independent va
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
+Sun, X., Zheng, C., Wandelt, S., & Zhang, A. (2024). Airline competition: A comprehensive review of recent research. Journal of the Air Transport Research Society, 100013. Elsevier.
+
+Belobaba, P., Odoni, A., & Barnhart, C. (2015). The global airline industry. John Wiley & Sons.
+
+International Air Transport Association (2019). Economic performance of the airline industry. Retrieved from https://www.iata.org/whatwedo/Documents/economics/IATA-Economic-Performance-of-the-Industry-end-year-2014-report.pdf.
+
+Borenstein, S., & Rose, N. L. (1994). Competition and price dispersion in the US airline industry. Journal of Political Economy, 102(4), 653–683. The University of Chicago Press.
+
+Sherly Puspha Annabel, L., Ramanan, G., Prakash, R., & Sreenidhi, S. (2023). Machine Learning-Based Approach for Airfare Forecasting. In Proceedings of International Conference on Data Science and Applications: ICDSA 2022, Volume 2 (pp. 901–912). Springer.
+
+Kalampokas, T., Tziridis, K., Kalampokas, N., Nikolaou, A., Vrochidou, E., & Papakostas, G. A. (2023). A holistic approach on airfare price prediction using machine learning techniques. IEEE Access, 11, 46627–46643. IEEE.
+
+Xu, X., McGrory, C. A., Wang, Y.-G., & Wu, J. (2021). Influential factors on Chinese airlines’ profitability and forecasting methods. Journal of Air Transport Management, 91, 101969. Elsevier.
+
+Gillen, D., & Morrison, W. G. (2005). The economics of franchise contracts and airport policy. Journal of Air Transport Management, 11(1), 43–48. Elsevier.
+
+Xiong, X., Song, X., Kaygorodova, A., Ding, X., Guo, L., & Huang, J. (2023). Aviation and carbon emissions: Evidence from airport operations. Journal of Air Transport Management, 109, 102383. Elsevier.
+
+Brueckner, J. K., & Abreu, C. (2017). Airline fuel usage and carbon emissions: Determining factors. Journal of Air Transport Management, 62, 10–17. Elsevier.
+
+scikit-learn developers (2023). Ordinary Least Squares. Retrieved October 30, 2024, from https://scikit-learn.org/stable/modules/linear_model.html#ordinary-least-squares.
 
