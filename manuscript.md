@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-11" />
   <meta name="citation_publication_date" content="2024-11-11" />
   <meta property="article:published_time" content="2024-11-11" />
-  <meta name="dc.modified" content="2024-11-11T01:28:33+00:00" />
-  <meta property="article:modified_time" content="2024-11-11T01:28:33+00:00" />
+  <meta name="dc.modified" content="2024-11-11T01:32:46+00:00" />
+  <meta property="article:modified_time" content="2024-11-11T01:32:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,17 +54,16 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/c4c4f3a411abc809ddf2f0a42a835cba41bac091/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/c4c4f3a411abc809ddf2f0a42a835cba41bac091/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/c4c4f3a411abc809ddf2f0a42a835cba41bac091/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/f666cb57c5b32794c5d62594f1c05ac768e32c90/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/f666cb57c5b32794c5d62594f1c05ac768e32c90/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/f666cb57c5b32794c5d62594f1c05ac768e32c90/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
-bibliography:
-- content/manual-references.json
+bibliography: []
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
@@ -78,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/c4c4f3a411abc809ddf2f0a42a835cba41bac091/))
+([permalink](https://uiceds.github.io/project-triples/v/f666cb57c5b32794c5d62594f1c05ac768e32c90/))
 was automatically generated
-from [uiceds/project-triples@c4c4f3a](https://github.com/uiceds/project-triples/tree/c4c4f3a411abc809ddf2f0a42a835cba41bac091)
+from [uiceds/project-triples@f666cb5](https://github.com/uiceds/project-triples/tree/f666cb57c5b32794c5d62594f1c05ac768e32c90)
 on November 11, 2024.
 </em></small>
 
