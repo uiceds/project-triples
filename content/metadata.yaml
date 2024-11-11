@@ -37,4 +37,4 @@ authors:
       - USACE ERDC CERL, Illinois
 
 bibliography:
-  - content/references.bib
+  - content/references.json
