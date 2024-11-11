@@ -2,14 +2,14 @@ Abreu
 Bafandkar
 Baisakhi
 Barnhart
-belobaba
-borenstein
+Belobaba
+Borenstein
 Brueckner
 CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 datasets
 Dep
 Diggs
@@ -20,7 +20,7 @@ ERDC
 Fitr
 Frenk
 Ganga
-Gillen
+gillen
 GoAir
 Guo
 Holi
@@ -36,7 +36,6 @@ Maha
 McGrory
 MLJ
 MSE
-multicollinearity
 Navami
 Nikolaou
 Odoni
@@ -53,7 +52,7 @@ Ramanan
 Regressor
 RMSE
 sbafan
-Scikit
+scikit
 ScikitLearn
 Shayan
 Sherly
@@ -64,7 +63,6 @@ Sreenidhi
 StatsPlots
 stopd
 supremepandey
-suspicioulsly
 SVD
 Trujet
 Tziridis
