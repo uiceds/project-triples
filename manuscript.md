@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-11" />
   <meta name="citation_publication_date" content="2024-11-11" />
   <meta property="article:published_time" content="2024-11-11" />
-  <meta name="dc.modified" content="2024-11-11T01:50:18+00:00" />
-  <meta property="article:modified_time" content="2024-11-11T01:50:18+00:00" />
+  <meta name="dc.modified" content="2024-11-11T01:52:55+00:00" />
+  <meta property="article:modified_time" content="2024-11-11T01:52:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/309799bb15982243f729f19fed3f60a6f820aff5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/309799bb15982243f729f19fed3f60a6f820aff5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/309799bb15982243f729f19fed3f60a6f820aff5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/))
+([permalink](https://uiceds.github.io/project-triples/v/309799bb15982243f729f19fed3f60a6f820aff5/))
 was automatically generated
-from [uiceds/project-triples@9ff240b](https://github.com/uiceds/project-triples/tree/9ff240b5a848ec53ace6cff0c311e691dda767f7)
+from [uiceds/project-triples@309799b](https://github.com/uiceds/project-triples/tree/309799bb15982243f729f19fed3f60a6f820aff5)
 on November 11, 2024.
 </em></small>
 
@@ -176,7 +176,7 @@ While predicting flight prices may seem primarily economic, it intersects with t
 ## Introduction
 _The dynamics of flight price predictions_
 
-Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [@sun2024airline]. As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [@sun2024airline; @belobaba2015global; @international2019economic; @borenstein1994competition]. Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [@belobaba2015global]. In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [@sherly2023machine; @kalampokas2023holistic; @xu2021influential]. For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
+Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [@sun2024airline]. As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [@sun2024airline; @belobaba2009global; @international2019economic; @borenstein1994competition]. Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [@belobaba2015global]. In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [@sherly2023machine; @kalampokas2023holistic; @xu2021influential]. For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
 
 _The importance of predicting flight prices_
 
