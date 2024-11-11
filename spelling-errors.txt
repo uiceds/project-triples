@@ -6,7 +6,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 datasets
 Dep
 Diggs

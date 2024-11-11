@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-11" />
   <meta name="citation_publication_date" content="2024-11-11" />
   <meta property="article:published_time" content="2024-11-11" />
-  <meta name="dc.modified" content="2024-11-11T01:48:51+00:00" />
-  <meta property="article:modified_time" content="2024-11-11T01:48:51+00:00" />
+  <meta name="dc.modified" content="2024-11-11T01:50:18+00:00" />
+  <meta property="article:modified_time" content="2024-11-11T01:50:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/78cfa72030a7be74bcdcbea2e121977dfce65c75/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/78cfa72030a7be74bcdcbea2e121977dfce65c75/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/78cfa72030a7be74bcdcbea2e121977dfce65c75/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/78cfa72030a7be74bcdcbea2e121977dfce65c75/))
+([permalink](https://uiceds.github.io/project-triples/v/9ff240b5a848ec53ace6cff0c311e691dda767f7/))
 was automatically generated
-from [uiceds/project-triples@78cfa72](https://github.com/uiceds/project-triples/tree/78cfa72030a7be74bcdcbea2e121977dfce65c75)
+from [uiceds/project-triples@9ff240b](https://github.com/uiceds/project-triples/tree/9ff240b5a848ec53ace6cff0c311e691dda767f7)
 on November 11, 2024.
 </em></small>
 
@@ -156,7 +156,7 @@ While predicting flight prices may seem primarily economic, it intersects with t
 
 ## Dataset Description 
   - Source: 
-  The dataset used for this project can be found on Kaggle, at this link: https://www.kaggle.com/datasets/viveksharmar/flight-price-data
+  The dataset used for this project can be found on Kaggle, at this link: [Kaggle](https://www.kaggle.com/datasets/viveksharmar/flight-price-data)
   It was used to help build a predictive model for flight price prediction using the data that will be explained below.
   - Format: The dataset is in CSV format, which is commonly used for tabular data storage. Each row represents a specific data point, with columns detailing various features that might impact flight prices.
   - Contents: 
