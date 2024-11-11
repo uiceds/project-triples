@@ -35,3 +35,6 @@ authors:
     affiliations:
       - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
       - USACE ERDC CERL, Illinois
+
+bibliography:
+  - content/references.bib
