@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-12" />
   <meta name="citation_publication_date" content="2024-11-12" />
   <meta property="article:published_time" content="2024-11-12" />
-  <meta name="dc.modified" content="2024-11-12T23:51:33+00:00" />
-  <meta property="article:modified_time" content="2024-11-12T23:51:33+00:00" />
+  <meta name="dc.modified" content="2024-11-12T23:53:51+00:00" />
+  <meta property="article:modified_time" content="2024-11-12T23:53:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/513495adb3e3d63ed274407b2b1c8d41fe02ef8f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/513495adb3e3d63ed274407b2b1c8d41fe02ef8f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/513495adb3e3d63ed274407b2b1c8d41fe02ef8f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/))
+([permalink](https://uiceds.github.io/project-triples/v/513495adb3e3d63ed274407b2b1c8d41fe02ef8f/))
 was automatically generated
-from [uiceds/project-triples@3313429](https://github.com/uiceds/project-triples/tree/33134294d8dfcc33885cff1e02942c73a4ef2f0f)
+from [uiceds/project-triples@513495a](https://github.com/uiceds/project-triples/tree/513495adb3e3d63ed274407b2b1c8d41fe02ef8f)
 on November 12, 2024.
 </em></small>
 
@@ -379,7 +379,7 @@ Our model will be able to predict the seasonal spikes in flight prices because o
 
 In this section, we first implemented a simple linear regression model for price prediction based on our dataset, to better understand the independent variables and their influence on the results. Then, we proceeded to enhance the model based on our findings.
 
-To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients (w = (w_1, ..., w_p)) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1). [@scikit-learn-ols]
+To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients (w = (w_1, ..., w_p)) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1). [(scikit-learn documentation)](https://scikit-learn.org/stable/modules/linear_model.html\#ordinary-least-squares)
 
 **Equation (1):**
 $$\min_w\|\| Xw - y\|\|_2^2 $$

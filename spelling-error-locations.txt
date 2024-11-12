@@ -101,8 +101,8 @@ content/06.Predictive_Model_planning.md:3:StatsPlots
 content/06.Predictive_Model_planning.md:3:XGBoost
 content/07.preliminary_predictive_modeling.md:3:dataset
 content/07.preliminary_predictive_modeling.md:5:dataset
-content/07.preliminary_predictive_modeling.md:5:ols
 content/07.preliminary_predictive_modeling.md:5:OLS
+content/07.preliminary_predictive_modeling.md:5:scikit
 content/07.preliminary_predictive_modeling.md:5:scikit
 content/07.preliminary_predictive_modeling.md:5:scikit
 content/07.preliminary_predictive_modeling.md:15:MSE
