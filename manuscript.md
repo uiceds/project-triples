@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-11-11'
+date-meta: '2024-11-12'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-11-11" />
-  <meta name="citation_publication_date" content="2024-11-11" />
-  <meta property="article:published_time" content="2024-11-11" />
-  <meta name="dc.modified" content="2024-11-11T21:44:34+00:00" />
-  <meta property="article:modified_time" content="2024-11-11T21:44:34+00:00" />
+  <meta name="dc.date" content="2024-11-12" />
+  <meta name="citation_publication_date" content="2024-11-12" />
+  <meta property="article:published_time" content="2024-11-12" />
+  <meta name="dc.modified" content="2024-11-12T23:51:33+00:00" />
+  <meta property="article:modified_time" content="2024-11-12T23:51:33+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/8ab318df15afb2399b8cd3898954b5ab34a882bf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/8ab318df15afb2399b8cd3898954b5ab34a882bf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/8ab318df15afb2399b8cd3898954b5ab34a882bf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/8ab318df15afb2399b8cd3898954b5ab34a882bf/))
+([permalink](https://uiceds.github.io/project-triples/v/33134294d8dfcc33885cff1e02942c73a4ef2f0f/))
 was automatically generated
-from [uiceds/project-triples@8ab318d](https://github.com/uiceds/project-triples/tree/8ab318df15afb2399b8cd3898954b5ab34a882bf)
-on November 11, 2024.
+from [uiceds/project-triples@3313429](https://github.com/uiceds/project-triples/tree/33134294d8dfcc33885cff1e02942c73a4ef2f0f)
+on November 12, 2024.
 </em></small>
 
 
@@ -176,19 +176,19 @@ While predicting flight prices may seem primarily economic, it intersects with t
 ## Introduction
 _The dynamics of flight price predictions_
 
-Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [@sun2024airline]. As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [@sun2024airline; @belobaba2009global; @international2019economic; @borenstein1994competition]. Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [@belobaba2015global]. In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [@sherly2023machine; @kalampokas2023holistic; @xu2021influential]. For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
+Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013). As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950). Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC). In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [Annabel et al.](doi.org/10.1007/978-981-19-6634-7_65); [kalampokas et al.](https://api.semanticscholar.org/CorpusID:258629132); [Xu et al.](doi.org/10.1016/j.jairtraman.2020.101969). For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
 
 _The importance of predicting flight prices_
 
-Accurately predicting flight prices has significant implications for multiple stakeholders. For consumers, anticipating price trends helps optimize travel costs, allowing for better budgeting and planning [@international2019economic; @borenstein1994competition; @gillen2005economics]. Airlines, on the other hand, can improve their revenue management strategies through dynamic pricing, ensuring that flights operate closer to capacity while adjusting pricing to meet seasonal demand shifts and market competition [@belobaba2015global; @borenstein1994competition; @gillen2005economics]. Additionally, by integrating environmental factors such as carbon emissions into the pricing model, this research can help airlines design more sustainable routes, potentially leading to fewer emissions through better traffic management and efficient flight operations [@sun2024airline; @international2019economic; @gillen2005economics; @xiong2023aviation]. The aviation industry contributes significantly to the global economy but also poses challenges due to its substantial carbon footprint [@brueckner2017airline].
+Accurately predicting flight prices has significant implications for multiple stakeholders. For consumers, anticipating price trends helps optimize travel costs, allowing for better budgeting and planning [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). Airlines, on the other hand, can improve their revenue management strategies through dynamic pricing, ensuring that flights operate closer to capacity while adjusting pricing to meet seasonal demand shifts and market competition [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). Additionally, by integrating environmental factors such as carbon emissions into the pricing model, this research can help airlines design more sustainable routes, potentially leading to fewer emissions through better traffic management and efficient flight operations [sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003); [Xiong et al.](doi.org/10.1016/j.jairtraman.2023.102383). The aviation industry contributes significantly to the global economy but also poses challenges due to its substantial carbon footprint [Brueckner et al.](doi.org/10.1016/j.jairtraman.2017.01.004).
 
 _Methodological approach and dataset_
 
-This project utilizes a Kaggle dataset on domestic flights in India, covering variables such as airline name, total stops, departure and destination locations, and flight prices [3–5, 8]. Using regression techniques within a machine learning framework, the researchers aim to identify which variables most significantly impact flight prices. Initial findings suggest that factors such as the number of stops, flight duration, and seasonal demand (correlating with major holidays in India) are key drivers of price variation. For instance, a notable spike in flight prices is observed around holidays in India, are insights that not only advance knowledge in transportation economics but also serve as a crucial decision-making tool for airline pricing strategies [@sun2024airline; @international2019economic; @borenstein1994competition; @gillen2005economics]. 
+This project utilizes a Kaggle dataset on domestic flights in India, covering variables such as airline name, total stops, departure and destination locations, and flight prices [3–5, 8]. Using regression techniques within a machine learning framework, the researchers aim to identify which variables most significantly impact flight prices. Initial findings suggest that factors such as the number of stops, flight duration, and seasonal demand (correlating with major holidays in India) are key drivers of price variation. For instance, a notable spike in flight prices is observed around holidays in India, are insights that not only advance knowledge in transportation economics but also serve as a crucial decision-making tool for airline pricing strategies [sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). 
 
 _Multidisciplinary implications_
 
-By developing this predictive model, the research bridges the gap between economics, machine learning, and environmental sustainability. Future applications of this work could extend beyond pricing into areas like route optimization and emission reduction strategies [@international2019economic]. As flight prices are a key variable in both economic and environmental calculations, understanding their underlying dynamics can contribute to more sustainable and cost-effective air travel in the future [@belobaba2015global; @international2019economic; @gillen2005economics].
+By developing this predictive model, the research bridges the gap between economics, machine learning, and environmental sustainability. Future applications of this work could extend beyond pricing into areas like route optimization and emission reduction strategies [@international2019economic]. As flight prices are a key variable in both economic and environmental calculations, understanding their underlying dynamics can contribute to more sustainable and cost-effective air travel in the future [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003).
 
 
 ## Exploratory Data Analysis of Indian Domestic Flights (March - June 2019)

@@ -2,7 +2,7 @@ Abreu
 Bafandkar
 Baisakhi
 Barnhart
-belobaba
+Belobaba
 Borenstein
 Brueckner
 CERL
@@ -20,7 +20,7 @@ ERDC
 Fitr
 frenk
 Ganga
-gillen
+Gillen
 GoAir
 Guo
 Holi
@@ -29,7 +29,7 @@ iloveheat
 INR
 jl
 Kaggle
-kalampokas
+Kalampokas
 Kaygorodova
 Kolkata
 Maha
@@ -52,7 +52,7 @@ Ramanan
 Regressor
 RMSE
 sbafan
-scikit
+Scikit
 ScikitLearn
 Shayan
 Sherly
