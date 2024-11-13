@@ -17,7 +17,7 @@ content/03.dataset_description.md:13:presententing
 content/04.introduction.md:4:Belobaba
 content/04.introduction.md:4:Belobaba
 content/04.introduction.md:4:Borenstein
-content/04.introduction.md:4:kalampokas
+content/04.introduction.md:4:Kalampokas
 content/04.introduction.md:4:Xu
 content/04.introduction.md:8:Belobaba
 content/04.introduction.md:8:Borenstein
@@ -29,7 +29,6 @@ content/04.introduction.md:8:Gillen
 content/04.introduction.md:8:Xiong
 content/04.introduction.md:12:Borenstein
 content/04.introduction.md:12:dataset
-content/04.introduction.md:12:Gillen
 content/04.introduction.md:12:Gillen
 content/04.introduction.md:12:Kaggle
 content/04.introduction.md:16:Belobaba
