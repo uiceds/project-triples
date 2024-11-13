@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 datasets
 Dep
 Diggs
@@ -29,7 +29,7 @@ iloveheat
 INR
 jl
 Kaggle
-Kalampokas
+kalampokas
 Kaygorodova
 Kolkata
 Maha
@@ -52,7 +52,7 @@ Ramanan
 Regressor
 RMSE
 sbafan
-scikit
+Scikit
 ScikitLearn
 Shayan
 Sherly
