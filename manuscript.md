@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-13" />
   <meta name="citation_publication_date" content="2024-11-13" />
   <meta property="article:published_time" content="2024-11-13" />
-  <meta name="dc.modified" content="2024-11-13T16:38:14+00:00" />
-  <meta property="article:modified_time" content="2024-11-13T16:38:14+00:00" />
+  <meta name="dc.modified" content="2024-11-13T19:45:24+00:00" />
+  <meta property="article:modified_time" content="2024-11-13T19:45:24+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ce6e9788590602aa0ad92ae7d58a55c117ced87e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ce6e9788590602aa0ad92ae7d58a55c117ced87e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ce6e9788590602aa0ad92ae7d58a55c117ced87e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/cfee45901e492c0132a8f7b085c7a59dc6841a80/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/cfee45901e492c0132a8f7b085c7a59dc6841a80/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/cfee45901e492c0132a8f7b085c7a59dc6841a80/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/ce6e9788590602aa0ad92ae7d58a55c117ced87e/))
+([permalink](https://uiceds.github.io/project-triples/v/cfee45901e492c0132a8f7b085c7a59dc6841a80/))
 was automatically generated
-from [uiceds/project-triples@ce6e978](https://github.com/uiceds/project-triples/tree/ce6e9788590602aa0ad92ae7d58a55c117ced87e)
+from [uiceds/project-triples@cfee459](https://github.com/uiceds/project-triples/tree/cfee45901e492c0132a8f7b085c7a59dc6841a80)
 on November 13, 2024.
 </em></small>
 
@@ -379,7 +379,7 @@ Our model will be able to predict the seasonal spikes in flight prices because o
 
 In this section, we first implemented a simple linear regression model for price prediction based on our dataset, to better understand the independent variables and their influence on the results. Then, we proceeded to enhance the model based on our findings.
 
-To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients (w = (w_1, ..., w_p)) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1) [(scikit-learn documentation)].(https://scikit-learn.org/stable/modules/linear_model.html\#ordinary-least-squares)
+To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients (w = (w_1, ..., w_p)) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1) [(scikit-learn documentation)](https://scikit-learn.org/stable/modules/linear_model.html\#ordinary-least-squares).
 
 **Equation (1):**
 $$\min_w\|\| Xw - y\|\|_2^2 $$
