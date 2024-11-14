@@ -188,6 +188,33 @@ print("Fleet columns after one-hot encoding:", fleet_columns)
 print("df_modified:")
 print(df_modified.head())
 
+#FEATURE SELECTION FROM RANDOM FOREST
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.feature_selection import RFECV
+
+df_analyse_features = df_modified.copy()
+
+X_analyse_features = df_analyse_features.drop(columns=['CO2_Emitted (US Ton)'])
+y_analyse_features = df_analyse_features['CO2_Emitted (US Ton)'].values
+
+features = X_analyse_features.columns
+
+X_train_analyse_features, X_test_analyse_features, y_train_analyse_features, y_test_analyse_features = train_test_split(X_analyse_features, y_analyse_features, test_size=0.2, random_state=42)
+
+rf = RandomForestRegressor(random_state=0)
+
+rf.fit(X_analyse_features,y_analyse_features)
+
+f_i = list(zip(features,rf.feature_importances_))
+f_i.sort(key = lambda x : x[1])
+plt.barh([x[0] for x in f_i],[x[1] for x in f_i])
+plt.xlabel("Feature Importance")
+plt.ylabel("Feature")
+plt.title("Feature Importances from Random Forest")
+
+plt.show()
+
 #remove data that is binary value 
 X_for_corrplot = df_modified.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
 #correlation matrix for variables to get a visual on correlation among variables before applying decision trees
@@ -195,7 +222,7 @@ corr_matrix = X_for_corrplot.corr()
 # Plot the heatmap
 plt.figure(figsize=(12, 8))
 sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Correlation Matrix of Features")
+plt.title("Correlation Matrix of Features for Original Data")
 plt.show()
 
 #drop the CO2_Emitted (US Ton) column so it can be used as the independent variable
@@ -223,8 +250,8 @@ mse = mean_squared_error(y_original_test, y_original_pred)
 rmse = np.sqrt(mse)  
 r2 = r2_score(y_original_test, y_original_pred)
 
-print(f"Original Root Mean Squared Error (RMSE): {rmse}")
-print(f"Original R^2 Score: {r2}") #The R^2 value is suspiciosly perfect, let's check if any variables are correlated
+print(f"Original Root Mean Squared Error (RMSE) for Original Data: {rmse}")
+print(f"Original R^2 Score for Original Data: {r2}") #The R^2 value is suspiciosly perfect, let's check if any variables are correlated
 
 
 #first plots:
@@ -234,7 +261,7 @@ plt.scatter(y_original_test, y_original_pred, alpha=0.6)
 plt.plot([y_original_test.min(), y_original_test.max()], [y_original_test.min(), y_original_test.max()], 'r--')
 plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
-plt.title('Actual vs Predicted Values')
+plt.title('Actual vs Predicted Values for Original Data')
 plt.show()
 
 #residuals plot
@@ -244,7 +271,7 @@ plt.scatter(y_original_pred, residuals, alpha=0.6)
 plt.axhline(y=0, color='r', linestyle='--')
 plt.xlabel('Predicted Values')
 plt.ylabel('Residuals')
-plt.title('Residual Plot')
+plt.title('Residual Plot for Original Data')
 plt.show()
 
 #histogram
@@ -252,7 +279,7 @@ plt.figure(figsize=(10, 6))
 plt.hist(residuals, bins=30, color='skyblue', edgecolor='black')
 plt.xlabel('Residuals')
 plt.ylabel('Frequency')
-plt.title('Distribution of Residuals')
+plt.title('Distribution of Residuals for Original Data')
 plt.show()
 
 #CO2 EMITTED / TOTAL DURATION -- BINOMIAL DISTRIBUTION
@@ -291,7 +318,7 @@ corr_matrix2 = corr_matrix2.corr()
 # Plot the heatmap
 plt.figure(figsize=(12, 8))
 sns.heatmap(corr_matrix2, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Correlation Matrix of Features 2")
+plt.title("Correlation Matrix of Features for CO2_Emissions/Hour Data")
 plt.show()
 
 print("df_modified2 head:")
@@ -371,8 +398,8 @@ y_pred2 = tree_model2.predict(X_test2)
 # Calculate and print RMSE and R^2 Score on test data
 rmse = np.sqrt(mean_squared_error(y_test2, y_pred2))
 r2 = r2_score(y_test2, y_pred2)
-print(f"Tuned RMSE on Test Set: {rmse}")
-print(f"Tuned R^2 Score on Test Set: {r2}")
+print(f"Tuned RMSE on Test Set for CO2_Emissions/Hour Data: {rmse}")
+print(f"Tuned R^2 Score on Test Set  for CO2_Emissions/Hour Data: {r2}")
 
 #PLOTS TO VISUALIZE THE OUTCOME
 
@@ -382,7 +409,7 @@ plt.scatter(y_test2, y_pred2, alpha=0.6)
 plt.plot([y_test2.min(), y_test2.max()], [y_test2.min(), y_test2.max()], 'r--')
 plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
-plt.title('Actual vs Predicted Values')
+plt.title('Actual vs Predicted Values for CO2_Emissions/Hour Data')
 plt.show()
 
 #residuals plot
@@ -392,7 +419,7 @@ plt.scatter(y_pred2, residuals2, alpha=0.6)
 plt.axhline(y=0, color='r', linestyle='--')
 plt.xlabel('Predicted Values')
 plt.ylabel('Residuals')
-plt.title('Residual Plot')
+plt.title('Residual Plot for CO2_Emissions/Hour Data')
 plt.show()
 
 #histogram
@@ -400,7 +427,7 @@ plt.figure(figsize=(10, 6))
 plt.hist(residuals2, bins=30, color='skyblue', edgecolor='black')
 plt.xlabel('Residuals')
 plt.ylabel('Frequency')
-plt.title('Distribution of Residuals')
+plt.title('Distribution of Residuals for CO2_Emissions/Hour Data')
 plt.show()
 
 #EMISSIONS PER FUEL USAGE RATE -- NON BINOMIAL
@@ -428,7 +455,7 @@ corr_matrix3 = corr_matrix3.corr()
 # Plot the heatmap
 plt.figure(figsize=(12, 8))
 sns.heatmap(corr_matrix3, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Correlation Matrix of Features 3")
+plt.title("Correlation Matrix of Features for CO2_Emissions/Fuel_Usage_Rate Data")
 plt.show()
 
 X_df3 = df_modified3.drop(columns=['CO2_Emitted/Fuel_Usage_Rate'])
@@ -443,8 +470,8 @@ y_pred3 = tree_model3.predict(X_test3)
 # Calculate and print RMSE and R^2 Score on test data
 rmse = np.sqrt(mean_squared_error(y_test3, y_pred3))
 r2 = r2_score(y_test3, y_pred3)
-print(f"Tuned RMSE on Test Set: {rmse}")
-print(f"Tuned R^2 Score on Test Set: {r2}")
+print(f"Tuned RMSE on Test Set for CO2_Emissions/Fuel_Usage_Rate Data: {rmse}")
+print(f"Tuned R^2 Score on Test Set for CO2_Emissions/Fuel_Usage_Rate Data: {r2}")
 
 #PLOTS TO VISUALIZE THE OUTCOME
 
@@ -454,7 +481,7 @@ plt.scatter(y_test3, y_pred3, alpha=0.6)
 plt.plot([y_test3.min(), y_test3.max()], [y_test3.min(), y_test3.max()], 'r--')
 plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
-plt.title('Actual vs Predicted Values')
+plt.title('Actual vs Predicted Values for CO2_Emissions/Fuel_Usage_Rate Data')
 plt.show()
 
 #residuals plot
@@ -464,7 +491,7 @@ plt.scatter(y_pred3, residuals3, alpha=0.6)
 plt.axhline(y=0, color='r', linestyle='--')
 plt.xlabel('Predicted Values')
 plt.ylabel('Residuals')
-plt.title('Residual Plot')
+plt.title('Residual Plot for CO2_Emissions/Fuel_Usage_Rate Data')
 plt.show()
 
 #histogram
@@ -472,65 +499,6 @@ plt.figure(figsize=(10, 6))
 plt.hist(residuals3, bins=30, color='skyblue', edgecolor='black')
 plt.xlabel('Residuals')
 plt.ylabel('Frequency')
-plt.title('Distribution of Residuals')
+plt.title('Distribution of Residuals for CO2_Emissions/Fuel_Usage_Rate Data')
 plt.show()
 
-
-#FEATURE SELECTION FROM RANDOM FOREST 1
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.feature_selection import RFECV
-
-df_analyse_features1 = df_modified.copy()
-#df_analyse_features1['CO2_Emitted/Fuel_Usage_Rate'] = df_analyse_features1['CO2_Emitted (US Ton)'] / df_analyse_features1['Fuel_Consumption_Rate (liters/hr)']
-df_analyse_features1['CO2_Emitted/Hour'] = df_analyse_features1['CO2_Emitted (US Ton)'] / df_analyse_features1['Total_Duration']
-df_analyse_features1 = df_analyse_features1.drop(columns=['CO2_Emitted (US Ton)', 'Total_Duration'])
-#df_modified4 = df_modified4.drop(columns=['CO2_Emitted (US Ton)', 'Fuel_Consumption_Rate (liters/hr)'])
-
-X_analyse_features1 = df_analyse_features1.drop(columns=['CO2_Emitted/Hour'])
-y_analyse_features1 = df_analyse_features1['CO2_Emitted/Hour'].values
-
-features = X_analyse_features1.columns
-
-X_train_analyse_features1, X_test_analyse_features1, y_train_analyse_features1, y_test_analyse_features1 = train_test_split(X_analyse_features1, y_analyse_features1, test_size=0.2, random_state=42)
-
-rf = RandomForestRegressor(random_state=0)
-
-rf.fit(X_analyse_features1,y_analyse_features1)
-
-f_i = list(zip(features,rf.feature_importances_))
-f_i.sort(key = lambda x : x[1])
-plt.barh([x[0] for x in f_i],[x[1] for x in f_i])
-plt.xlabel("Feature Importance 1")
-plt.ylabel("Feature 1")
-plt.title("Feature Importances from Random Forest 1")
-
-plt.show()
-
-
-#FEATURE SELECTION FROM RANDOM FOREST 2
-df_analyse_features2 = df_modified.copy()
-df_analyse_features2['CO2_Emitted/Fuel_Usage_Rate'] = df_analyse_features2['CO2_Emitted (US Ton)'] / df_analyse_features2['Fuel_Consumption_Rate (liters/hr)']
-#df_modified4['CO2_Emitted/Hour'] = df_modified4['CO2_Emitted (US Ton)'] / df_modified4['Total_Duration']
-#df_analyse_features1 = df_analyse_features1.drop(columns=['CO2_Emitted (US Ton)', 'Total_Duration'])
-df_analyse_features2 = df_analyse_features2.drop(columns=['CO2_Emitted (US Ton)', 'Fuel_Consumption_Rate (liters/hr)'])
-
-X_analyse_features2 = df_analyse_features2.drop(columns=['CO2_Emitted/Fuel_Usage_Rate'])
-y_analyse_features2 = df_analyse_features2['CO2_Emitted/Fuel_Usage_Rate'].values
-
-features2 = X_analyse_features2.columns
-
-X_train_analyse_features2, X_test_analyse_features2, y_train_analyse_features2, y_test_analyse_features2 = train_test_split(X_analyse_features2, y_analyse_features2, test_size=0.2, random_state=42)
-
-rf2 = RandomForestRegressor(random_state=0)
-
-rf2.fit(X_analyse_features2,y_analyse_features2)
-
-f_i2 = list(zip(features2,rf2.feature_importances_))
-f_i.sort(key = lambda x : x[1])
-plt.barh([x[0] for x in f_i],[x[1] for x in f_i])
-plt.xlabel("Feature Importance 2")
-plt.ylabel("Feature 2")
-plt.title("Feature Importances from Random Forest 2")
-
-plt.show()
