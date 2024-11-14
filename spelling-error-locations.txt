@@ -125,6 +125,9 @@ content/07.preliminary_predictive_modeling.md:27:RMSE
 content/07.preliminary_predictive_modeling.md:41:RMSE
 content/07.preliminary_predictive_modeling.md:42:MSE
 content/07.preliminary_predictive_modeling.md:45:dataset
+content/07.preliminary_predictive_modeling.md:50:MSE
+content/07.preliminary_predictive_modeling.md:50:performence
+content/07.preliminary_predictive_modeling.md:50:RSME
 content/08.back-matter.md:5:Elsevier
 content/08.back-matter.md:5:Wandelt
 content/08.back-matter.md:5:Zhang

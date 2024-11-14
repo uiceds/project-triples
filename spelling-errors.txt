@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 datasets
 Dep
 Diggs
@@ -18,7 +18,7 @@ Eid
 Elsevier
 ERDC
 Fitr
-frenk
+Frenk
 Ganga
 Gillen
 GoAir
@@ -43,6 +43,7 @@ OLS
 Pandey
 Papakostas
 PCA
+performence
 Prakash
 predicion
 presententing
@@ -51,6 +52,7 @@ Puspha
 Ramanan
 Regressor
 RMSE
+RSME
 sbafan
 scikit
 ScikitLearn
