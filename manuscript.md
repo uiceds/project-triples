@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-14" />
   <meta name="citation_publication_date" content="2024-11-14" />
   <meta property="article:published_time" content="2024-11-14" />
-  <meta name="dc.modified" content="2024-11-14T01:31:00+00:00" />
-  <meta property="article:modified_time" content="2024-11-14T01:31:00+00:00" />
+  <meta name="dc.modified" content="2024-11-14T01:32:31+00:00" />
+  <meta property="article:modified_time" content="2024-11-14T01:32:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6c3a98f3fd4f20b8ee02dee3feda288d488ad7af/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6c3a98f3fd4f20b8ee02dee3feda288d488ad7af/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6c3a98f3fd4f20b8ee02dee3feda288d488ad7af/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/db31d73d8476ed92af29fc84d32548a601e617b8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/db31d73d8476ed92af29fc84d32548a601e617b8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/db31d73d8476ed92af29fc84d32548a601e617b8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/6c3a98f3fd4f20b8ee02dee3feda288d488ad7af/))
+([permalink](https://uiceds.github.io/project-triples/v/db31d73d8476ed92af29fc84d32548a601e617b8/))
 was automatically generated
-from [uiceds/project-triples@6c3a98f](https://github.com/uiceds/project-triples/tree/6c3a98f3fd4f20b8ee02dee3feda288d488ad7af)
+from [uiceds/project-triples@db31d73](https://github.com/uiceds/project-triples/tree/db31d73d8476ed92af29fc84d32548a601e617b8)
 on November 14, 2024.
 </em></small>
 
@@ -422,7 +422,7 @@ To test these theories, we first implemented cross-validation with 5 folds, as t
 The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, we evaluated the performance with the polynomial regression model. This time we eliminated the one feature "Holiday" as it has less correlation with the price and we divided the data into 80% training and 20% testing.
 
 **Equation (5):**
-$$\text{Price} = 4332.83 + 4764.5065 \times \text{Total Stops} + 4.98 \times \text{Flight Duration} - 424.07 \times \text{Holiday}<sup>2</sup> - 0.001 \times \text{Flight Duration}<sup>2</sup>$$ - 1.43 \text{Noise}$$
+$$\text{Price} = 4332.83 + 4764.5065 x \text{Total Stops} + 4.98 x \text{Flight Duration} - 424.07 x \text{Holiday}<sup>2</sup> - 0.001 x \text{Flight Duration}<sup>2</sup>$$ - 1.43 \text{Noise}$$
 
 The RSME, MSE and R^2 values we observed from this model are 3082.22, \( 9.50 e+06 \), and 0.48, respectively. You can observed that the model performence have improved than the last model but still it has low performance. 
 
