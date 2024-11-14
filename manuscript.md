@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-14" />
   <meta name="citation_publication_date" content="2024-11-14" />
   <meta property="article:published_time" content="2024-11-14" />
-  <meta name="dc.modified" content="2024-11-14T01:37:00+00:00" />
-  <meta property="article:modified_time" content="2024-11-14T01:37:00+00:00" />
+  <meta name="dc.modified" content="2024-11-14T16:54:39+00:00" />
+  <meta property="article:modified_time" content="2024-11-14T16:54:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/383abf1e1b5c2e82923e72d5c9dfef61569cd5a8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/383abf1e1b5c2e82923e72d5c9dfef61569cd5a8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/383abf1e1b5c2e82923e72d5c9dfef61569cd5a8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/75a970b1427d39c3678cc25c7d31f390589d778b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/75a970b1427d39c3678cc25c7d31f390589d778b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/75a970b1427d39c3678cc25c7d31f390589d778b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/383abf1e1b5c2e82923e72d5c9dfef61569cd5a8/))
+([permalink](https://uiceds.github.io/project-triples/v/75a970b1427d39c3678cc25c7d31f390589d778b/))
 was automatically generated
-from [uiceds/project-triples@383abf1](https://github.com/uiceds/project-triples/tree/383abf1e1b5c2e82923e72d5c9dfef61569cd5a8)
+from [uiceds/project-triples@75a970b](https://github.com/uiceds/project-triples/tree/75a970b1427d39c3678cc25c7d31f390589d778b)
 on November 14, 2024.
 </em></small>
 
@@ -176,11 +176,11 @@ While predicting flight prices may seem primarily economic, it intersects with t
 ## Introduction
 _The dynamics of flight price predictions_
 
-Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013). As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950). Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC). In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [Annabel et al.](doi.org/10.1007/978-981-19-6634-7_65); [Kalampokas et al.](https://api.semanticscholar.org/CorpusID:258629132); [Xu et al.](doi.org/10.1016/j.jairtraman.2020.101969). For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
+Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013). As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950). Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC). In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [Annabel et al.](https://link.springer.com/chapter/10.1007/978-981-19-6634-7_65); [Kalampokas et al.](https://api.semanticscholar.org/CorpusID:258629132); [Xu et al.](https://www.sciencedirect.com/science/article/pii/S0969699720305524?via%3Dihub). For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
 
 _The importance of predicting flight prices_
 
-Accurately predicting flight prices has significant implications for multiple stakeholders. For consumers, anticipating price trends helps optimize travel costs, allowing for better budgeting and planning [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). Airlines, on the other hand, can improve their revenue management strategies through dynamic pricing, ensuring that flights operate closer to capacity while adjusting pricing to meet seasonal demand shifts and market competition [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). Additionally, by integrating environmental factors such as carbon emissions into the pricing model, this research can help airlines design more sustainable routes, potentially leading to fewer emissions through better traffic management and efficient flight operations [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003); [Xiong et al.](doi.org/10.1016/j.jairtraman.2023.102383). The aviation industry contributes significantly to the global economy but also poses challenges due to its substantial carbon footprint [Brueckner et al.](doi.org/10.1016/j.jairtraman.2017.01.004).
+Accurately predicting flight prices has significant implications for multiple stakeholders. For consumers, anticipating price trends helps optimize travel costs, allowing for better budgeting and planning [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). Airlines, on the other hand, can improve their revenue management strategies through dynamic pricing, ensuring that flights operate closer to capacity while adjusting pricing to meet seasonal demand shifts and market competition [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [Borenstein et al.](doi.org/10.1086/261950); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003). Additionally, by integrating environmental factors such as carbon emissions into the pricing model, this research can help airlines design more sustainable routes, potentially leading to fewer emissions through better traffic management and efficient flight operations [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003); [Xiong et al.](doi.org/10.1016/j.jairtraman.2023.102383). The aviation industry contributes significantly to the global economy but also poses challenges due to its substantial carbon footprint [Brueckner et al.](https://www.sciencedirect.com/science/article/pii/S0969699716302976?via%3Dihub).
 
 _Methodological approach and dataset_
 
