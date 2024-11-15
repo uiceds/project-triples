@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-15" />
   <meta name="citation_publication_date" content="2024-11-15" />
   <meta property="article:published_time" content="2024-11-15" />
-  <meta name="dc.modified" content="2024-11-15T08:02:40+00:00" />
-  <meta property="article:modified_time" content="2024-11-15T08:02:40+00:00" />
+  <meta name="dc.modified" content="2024-11-15T08:08:28+00:00" />
+  <meta property="article:modified_time" content="2024-11-15T08:08:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/3aa6dc25addf15a03a9ad83f4f3f82e5a0ae722a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/3aa6dc25addf15a03a9ad83f4f3f82e5a0ae722a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/3aa6dc25addf15a03a9ad83f4f3f82e5a0ae722a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/4750a5f76bff5d6b885278c9539514d01c485ced/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/4750a5f76bff5d6b885278c9539514d01c485ced/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/4750a5f76bff5d6b885278c9539514d01c485ced/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/3aa6dc25addf15a03a9ad83f4f3f82e5a0ae722a/))
+([permalink](https://uiceds.github.io/project-triples/v/4750a5f76bff5d6b885278c9539514d01c485ced/))
 was automatically generated
-from [uiceds/project-triples@3aa6dc2](https://github.com/uiceds/project-triples/tree/3aa6dc25addf15a03a9ad83f4f3f82e5a0ae722a)
+from [uiceds/project-triples@4750a5f](https://github.com/uiceds/project-triples/tree/4750a5f76bff5d6b885278c9539514d01c485ced)
 on November 15, 2024.
 </em></small>
 
@@ -454,13 +454,13 @@ As can be seen from the figure above, the highest correlation appears between To
 In order to question this highly suspicious result, we divided the origianl dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. 
 
 <p align="center">
-  <img src="images/Actual_Predicted_CO2_Emission_Hour.png" alt="Actual vs predicted values using CO2_Emitted per Hour as a dependent variable." width="600px">
+  <img src="images/Residuals_CO2_Hour" alt="Actual vs predicted values using CO2_Emitted per Hour as a dependent variable." width="600px">
   <br>
   <strong>Figure 9:</strong> Actual vs predicted values using CO2_Emitted per Hour as a dependent variable.
 </p>
 
 <p align="center">
-  <img src="images/Correlation_Mat_CO2_Emission_Hour.png" alt="Correlation matrix created using CO2_Emitted per Hour as a dependent variable" width="600px">
+  <img src="images/Corr_CO2_Hour" alt="Correlation matrix created using CO2_Emitted per Hour as a dependent variable" width="600px">
   <br>
   <strong>Figure 10:</strong> Correlation matrix created using CO2_Emitted per Hour as a dependent variable.
 </p>
