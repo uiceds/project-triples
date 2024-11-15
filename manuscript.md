@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-15" />
   <meta name="citation_publication_date" content="2024-11-15" />
   <meta property="article:published_time" content="2024-11-15" />
-  <meta name="dc.modified" content="2024-11-15T06:46:57+00:00" />
-  <meta property="article:modified_time" content="2024-11-15T06:46:57+00:00" />
+  <meta name="dc.modified" content="2024-11-15T07:48:10+00:00" />
+  <meta property="article:modified_time" content="2024-11-15T07:48:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/efc7aa356704e1c765a37d24e4e51c499c7ce3aa/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/efc7aa356704e1c765a37d24e4e51c499c7ce3aa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/efc7aa356704e1c765a37d24e4e51c499c7ce3aa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6b3a020ea013e6d3f7dfd842ceceb3c2c0371d41/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6b3a020ea013e6d3f7dfd842ceceb3c2c0371d41/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6b3a020ea013e6d3f7dfd842ceceb3c2c0371d41/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/efc7aa356704e1c765a37d24e4e51c499c7ce3aa/))
+([permalink](https://uiceds.github.io/project-triples/v/6b3a020ea013e6d3f7dfd842ceceb3c2c0371d41/))
 was automatically generated
-from [uiceds/project-triples@efc7aa3](https://github.com/uiceds/project-triples/tree/efc7aa356704e1c765a37d24e4e51c499c7ce3aa)
+from [uiceds/project-triples@6b3a020](https://github.com/uiceds/project-triples/tree/6b3a020ea013e6d3f7dfd842ceceb3c2c0371d41)
 on November 15, 2024.
 </em></small>
 
@@ -432,7 +432,7 @@ The RSME, MSE and R^2 values we observed from this model are 3082.22, \( 9.50 e+
 # Decision Tree Analysis
 
 This section is dedicated to decision tree analysis. Because the dependent variable is not categorical, the DecisionTreeRegressor from scikit-learn was employed. 
-After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the \( R^2 \) value was 0.999977. This value seemed suspuciously perfect. 
+After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.999977. This value seemed suspuciously perfect. 
 The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted value, and as can be seen the predicted values fall almost perfectly along the actual values.
 
 <p align="center">
@@ -441,9 +441,7 @@ The effect of the high correlation value can also be seen in the figure below, w
   <strong>Figure 7:</strong> Correlation matrix created using the original dataset.
 </p>
 
-
-
-To understand the origins of this \( R^2 \) value, firstly a correlation plot was created. The first correlation plot is seen below in Figure 8:
+To understand the origins of this $R^2$ value, firstly, a correlation plot was created. The first correlation plot is seen below in Figure 8:
 
 <p align="center">
   <img src="images/Correlation_Mat_Original_Data.png" alt="Correlation matrix created using the original dataset" width="600px">
@@ -451,7 +449,60 @@ To understand the origins of this \( R^2 \) value, firstly a correlation plot wa
   <strong>Figure 8:</strong> Correlation matrix created using the original dataset.
 </p>
 
-As can be seen from the figure above, the highest correlation appears between Total_Duration and CO2_Emitted (US Ton), the depenent variable. This makes sense, of course, because the longer the plane is in flight, the more \( CO_2 \) will be emitted. 
+As can be seen from the figure above, the highest correlation appears between Total_Duration and CO2_Emitted (US Ton), the depenent variable. This makes sense, of course, because the longer the plane is in flight, the more $CO_2$ will be emitted. 
+
+In order to question this highly suspicious result, we divided the origianl dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. 
+
+<p align="center">
+  <img src="images/Actual_Predicted_CO2_Emission/Hour.png" alt="Actual vs predicted values using CO2_Emitted/Hour as a dependent variable" width="600px">
+  <br>
+  <strong>Figure 9:</strong> Actual vs predicted values using CO2_Emitted/Hour as a dependent variable.
+</p>
+
+<p align="center">
+  <img src="images/Correlation_Mat_CO2_Emissions/Hour.png" alt="Correlation matrix created using CO2_Emitted/Hour as a dependent variable" width="600px">
+  <br>
+  <strong>Figure 10:</strong> Correlation matrix created using CO2_Emitted/Hour as a dependent variable.
+</p>
+
+Note the appearance of binomial data
+<p align="center">
+  <img src="images/Distribution_CO2_Emitted_Hour.png" alt="DISTRIBUTION using CO2_Emitted/Hour as a dependent variable" width="600px">
+  <br>
+  <strong>Figure 11:</strong> DISTRIBUTION using CO2_Emitted/Hour as a dependent variable.
+</p>
+
+<p align="center">
+  <img src="images/Actual_Predicted_CO2_Emissions_Fuel.png" alt="Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
+  <br>
+  <strong>Figure 12:</strong> Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
+</p>
+
+<p align="center">
+  <img src="images/Correlation_Mat_CO2_Emissions_Fuel.png" alt="Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
+  <br>
+  <strong>Figure 13:</strong> Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
+</p>
+
+Note the appearance of binomial data
+<p align="center">
+  <img src="images/Distribution_Fuel_Consuption.png" alt="DISTRIBUTION of Fuel_Usage_Rate" width="600px">
+  <br>
+  <strong>Figure 14:</strong> DISTRIBUTION of Fuel_Usage_Rate.
+</p>
+
+Data mimickry noting that Total_Duration and Fuel_Consumption_Rate are most influential independent variables
+<p align="center">
+  <img src="images/Distribution_CO2_Emission_Fuel.png" alt="DISTRIBUTION using CO2_Emitted/Hour as a dependent variable" width="600px">
+  <br>
+  <strong>Figure 11:</strong> DISTRIBUTION using CO2_Emitted/Hour as a dependent variable.
+</p>
+
+<p align="center">
+  <img src="images/Distribution_Total_Duration.png" alt="DISTRIBUTION of Total_Duration" width="600px">
+  <br>
+  <strong>Figure 11:</strong> DISTRIBUTION of Total_Duration.
+</p>
 
 
 ## References {.page_break_before}
