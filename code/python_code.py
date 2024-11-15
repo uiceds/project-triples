@@ -193,25 +193,25 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import RFECV
 
-df_analyse_features = df_modified.copy()
+df_analyse_features_1 = df_modified.copy()
 
-X_analyse_features = df_analyse_features.drop(columns=['CO2_Emitted (US Ton)'])
-y_analyse_features = df_analyse_features['CO2_Emitted (US Ton)'].values
+X_analyse_features_1 = df_analyse_features_1.drop(columns=['CO2_Emitted (US Ton)'])
+y_analyse_features_1 = df_analyse_features_1['CO2_Emitted (US Ton)'].values
 
-features = X_analyse_features.columns
+features = X_analyse_features_1.columns
 
-X_train_analyse_features, X_test_analyse_features, y_train_analyse_features, y_test_analyse_features = train_test_split(X_analyse_features, y_analyse_features, test_size=0.2, random_state=42)
+X_train_analyse_features, X_test_analyse_features, y_train_analyse_features, y_test_analyse_features = train_test_split(X_analyse_features_1, y_analyse_features_1, test_size=0.2, random_state=42)
 
 rf = RandomForestRegressor(random_state=0)
 
-rf.fit(X_analyse_features,y_analyse_features)
+rf.fit(X_analyse_features_1,y_analyse_features_1)
 
 f_i = list(zip(features,rf.feature_importances_))
 f_i.sort(key = lambda x : x[1])
 plt.barh([x[0] for x in f_i],[x[1] for x in f_i])
 plt.xlabel("Feature Importance")
 plt.ylabel("Feature")
-plt.title("Feature Importances from Random Forest")
+plt.title("Feature Importances from Random Forest for Original Dataset")
 
 plt.show()
 
@@ -291,7 +291,9 @@ plt.show()
 #bring back 0/1 values and use random forest package (feature explanation -- which indep variable most useful for prediction)
 
 df_modified2 = df_modified.copy()
+
 df_modified2['CO2_Emitted/Hour'] = df_modified2['CO2_Emitted (US Ton)'] / df_modified2['Total_Duration']
+df_modified2 = df_modified2.drop(columns=['CO2_Emitted (US Ton)', 'Total_Duration'])
 
 plt.figure(figsize=(10, 5))
 plt.hist(df_modified2['CO2_Emitted/Hour'], bins=30, color='skyblue', edgecolor='black')
@@ -307,11 +309,33 @@ plt.ylabel('Frequency')
 plt.title('Distribution of Transformed Fuel Consumption Rate')
 plt.show()
 
-df_modified2 = df_modified2.drop(columns=['CO2_Emitted (US Ton)', 'Total_Duration'])
+#feature selection
+df_analyse_features_2 = df_modified2.copy()
 
-corr_matrix2 = df_modified2.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
+X_analyse_features_2 = df_analyse_features_2.drop(columns=['CO2_Emitted/Hour'])
+y_analyse_features_2 = df_analyse_features_2['CO2_Emitted/Hour'].values
+
+features2 = X_analyse_features_2.columns
+
+X_train_analyse_features2, X_test_analyse_features2, y_train_analyse_features2, y_test_analyse_features2 = train_test_split(X_analyse_features_2, y_analyse_features_2, test_size=0.2, random_state=42)
+
+rf = RandomForestRegressor(random_state=0)
+
+rf.fit(X_analyse_features_2,y_analyse_features_2)
+
+f_i = list(zip(features2,rf.feature_importances_))
+f_i.sort(key = lambda x : x[1])
+plt.barh([x[0] for x in f_i],[x[1] for x in f_i])
+plt.xlabel("Feature Importance")
+plt.ylabel("Feature")
+plt.title("Feature Importances from Random Forest for Dataset with CO2_Emitted/Hour")
+
+plt.show()
+
+
 #correlation matrix for variables to get a visual on correlation among variables before applying decision trees
 #corr_matrix = X_for_corrplot2.corr()
+corr_matrix2 = df_modified2.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
 
 corr_matrix2 = corr_matrix2.corr()
 
@@ -433,6 +457,7 @@ plt.show()
 #EMISSIONS PER FUEL USAGE RATE -- NON BINOMIAL
 df_modified3 = df_modified.copy()
 df_modified3['CO2_Emitted/Fuel_Usage_Rate'] = df_modified3['CO2_Emitted (US Ton)'] / df_modified3['Fuel_Consumption_Rate (liters/hr)']
+df_modified3 = df_modified3.drop(columns=['CO2_Emitted (US Ton)', 'Fuel_Consumption_Rate (liters/hr)']) #, 'Total_Duration'
 
 plt.figure(figsize=(10, 5))
 plt.hist(df_modified3['CO2_Emitted/Fuel_Usage_Rate'], bins=30, color='skyblue', edgecolor='black')
@@ -448,8 +473,31 @@ plt.ylabel('Frequency')
 plt.title('Distribution of Total_Duration')
 plt.show()
 
-df_modified3 = df_modified3.drop(columns=['CO2_Emitted (US Ton)', 'Fuel_Consumption_Rate (liters/hr)']) #, 'Total_Duration'
 
+#feature selection
+df_analyse_features_3 = df_modified3.copy()
+
+X_analyse_features_3 = df_analyse_features_3.drop(columns=['CO2_Emitted/Fuel_Usage_Rate'])
+y_analyse_features_3 = df_analyse_features_3['CO2_Emitted/Fuel_Usage_Rate'].values
+
+features3 = X_analyse_features_3.columns
+
+X_train_analyse_features3, X_test_analyse_features3, y_train_analyse_features3, y_test_analyse_features3 = train_test_split(X_analyse_features_3, y_analyse_features_3, test_size=0.2, random_state=42)
+
+rf = RandomForestRegressor(random_state=0)
+
+rf.fit(X_analyse_features_3,y_analyse_features_3)
+
+f_i = list(zip(features3,rf.feature_importances_))
+f_i.sort(key = lambda x : x[1])
+plt.barh([x[0] for x in f_i],[x[1] for x in f_i])
+plt.xlabel("Feature Importance")
+plt.ylabel("Feature")
+plt.title("Feature Importances from Random Forest for Dataset with CO2_Emitted/Fuel_Usage_Rate")
+
+plt.show()
+
+#correlation matrix
 corr_matrix3 = df_modified3.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
 corr_matrix3 = corr_matrix3.corr()
 # Plot the heatmap
