@@ -139,7 +139,9 @@ content/08.decision_tree.md:16:dataset
 content/08.decision_tree.md:18:dataset
 content/08.decision_tree.md:21:depenent
 content/08.decision_tree.md:23:origianl
-content/08.decision_tree.md:63:mimickry
+content/08.decision_tree.md:31:RandomForestRegression
+content/08.decision_tree.md:31:scikit
+content/08.decision_tree.md:80:mimickry
 content/09.back-matter.md:5:Elsevier
 content/09.back-matter.md:5:Wandelt
 content/09.back-matter.md:5:Zhang

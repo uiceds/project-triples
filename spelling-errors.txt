@@ -54,6 +54,7 @@ presententing
 Purnima
 Puspha
 Ramanan
+RandomForestRegression
 Regressor
 RMSE
 RSME
