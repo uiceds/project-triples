@@ -335,7 +335,7 @@ plt.show()
 
 #correlation matrix for variables to get a visual on correlation among variables before applying decision trees
 #corr_matrix = X_for_corrplot2.corr()
-corr_matrix2 = df_modified2.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
+corr_matrix2 = df_modified2.drop(columns=['Frequent_Route'])
 
 corr_matrix2 = corr_matrix2.corr()
 
@@ -498,7 +498,7 @@ plt.title("Feature Importances from Random Forest for Dataset with CO2_Emitted/F
 plt.show()
 
 #correlation matrix
-corr_matrix3 = df_modified3.drop(columns=['Fleet_Airbus A320', 'Fleet_Boeing 737s', 'Frequent_Route'])
+corr_matrix3 = df_modified3.drop(columns=['Frequent_Route'])
 corr_matrix3 = corr_matrix3.corr()
 # Plot the heatmap
 plt.figure(figsize=(12, 8))
