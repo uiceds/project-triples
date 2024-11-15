@@ -11,14 +11,16 @@ CSV
 DataFrame
 dataset
 datasets
+DecisionTreeRegressor
 Dep
+depenent
 Diggs
 Dussehra
 Eid
 Elsevier
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
@@ -65,6 +67,7 @@ Sreenidhi
 StatsPlots
 stopd
 supremepandey
+suspuciously
 SVD
 Trujet
 Tziridis

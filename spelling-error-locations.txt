@@ -129,6 +129,15 @@ content/07.preliminary_predictive_modeling.md:45:dataset
 content/07.preliminary_predictive_modeling.md:50:MSE
 content/07.preliminary_predictive_modeling.md:50:performence
 content/07.preliminary_predictive_modeling.md:50:RSME
+content/08.decision_tree.md:3:DecisionTreeRegressor
+content/08.decision_tree.md:3:scikit
+content/08.decision_tree.md:4:dataset
+content/08.decision_tree.md:4:suspuciously
+content/08.decision_tree.md:8:dataset
+content/08.decision_tree.md:10:dataset
+content/08.decision_tree.md:18:dataset
+content/08.decision_tree.md:20:dataset
+content/08.decision_tree.md:23:depenent
 content/09.back-matter.md:5:Elsevier
 content/09.back-matter.md:5:Wandelt
 content/09.back-matter.md:5:Zhang
