@@ -186,7 +186,7 @@ print("Airline columns after one-hot encoding:", airline_columns)
 print("Fleet columns after one-hot encoding:", fleet_columns)
 
 print("df_modified:")
-print(df_modified.head())
+print(df_modified.head()) 
 
 #FEATURE SELECTION FROM RANDOM FOREST
 from sklearn.ensemble import RandomForestRegressor
@@ -225,7 +225,7 @@ sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
 plt.title("Correlation Matrix of Features for Original Data")
 plt.show()
 
-#drop the CO2_Emitted (US Ton) column so it can be used as the independent variable
+#drop CO2_Emitted (US Ton) column so it can be used as the independent variable
 X_original = df_modified.drop(columns=['CO2_Emitted (US Ton)'])
 y_original = df_modified['CO2_Emitted (US Ton)']
 
