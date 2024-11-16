@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 datasets
 DecisionTreeRegressor
 Dep
@@ -20,7 +20,7 @@ Eid
 Elsevier
 ERDC
 Fitr
-frenk
+Frenk
 Ganga
 Gillen
 GoAir

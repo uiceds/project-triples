@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-11-15'
+date-meta: '2024-11-16'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-11-15" />
-  <meta name="citation_publication_date" content="2024-11-15" />
-  <meta property="article:published_time" content="2024-11-15" />
-  <meta name="dc.modified" content="2024-11-15T19:41:28+00:00" />
-  <meta property="article:modified_time" content="2024-11-15T19:41:28+00:00" />
+  <meta name="dc.date" content="2024-11-16" />
+  <meta name="citation_publication_date" content="2024-11-16" />
+  <meta property="article:published_time" content="2024-11-16" />
+  <meta name="dc.modified" content="2024-11-16T02:17:53+00:00" />
+  <meta property="article:modified_time" content="2024-11-16T02:17:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/dc0d9aa32cc054acd54715a42934f062b3fb4537/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/dc0d9aa32cc054acd54715a42934f062b3fb4537/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/dc0d9aa32cc054acd54715a42934f062b3fb4537/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/dc0d9aa32cc054acd54715a42934f062b3fb4537/))
+([permalink](https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/))
 was automatically generated
-from [uiceds/project-triples@dc0d9aa](https://github.com/uiceds/project-triples/tree/dc0d9aa32cc054acd54715a42934f062b3fb4537)
-on November 15, 2024.
+from [uiceds/project-triples@a004e13](https://github.com/uiceds/project-triples/tree/a004e138581df428a445b83737fb3cde5934571f)
+on November 16, 2024.
 </em></small>
 
 
@@ -418,13 +418,18 @@ To test these theories, we first implemented cross-validation with 5 folds, as t
 | RMSE       | [3731.48, 3732.26, 3636.08, 3468.79, 3627.01]                                                            | 3639.12          | 96.31        |
 | MSE        | [13,923,954.82, 13,929,781.75, 13,221,049.43, 12,032,485.40, 13,155,213.99]                              | 13,252,497.08    | 694,039.12   |
 | \( R^2 \)  | [0.378, 0.369, 0.377, 0.380, 0.379]                                                                      | 0.377            | 0.004        |
-
-The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, we evaluated the performance with the polynomial regression model. This time we eliminated the one feature "Holiday" as it has less correlation with the price and we divided the data into 80% training and 20% testing.
+As we can observe the performance of the Model 4 is quite low, So we decided to add one more feature "Attractive Destination" in binary form. The origin and the destination mentioned in the Table 2 will be 1 and other will be 0.
 
 **Equation (5):**
-Price = 4332.83 + 4764.5065 x Total Stops + 4.98 x Flight Duration - 424.07 x (Total Stops)<sup>2</sup> - 0.001 x (Flight Duration)<sup>2</sup> - 1.43(Noise)
+Price = 5867.98 + 4764.5065 x Total Stops - 900.40 x Holiday + 1.10 x Flight Duration - 636.365 x Attractive Destination
 
-The RSME, MSE and R^2 values we observed from this model are 3082.22, \( 9.50 e+06 \), and 0.48, respectively. You can observed that the model performence have improved than the last model but still it has low performance. 
+The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3443.25, \( 1.185 e+07 \), and 0.42 respectively. We can notice that the performance has slightly improved, Although we could not get the satisfactory results.
+
+**Equation (6):**
+Price = 4332.83 + 3652.17 x Total Stops + 4.98 x Flight Duration - 424.07 x (Total Stops)<sup>2</sup> - 0.001 x (Flight Duration)<sup>2</sup> - 1.43(Noise)
+
+
+The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. we evaluated the performance with the polynomial regression model. This time we eliminated the one feature "Holiday" as it has less correlation with the price and we divided the data into 80% training and 20% testing. The RSME, MSE and R^2 values we observed from this model are 3082.22, \( 9.50 e+06 \), and 0.48, respectively. You can observed that the model performence have improved than the last model but still it has low performance. 
 
 
 
