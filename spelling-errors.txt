@@ -11,6 +11,7 @@ CSV
 DataFrame
 dataset
 datasets
+datatset
 DecisionTreeRegressor
 Dep
 depenent
@@ -26,6 +27,7 @@ Gillen
 GoAir
 Guo
 Holi
+hyperparameter
 ICDSA
 iloveheat
 INR
@@ -36,13 +38,13 @@ Kaygorodova
 Kolkata
 Maha
 McGrory
-mimickry
 MLJ
 MSE
 Navami
 Nikolaou
 Odoni
 OLS
+overfitting
 Pandey
 Papakostas
 PCA

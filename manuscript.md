@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-16" />
   <meta name="citation_publication_date" content="2024-11-16" />
   <meta property="article:published_time" content="2024-11-16" />
-  <meta name="dc.modified" content="2024-11-16T03:25:44+00:00" />
-  <meta property="article:modified_time" content="2024-11-16T03:25:44+00:00" />
+  <meta name="dc.modified" content="2024-11-16T04:12:12+00:00" />
+  <meta property="article:modified_time" content="2024-11-16T04:12:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/91bb37557fd7f9fcf6d1203a6579d5b18608d611/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/91bb37557fd7f9fcf6d1203a6579d5b18608d611/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/91bb37557fd7f9fcf6d1203a6579d5b18608d611/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/91bb37557fd7f9fcf6d1203a6579d5b18608d611/))
+([permalink](https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/))
 was automatically generated
-from [uiceds/project-triples@91bb375](https://github.com/uiceds/project-triples/tree/91bb37557fd7f9fcf6d1203a6579d5b18608d611)
+from [uiceds/project-triples@0028698](https://github.com/uiceds/project-triples/tree/002869854a11aed669226dd493597c0a08692434)
 on November 16, 2024.
 </em></small>
 
@@ -444,13 +444,13 @@ The relatively low performance of linear models suggests that the relationships 
 # Decision Tree Analysis
 
 This section is dedicated to decision tree analysis. Because the dependent variable is not categorical, the DecisionTreeRegressor from scikit-learn was employed. 
-After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.999977. This value seemed suspuciously perfect. 
-The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted value, and as can be seen the predicted values fall almost perfectly along the actual values.
+After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.999977. This value seemed suspuciously close to perfect. 
+The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted value, and as can be seen the predicted values fall almost perfectly along the actual values. This is also evidenced by the very small RMSE value, 0.3913489.
 
 <p align="center">
   <img src="images/Actual_Predicted_Vals_Original_Data.png" alt="Actual vs predicted values for the original dataset" width="600px">
   <br>
-  <strong>Figure 7:</strong> Correlation matrix created using the original dataset.
+  <strong>Figure 7:</strong> Actual vs predicted values for the original datatset
 </p>
 
 To understand the origins of this $R^2$ value, firstly, a correlation plot was created. The first correlation plot is seen below in Figure 8:
@@ -463,7 +463,7 @@ To understand the origins of this $R^2$ value, firstly, a correlation plot was c
 
 As can be seen from the figure above, the highest correlation appears between Total_Duration and CO2_Emitted (US Ton), the depenent variable. This makes sense, of course, because the longer the plane is in flight, the more $CO_2$ will be emitted. 
 
-In order to question this highly suspicious result, we divided the original dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. He created a second decision tree and plotted the actual and predicted values, as seen in Figure 9. Now we notice the appearance of two clusters, which indicates that there must be a variable(s) that is causing a binomial distribution. The $R^2$ value for the second decision tree was  0.999268, which is lower than the original but still very close to perfect. 
+In order to question this highly suspicious result, we divided the original dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. He created a second decision tree and plotted the actual and predicted values, as seen in Figure 9. Now we notice the appearance of two clusters, which indicates that there must be a variable(s) that is causing a binomial distribution. The $R^2$ value for the second decision tree was  0.999268, which is lower than the original but still very close to perfect. The RMSE value was also very low, at 0.003494. 
 
 <p align="center">
   <img src="images/Screenshot_Actual_Predicted_Hour.png" alt="Actual vs predicted values using CO2_Emitted per Hour as a dependent variable" width="600px">
@@ -511,7 +511,7 @@ This is also confirmed by the correlation matrix below, as we see a high correla
   <strong>Figure 14:</strong> Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
 </p>
 
-However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is an even higher value than the original $R^2$ value.
+However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is an even higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at 9.193469. This is a very large deviation from the previous RMSE values, both of which were less than 1.
 <p align="center">
   <img src="images/Actual_Predicted_CO2_Emissions_Fuel.png" alt="Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
   <br>
@@ -525,18 +525,7 @@ The histogram below also shows that the variable Fuel_Usage_Rate is also binomia
   <strong>Figure 16:</strong> Distribution of Fuel_Usage_Rate.
 </p>
 
-Data mimickry noting that Total_Duration and Fuel_Consumption_Rate are most influential independent variables
-<p align="center">
-  <img src="images/Distribution_CO2_Emission_Fuel.png" alt="DISTRIBUTION using CO2_Emitted/Hour as a dependent variable" width="600px">
-  <br>
-  <strong>Figure 17:</strong> DISTRIBUTION using CO2_Emitted/Hour as a dependent variable.
-</p>
-
-<p align="center">
-  <img src="images/Distribution_Total_Duration.png" alt="DISTRIBUTION of Total_Duration" width="600px">
-  <br>
-  <strong>Figure 18:</strong> DISTRIBUTION of Total_Duration.
-</p>
+Despite experimenting with various decision tree models and hyperparameter tuning, we were unable to achieve an $R^2$ value that provided any meaningful insights without appearing suspiciously close to 1. This is indicative of potential overfitting and suggests that the dataset itself may have limitations. The high correlations between certain features, ie Total_Duration and Fuel_Consumption_Rate with CO2_Emitted, led us to question the authenticity of the data. If the data were generated synthetically, and therefore lacks or lacked sufficient variability, it would explain the difficulty in deriving meaningful models. This highlights the importance of ensuring that datasets used for machine learning are diverse and representative of real-world findings. Without these properties, even the most sophisticated models will be unable to yield reliable findings.
 
 
 ## References {.page_break_before}
