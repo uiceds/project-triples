@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-16" />
   <meta name="citation_publication_date" content="2024-11-16" />
   <meta property="article:published_time" content="2024-11-16" />
-  <meta name="dc.modified" content="2024-11-16T04:24:13+00:00" />
-  <meta property="article:modified_time" content="2024-11-16T04:24:13+00:00" />
+  <meta name="dc.modified" content="2024-11-16T04:27:10+00:00" />
+  <meta property="article:modified_time" content="2024-11-16T04:27:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d2e356e182d9e0d7463a479562e293c9420ef1d7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d2e356e182d9e0d7463a479562e293c9420ef1d7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d2e356e182d9e0d7463a479562e293c9420ef1d7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/))
+([permalink](https://uiceds.github.io/project-triples/v/d2e356e182d9e0d7463a479562e293c9420ef1d7/))
 was automatically generated
-from [uiceds/project-triples@ec8c811](https://github.com/uiceds/project-triples/tree/ec8c81183a5b3fcb1616145329be403cee0e616e)
+from [uiceds/project-triples@d2e356e](https://github.com/uiceds/project-triples/tree/d2e356e182d9e0d7463a479562e293c9420ef1d7)
 on November 16, 2024.
 </em></small>
 
@@ -490,7 +490,7 @@ The histogram below also shows the binomial nature of the data:
   <strong>Figure 11:</strong> Distribution using CO2_Emitted/Hour as a dependent variable.
 </p>
 
-After transforming our dependent variable to CO2_Emitted/Hour and creating another correlation matrix, we saw a high correlation between each of the Fleet variable values (Boeing 737s and Airbus A320) and the dependent variable CO2_Emitted/Hour, which confirms that Fleet has an important effect on the data. We also see a high correlation between the dependent variable and the variable Fuel_Consumption_Rate (liters/hour). Again, this makes sense because the the faster a plane uses its fuel, the more $CO_2$ will be emitted. 
+After transforming our dependent variable to CO2_Emitted/Hour and creating another correlation matrix, we saw a high correlation between each of the Fleet variable values (Boeing 737s and Airbus A320) and the dependent variable CO2_Emitted/Hour, which confirms that Fleet has an important effect on the data and is likely responsible for the binomial nature of the distribution in Figure 11. We also see a high correlation between the dependent variable and the variable Fuel_Consumption_Rate (liters/hour). Again, this makes sense because the the faster a plane uses its fuel, the more $CO_2$ will be emitted. 
 
 <p align="center">
   <img src="images/Screenshot_Corr_Hour.png" alt="Correlation matrix created using CO2_Emitted per Hour as a dependent variable" width="600px">
