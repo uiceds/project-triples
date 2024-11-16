@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-16" />
   <meta name="citation_publication_date" content="2024-11-16" />
   <meta property="article:published_time" content="2024-11-16" />
-  <meta name="dc.modified" content="2024-11-16T02:17:53+00:00" />
-  <meta property="article:modified_time" content="2024-11-16T02:17:53+00:00" />
+  <meta name="dc.modified" content="2024-11-16T02:19:41+00:00" />
+  <meta property="article:modified_time" content="2024-11-16T02:19:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/dc8cd23dabfb79d2fc8b6e24417060b12dc7130e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/dc8cd23dabfb79d2fc8b6e24417060b12dc7130e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/dc8cd23dabfb79d2fc8b6e24417060b12dc7130e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/a004e138581df428a445b83737fb3cde5934571f/))
+([permalink](https://uiceds.github.io/project-triples/v/dc8cd23dabfb79d2fc8b6e24417060b12dc7130e/))
 was automatically generated
-from [uiceds/project-triples@a004e13](https://github.com/uiceds/project-triples/tree/a004e138581df428a445b83737fb3cde5934571f)
+from [uiceds/project-triples@dc8cd23](https://github.com/uiceds/project-triples/tree/dc8cd23dabfb79d2fc8b6e24417060b12dc7130e)
 on November 16, 2024.
 </em></small>
 
@@ -418,6 +418,7 @@ To test these theories, we first implemented cross-validation with 5 folds, as t
 | RMSE       | [3731.48, 3732.26, 3636.08, 3468.79, 3627.01]                                                            | 3639.12          | 96.31        |
 | MSE        | [13,923,954.82, 13,929,781.75, 13,221,049.43, 12,032,485.40, 13,155,213.99]                              | 13,252,497.08    | 694,039.12   |
 | \( R^2 \)  | [0.378, 0.369, 0.377, 0.380, 0.379]                                                                      | 0.377            | 0.004        |
+
 As we can observe the performance of the Model 4 is quite low, So we decided to add one more feature "Attractive Destination" in binary form. The origin and the destination mentioned in the Table 2 will be 1 and other will be 0.
 
 **Equation (5):**

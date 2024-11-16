@@ -20,7 +20,7 @@ Eid
 Elsevier
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
@@ -59,7 +59,7 @@ Regressor
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 Shayan
 Sherly
