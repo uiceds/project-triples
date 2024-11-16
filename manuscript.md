@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-16" />
   <meta name="citation_publication_date" content="2024-11-16" />
   <meta property="article:published_time" content="2024-11-16" />
-  <meta name="dc.modified" content="2024-11-16T04:12:12+00:00" />
-  <meta property="article:modified_time" content="2024-11-16T04:12:12+00:00" />
+  <meta name="dc.modified" content="2024-11-16T04:24:13+00:00" />
+  <meta property="article:modified_time" content="2024-11-16T04:24:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/002869854a11aed669226dd493597c0a08692434/))
+([permalink](https://uiceds.github.io/project-triples/v/ec8c81183a5b3fcb1616145329be403cee0e616e/))
 was automatically generated
-from [uiceds/project-triples@0028698](https://github.com/uiceds/project-triples/tree/002869854a11aed669226dd493597c0a08692434)
+from [uiceds/project-triples@ec8c811](https://github.com/uiceds/project-triples/tree/ec8c81183a5b3fcb1616145329be403cee0e616e)
 on November 16, 2024.
 </em></small>
 
@@ -445,7 +445,7 @@ The relatively low performance of linear models suggests that the relationships 
 
 This section is dedicated to decision tree analysis. Because the dependent variable is not categorical, the DecisionTreeRegressor from scikit-learn was employed. 
 After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.999977. This value seemed suspuciously close to perfect. 
-The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted value, and as can be seen the predicted values fall almost perfectly along the actual values. This is also evidenced by the very small RMSE value, 0.3913489.
+The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted values, and as can easily be seen, the predicted values fall almost perfectly along the actual values. This is also evidenced by the very small RMSE value, 0.3913489.
 
 <p align="center">
   <img src="images/Actual_Predicted_Vals_Original_Data.png" alt="Actual vs predicted values for the original dataset" width="600px">
@@ -463,7 +463,8 @@ To understand the origins of this $R^2$ value, firstly, a correlation plot was c
 
 As can be seen from the figure above, the highest correlation appears between Total_Duration and CO2_Emitted (US Ton), the depenent variable. This makes sense, of course, because the longer the plane is in flight, the more $CO_2$ will be emitted. 
 
-In order to question this highly suspicious result, we divided the original dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. He created a second decision tree and plotted the actual and predicted values, as seen in Figure 9. Now we notice the appearance of two clusters, which indicates that there must be a variable(s) that is causing a binomial distribution. The $R^2$ value for the second decision tree was  0.999268, which is lower than the original but still very close to perfect. The RMSE value was also very low, at 0.003494. 
+In order to question this highly suspicious result, we divided the original dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. We created a second decision tree and plotted the actual and predicted values, as seen in Figure 9. We then noticed the appearance of two clusters, which indicates that there must be a variable(s) that is causing a binomial distribution.
+The $R^2$ value for the second decision tree was  0.999268, which is lower than the original but still very close to perfect. The RMSE value was also very low, at 0.003494. 
 
 <p align="center">
   <img src="images/Screenshot_Actual_Predicted_Hour.png" alt="Actual vs predicted values using CO2_Emitted per Hour as a dependent variable" width="600px">
@@ -479,17 +480,17 @@ To figure out what variable could be causing this binomial distribution, we used
   <strong>Figure 10:</strong> Most important features using CO2_Emitted per Hour as a dependent variable.
 </p>
 
-We see that the fleet, Boeing 737s is the most important feature when using CO2_Emitted per Hour as a dependent variable. Originally, we removed this variable to create the first correlation plot since it is a binary variable, and, of course, it was showing a very red (ie, highly correlated) square with its counterpart is Airbus A320. However, we see, thanks to Figure 10, that it would be important to bring the Fleet variable back because it is causing the binomial distribution seen in Figure 9.
+We see that the fleet, Boeing 737s is the most important feature when using CO2_Emitted/Hour as a dependent variable. Originally, we removed the Fleet variable to create the first correlation plot since it is a binary variable, and, of course, it was showing 2 very red (ie, highly correlated) squares for the value Boeing 737s and its counterpart, Airbus A320. However, we see, thanks to Figure 10, that it would be important to bring the Fleet variable back because it is causing the binomial distribution seen in Figure 9.
 
 The histogram below also shows the binomial nature of the data:
 
 <p align="center">
-  <img src="images/Distribution_CO2_Emitted_Hour.png" alt="DISTRIBUTION using CO2_Emitted/Hour as a dependent variable" width="600px">
+  <img src="images/Distribution_CO2_Emitted_Hour.png" alt="Distribution using CO2_Emitted/Hour as a dependent variable" width="600px">
   <br>
-  <strong>Figure 11:</strong> DISTRIBUTION using CO2_Emitted/Hour as a dependent variable.
+  <strong>Figure 11:</strong> Distribution using CO2_Emitted/Hour as a dependent variable.
 </p>
 
-After transforming our dependent variable to CO2_Emitted/Hour and creating another correlation matrix, we see a high correlation between each of the Fleet variables (Boeing 737s and Airbus A320) and the dependent variable CO2_Emitted/Hour, which confirms that the Fleet variable has an important effect on the data. We also see a high correlation between the dependent variable and the variable Fuel_Consumption_Rate (liters/hour). Because of this, the next thing we tried was to divide the original dependent variable CO2_Emitted (US Ton) by Fuel_Consumption_Rate and created a new dependent variable called CO2_Emissions/Fuel_Usage_Rate.
+After transforming our dependent variable to CO2_Emitted/Hour and creating another correlation matrix, we saw a high correlation between each of the Fleet variable values (Boeing 737s and Airbus A320) and the dependent variable CO2_Emitted/Hour, which confirms that Fleet has an important effect on the data. We also see a high correlation between the dependent variable and the variable Fuel_Consumption_Rate (liters/hour). Again, this makes sense because the the faster a plane uses its fuel, the more $CO_2$ will be emitted. 
 
 <p align="center">
   <img src="images/Screenshot_Corr_Hour.png" alt="Correlation matrix created using CO2_Emitted per Hour as a dependent variable" width="600px">
@@ -497,7 +498,7 @@ After transforming our dependent variable to CO2_Emitted/Hour and creating anoth
   <strong>Figure 12:</strong> Correlation matrix created using CO2_Emitted per Hour as a dependent variable.
 </p>
 
-We again checked the most important features, now using CO2_Emissions/Fuel_Usage_Rate as the dependent variable. It is clear to see that the most important feature is Total_Duration, so clearly Total_Duration and Fuel_Usage_Rate are variables that greatly affect the dependent variable.
+Because of the high correlation between Fuel_Consumption_Rate (liters/hour) and CO2_Emitted/Hour, the next thing we tried was to divide the original dependent variable, CO2_Emitted (US Ton), by Fuel_Consumption_Rate (liters/hour) and created a new dependent variable called CO2_Emissions/Fuel_Usage_Rate. We again checked the most important features, now using CO2_Emissions/Fuel_Usage_Rate as the dependent variable. It is clear to see that the most important feature is Total_Duration, so clearly Total_Duration and Fuel_Usage_Rate are variables that greatly affect the emission of $CO_2$.
 <p align="center">
   <img src="images/Features_Fuel_Usage.png" alt="Features CO2_Emitted per Fuel Usage as a dependent variable" width="600px">
   <br>
@@ -511,7 +512,7 @@ This is also confirmed by the correlation matrix below, as we see a high correla
   <strong>Figure 14:</strong> Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
 </p>
 
-However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is an even higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at 9.193469. This is a very large deviation from the previous RMSE values, both of which were less than 1.
+However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at 9.193469. This is a very large deviation from the previous RMSE values, both of which were less than 1.
 <p align="center">
   <img src="images/Actual_Predicted_CO2_Emissions_Fuel.png" alt="Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
   <br>

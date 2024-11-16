@@ -21,7 +21,7 @@ Eid
 Elsevier
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
