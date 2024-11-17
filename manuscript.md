@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-17" />
   <meta name="citation_publication_date" content="2024-11-17" />
   <meta property="article:published_time" content="2024-11-17" />
-  <meta name="dc.modified" content="2024-11-17T22:38:28+00:00" />
-  <meta property="article:modified_time" content="2024-11-17T22:38:28+00:00" />
+  <meta name="dc.modified" content="2024-11-17T22:42:01+00:00" />
+  <meta property="article:modified_time" content="2024-11-17T22:42:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/95f93f7f744ecb943991bf0c3367adfad83bb4f8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/95f93f7f744ecb943991bf0c3367adfad83bb4f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/95f93f7f744ecb943991bf0c3367adfad83bb4f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/95f93f7f744ecb943991bf0c3367adfad83bb4f8/))
+([permalink](https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/))
 was automatically generated
-from [uiceds/project-triples@95f93f7](https://github.com/uiceds/project-triples/tree/95f93f7f744ecb943991bf0c3367adfad83bb4f8)
+from [uiceds/project-triples@6a1758a](https://github.com/uiceds/project-triples/tree/6a1758ade240b97cf6062d66b764eb36e5418443)
 on November 17, 2024.
 </em></small>
 
@@ -516,7 +516,7 @@ This is also confirmed by the correlation matrix below, as we see a high correla
   <strong>Figure 14:</strong> Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
 </p>
 
-However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at $9.193469*10^-5$. This is a very small value and significantly smaller that the previous RMSE values. The RMSE value for this last model was $10^4$ times smaller than the RMSE for the first decision tree and $10^2$ times smaller than the RMSE value for the second decision tree.
+However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at $9.193469*10(^-5)$. This is a very small value and significantly smaller that the previous RMSE values. The RMSE value for this last model was $10^4$ times smaller than the RMSE for the first decision tree and $10^2$ times smaller than the RMSE value for the second decision tree.
 <p align="center">
   <img src="images/Actual_Predicted_CO2_Emissions_Fuel.png" alt="Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
   <br>
