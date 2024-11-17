@@ -146,6 +146,9 @@ content/08.decision_tree.md:32:RandomForestRegression
 content/08.decision_tree.md:32:scikit
 content/08.decision_tree.md:72:RMSE
 content/08.decision_tree.md:72:RMSE
+content/08.decision_tree.md:72:RMSE
+content/08.decision_tree.md:72:RMSE
+content/08.decision_tree.md:72:RMSE
 content/08.decision_tree.md:86:dataset
 content/08.decision_tree.md:86:datasets
 content/08.decision_tree.md:86:hyperparameter
