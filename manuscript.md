@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-18" />
   <meta name="citation_publication_date" content="2024-11-18" />
   <meta property="article:published_time" content="2024-11-18" />
-  <meta name="dc.modified" content="2024-11-18T13:42:03+00:00" />
-  <meta property="article:modified_time" content="2024-11-18T13:42:03+00:00" />
+  <meta name="dc.modified" content="2024-11-18T13:43:51+00:00" />
+  <meta property="article:modified_time" content="2024-11-18T13:43:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/))
+([permalink](https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/))
 was automatically generated
-from [uiceds/project-triples@d3f68ac](https://github.com/uiceds/project-triples/tree/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f)
+from [uiceds/project-triples@e3d6728](https://github.com/uiceds/project-triples/tree/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9)
 on November 18, 2024.
 </em></small>
 
@@ -430,7 +430,7 @@ Price = 5869.27 + 3701.61 x Total Stops - 930.98 x Holiday + 1.01 x Flight Durat
   <strong>Figure 7:</strong> Performance of model 5
 </p>
 
-The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3502.70, \( 1.22 e+07 \), and 0.41 respectively. We noticed that the performance has slightly improved, Although we could not get the satisfactory results. We ran the model using K-fold (k=5) cross-validation but we do not see any improvement rather we notice the R<sup>2</sup> value decreses.The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, In Model 6, we evaluated the performance with the polynomial (Quadratic) regression model. This time we eliminated the two features "Holiday" and "Attractive Destination", Because "Holiday" has negative correlation with the price and "Attractive Destination" has approximately 8.7% correlation. Likewise, we divided the data into 80% training and 20% testing.
+The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3502.70, \( 1.22 e+07 \), and 0.41 respectively. We noticed that the performance has slightly improved, Although we could not get the satisfactory results. We ran the model using K-fold (k=5) cross-validation but we do not see any improvement rather we notice the R<sup>2</sup> value decreses. The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, In Model 6, we evaluated the performance with the polynomial (Quadratic) regression model. This time we eliminated the two features "Holiday" and "Attractive Destination", Because "Holiday" has negative correlation with the price and "Attractive Destination" has approximately 8.7% correlation. Likewise, we divided the data into 80% training and 20% testing.
 
 **Equation (6):**
 Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Total Stops)<sup>2</sup> - 0.001 x (Flight Duration)<sup>2</sup> - 1.30(Noise)
