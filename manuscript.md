@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-11-17'
+date-meta: '2024-11-18'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-11-17" />
-  <meta name="citation_publication_date" content="2024-11-17" />
-  <meta property="article:published_time" content="2024-11-17" />
-  <meta name="dc.modified" content="2024-11-17T22:42:01+00:00" />
-  <meta property="article:modified_time" content="2024-11-17T22:42:01+00:00" />
+  <meta name="dc.date" content="2024-11-18" />
+  <meta name="citation_publication_date" content="2024-11-18" />
+  <meta property="article:published_time" content="2024-11-18" />
+  <meta name="dc.modified" content="2024-11-18T13:42:03+00:00" />
+  <meta property="article:modified_time" content="2024-11-18T13:42:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/6a1758ade240b97cf6062d66b764eb36e5418443/))
+([permalink](https://uiceds.github.io/project-triples/v/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f/))
 was automatically generated
-from [uiceds/project-triples@6a1758a](https://github.com/uiceds/project-triples/tree/6a1758ade240b97cf6062d66b764eb36e5418443)
-on November 17, 2024.
+from [uiceds/project-triples@d3f68ac](https://github.com/uiceds/project-triples/tree/d3f68acf98d3ff762c28d71e68cf9a5bdf4b618f)
+on November 18, 2024.
 </em></small>
 
 
@@ -419,7 +419,7 @@ To test these theories, we first implemented cross-validation with 5 folds, as t
 | MSE        | [13,923,954.82, 13,929,781.75, 13,221,049.43, 12,032,485.40, 13,155,213.99]                              | 13,252,497.08    | 694,039.12   |
 | \( R^2 \)  | [0.378, 0.369, 0.377, 0.380, 0.379]                                                                      | 0.377            | 0.004        |
 
-As we can observe the performance of the Model 4 is quite low, So we decided to add one more feature "Attractive Destination" in binary form along with that we divided the data into 80% for training and 20% for testing. The origin and the destination mentioned in the Table 2 will be 1 and other will be 0.
+As we can observe the performance of the Model 4 is quite low, So we decided to add one more feature "Attractive Destination" in binary form, Added number of holidays and festivals throughout the year as well as we divided the data into 80% for training and 20% for testing. We arranged the "Attractive Destination" feature in such a way that the origin and the destination mentioned in the Table 2 will be 1 and other will be 0.
 
 **Equation (5):**
 Price = 5869.27 + 3701.61 x Total Stops - 930.98 x Holiday + 1.01 x Flight Duration - 659.77 x Attractive Destination
@@ -430,7 +430,7 @@ Price = 5869.27 + 3701.61 x Total Stops - 930.98 x Holiday + 1.01 x Flight Durat
   <strong>Figure 7:</strong> Performance of model 5
 </p>
 
-The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3502.70, \( 1.22 e+07 \), and 0.41 respectively. We noticed that the performance has slightly improved, Although we could not get the satisfactory results.The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, In Model 6, we evaluated the performance with the polynomial (Quadratic) regression model. This time we eliminated the two features "Holiday" and "Attractive Destination", Because "Holiday" has negative correlation with the price and "Attractive Destination" has approximately 8.7% correlation. Likewise, we divided the data into 80% training and 20% testing.
+The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3502.70, \( 1.22 e+07 \), and 0.41 respectively. We noticed that the performance has slightly improved, Although we could not get the satisfactory results. We ran the model using K-fold (k=5) cross-validation but we do not see any improvement rather we notice the R<sup>2</sup> value decreses.The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, In Model 6, we evaluated the performance with the polynomial (Quadratic) regression model. This time we eliminated the two features "Holiday" and "Attractive Destination", Because "Holiday" has negative correlation with the price and "Attractive Destination" has approximately 8.7% correlation. Likewise, we divided the data into 80% training and 20% testing.
 
 **Equation (6):**
 Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Total Stops)<sup>2</sup> - 0.001 x (Flight Duration)<sup>2</sup> - 1.30(Noise)
@@ -440,7 +440,7 @@ Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Tot
   <strong>Figure 7:</strong> Performance of model 6
 </p>
 
-The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+06 \), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. 
+The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+06 \), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficient.
 
 
 
@@ -516,7 +516,7 @@ This is also confirmed by the correlation matrix below, as we see a high correla
   <strong>Figure 14:</strong> Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
 </p>
 
-However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at $9.193469*10(^-5)$. This is a very small value and significantly smaller that the previous RMSE values. The RMSE value for this last model was $10^4$ times smaller than the RMSE for the first decision tree and $10^2$ times smaller than the RMSE value for the second decision tree.
+However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at $9.193469*(1/10^5)$. This is a very small value and significantly smaller that the previous RMSE values. The RMSE value for this last model was $10^4$ times smaller than the RMSE for the first decision tree and $10^2$ times smaller than the RMSE value for the second decision tree.
 <p align="center">
   <img src="images/Actual_Predicted_CO2_Emissions_Fuel.png" alt="Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
   <br>

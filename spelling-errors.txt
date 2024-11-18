@@ -9,10 +9,11 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 datasets
 datatset
 DecisionTreeRegressor
+decreses
 Dep
 depenent
 Diggs
@@ -60,7 +61,7 @@ Regressor
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 Shayan
 Sherly
