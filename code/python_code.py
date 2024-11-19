@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from sklearn.decomposition import PCA
+from sklearn.discriminant_analysis import StandardScaler
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
@@ -550,3 +551,99 @@ plt.ylabel('Frequency')
 plt.title('Distribution of Residuals for CO2_Emissions/Fuel_Usage_Rate Data')
 plt.show()
 
+
+#NEURAL NETWORK PORTION:
+
+'''df_neural_network = df.copy()
+
+df_neural_network['Total_Duration'] = df_neural_network['Duration_hours'] + df_neural_network['Duration_min'] / 60
+df_neural_network.drop(columns=['Duration_hours', 'Duration_min', 'Dep_hours', 'Dep_min', 'Arrival_hours', 'Arrival_min', 'Day', 'Month', 'Year'], inplace=True)
+
+frequent_routes = set((row['Source'], row['Destination']) for _, row in od_pairs.iterrows())
+df_neural_network['Frequent_Route'] = df_neural_network.apply(lambda row: 1 if (row['Source'], row['Destination']) in frequent_routes else 0, axis=1)
+df_neural_network.drop(columns=['Source', 'Destination', 'Adjusted_Date'], inplace=True)
+
+df_neural_network = pd.get_dummies(df_neural_network, columns=['Airline', 'Fleet'], drop_first=True)
+airline_columns_neural_network = [value for value in df_neural_network.columns if 'Airline_' in value]
+fleet_columns_neural_network = [value for value in df_neural_network.columns if 'Fleet_' in value]
+
+print("Airline columns after one-hot encoding:", airline_columns_neural_network)
+print("Fleet columns after one-hot encoding:", fleet_columns_neural_network)
+
+print("df_neural_network:")
+print(df_neural_network.head()) 
+
+X_neural_network = df_neural_network.drop(columns=['CO2_Emitted (US Ton)'])
+y_neural_network = df_neural_network['CO2_Emitted (US Ton)'].values
+
+
+X_train_neural_network, X_test_neural_network, y_train_neural_network, y_test_neural_network = train_test_split(X_neural_network.to_numpy(), y_neural_network, test_size=0.2, random_state=42)
+print(X_neural_network.shape)
+print(X_neural_network.columns)
+X_train_neural_network = X_train_neural_network.astype(np.float64)
+
+print(X_train_neural_network.dtype)
+print(type(X_train_neural_network))
+print(type(y_train_neural_network))
+print(type(y_train_neural_network.dtype))
+
+scaler_X = StandardScaler()
+X_train_neural_network = scaler_X.fit_transform(X_train_neural_network)
+X_test_neural_network = scaler_X.transform(X_test_neural_network)
+
+scaler_y = StandardScaler()
+y_train_neural_network = scaler_y.fit_transform(y_train_neural_network.reshape(-1, 1)).flatten()
+y_test_neural_network = scaler_y.transform(y_test_neural_network.reshape(-1, 1)).flatten()
+
+degree = min(3, X_train_neural_network.shape[1])
+initial_beta = np.arange(degree, dtype=np.float64)
+padded_beta = np.zeros(X_train_neural_network.shape[1], dtype=np.float64)
+
+padded_beta[:degree] = initial_beta
+
+print(padded_beta)
+    
+def polymodel(beta, x_values):
+    powers = np.arange(len(beta)) 
+    model_output = np.sum(beta * (x_values ** powers), axis = 1)
+    return model_output
+
+
+def gradient_of_error(residuals, x_values, beta, lambda_=0.01):
+    regularization_term = lambda_ * beta
+    gradient = (
+        np.mean(residuals[:, None] * (x_values ** np.arange(len(beta))), axis=0)
+        + regularization_term
+    )
+    return gradient
+
+def minimize(model_f, beta_guess, x_values, y_values, niu, number_steps):
+    beta = beta_guess
+    for _ in range(number_steps):
+        residuals = model_f(beta, x_values) - y_values
+        gradient = gradient_of_error(residuals, x_values, beta)
+        beta -= niu * gradient
+    return beta 
+
+def train(f_model, beta_guess, x_values, y_values, niu, number_steps):
+    minimized_beta = minimize(f_model, beta_guess, x_values, y_values, niu, number_steps)
+    return minimized_beta
+
+#initial_beta = np.arange(X_train_neural_network.shape[1], dtype=np.float64)
+learning_rate = 0.001
+num_steps = 500
+
+final_beta = train(polymodel, padded_beta, X_train_neural_network, y_train_neural_network, learning_rate, num_steps)
+
+
+
+y_pred = polymodel(final_beta, X_test_neural_network)
+mse = mean_squared_error(y_test_neural_network, y_pred)
+print(f"Mean Squared Error on Test Set: {mse}")'''
+
+#NEURAL NETWORKS WITH PACKAGES
+
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.optimizers import Adam
+from sklearn.preprocessing import StandardScaler
