@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-11-18'
+date-meta: '2024-11-19'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-11-18" />
-  <meta name="citation_publication_date" content="2024-11-18" />
-  <meta property="article:published_time" content="2024-11-18" />
-  <meta name="dc.modified" content="2024-11-18T13:43:51+00:00" />
-  <meta property="article:modified_time" content="2024-11-18T13:43:51+00:00" />
+  <meta name="dc.date" content="2024-11-19" />
+  <meta name="citation_publication_date" content="2024-11-19" />
+  <meta property="article:published_time" content="2024-11-19" />
+  <meta name="dc.modified" content="2024-11-19T22:12:57+00:00" />
+  <meta property="article:modified_time" content="2024-11-19T22:12:57+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/37c296192a75ab54472d14a247f50709887c6ae4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/37c296192a75ab54472d14a247f50709887c6ae4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/37c296192a75ab54472d14a247f50709887c6ae4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9/))
+([permalink](https://uiceds.github.io/project-triples/v/37c296192a75ab54472d14a247f50709887c6ae4/))
 was automatically generated
-from [uiceds/project-triples@e3d6728](https://github.com/uiceds/project-triples/tree/e3d6728c4e6eb5ecfd9807c475eab2948c9629a9)
-on November 18, 2024.
+from [uiceds/project-triples@37c2961](https://github.com/uiceds/project-triples/tree/37c296192a75ab54472d14a247f50709887c6ae4)
+on November 19, 2024.
 </em></small>
 
 
