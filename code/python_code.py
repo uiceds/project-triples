@@ -642,8 +642,53 @@ mse = mean_squared_error(y_test_neural_network, y_pred)
 print(f"Mean Squared Error on Test Set: {mse}")'''
 
 #NEURAL NETWORKS WITH PACKAGES
-
+import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
-from sklearn.preprocessing import StandardScaler
+
+df_neural_network = df.copy()
+
+df_neural_network['Total_Duration'] = df_neural_network['Duration_hours'] + df_neural_network['Duration_min'] / 60
+df_neural_network.drop(columns=['Duration_hours', 'Duration_min', 'Dep_hours', 'Dep_min', 'Arrival_hours', 'Arrival_min', 'Day', 'Month', 'Year'], inplace=True)
+
+frequent_routes = set((row['Source'], row['Destination']) for _, row in od_pairs.iterrows())
+df_neural_network['Frequent_Route'] = df_neural_network.apply(lambda row: 1 if (row['Source'], row['Destination']) in frequent_routes else 0, axis=1)
+df_neural_network.drop(columns=['Source', 'Destination', 'Adjusted_Date'], inplace=True)
+
+df_neural_network = pd.get_dummies(df_neural_network, columns=['Airline', 'Fleet'], drop_first=True)
+airline_columns_neural_network = [value for value in df_neural_network.columns if 'Airline_' in value]
+fleet_columns_neural_network = [value for value in df_neural_network.columns if 'Fleet_' in value]
+
+print("Airline columns after one-hot encoding:", airline_columns_neural_network)
+print("Fleet columns after one-hot encoding:", fleet_columns_neural_network)
+
+print("df_neural_network:")
+print(df_neural_network.head()) 
+
+X_neural_network = df_neural_network.drop(columns=['CO2_Emitted (US Ton)']).values
+y_neural_network = df_neural_network['CO2_Emitted (US Ton)'].values
+
+#Split the data
+X_train_neural_network, X_test_neural_network, y_train_neural_network, y_test_neural_network = train_test_split(X_neural_network, y_neural_network, test_size=0.2, random_state=42)
+
+#Normalize the data
+X_train_neural_norm = (X_train_neural_network - X_train_neural_network.mean(axis=0)) / X_train_neural_network.std(axis=0)
+X_test_norm = (X_test_neural_network - X_train_neural_network.mean(axis=0)) / X_train_neural_network.std(axis=0)
+
+
+#build layered model
+model = Sequential()
+model.add(Dense(64, input_dim=X_train_neural_network.shape[1], activation='relu'))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(1))
+
+#Implement radient descent
+model.compile(optimizer=Adam(learning_rate=0.001), loss='mean_squared_error')
+
+#Train the model
+model.fit(X_train_neural_network, y_train_neural_network, epochs=50, batch_size=32, validation_data=(X_test_neural_network, y_test_neural_network))
+
+#Evaluate the model
+loss = model.evaluate(X_test_neural_network, y_test_neural_network)
+print(f"Test Loss (MSE): {loss}")
