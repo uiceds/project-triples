@@ -63,7 +63,7 @@ Regressor
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 Shayan
 Sherly
