@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-22" />
   <meta name="citation_publication_date" content="2024-11-22" />
   <meta property="article:published_time" content="2024-11-22" />
-  <meta name="dc.modified" content="2024-11-22T02:57:07+00:00" />
-  <meta property="article:modified_time" content="2024-11-22T02:57:07+00:00" />
+  <meta name="dc.modified" content="2024-11-22T03:08:43+00:00" />
+  <meta property="article:modified_time" content="2024-11-22T03:08:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e273ec126f44fb9127d6bafdf1572341f7ba6962/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e273ec126f44fb9127d6bafdf1572341f7ba6962/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e273ec126f44fb9127d6bafdf1572341f7ba6962/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/1b8da9c7145af40ce09b3948372583169b5c4eed/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/1b8da9c7145af40ce09b3948372583169b5c4eed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/1b8da9c7145af40ce09b3948372583169b5c4eed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/e273ec126f44fb9127d6bafdf1572341f7ba6962/))
+([permalink](https://uiceds.github.io/project-triples/v/1b8da9c7145af40ce09b3948372583169b5c4eed/))
 was automatically generated
-from [uiceds/project-triples@e273ec1](https://github.com/uiceds/project-triples/tree/e273ec126f44fb9127d6bafdf1572341f7ba6962)
+from [uiceds/project-triples@1b8da9c](https://github.com/uiceds/project-triples/tree/1b8da9c7145af40ce09b3948372583169b5c4eed)
 on November 22, 2024.
 </em></small>
 
@@ -531,6 +531,9 @@ The histogram below also shows that the variable Fuel_Usage_Rate is also binomia
 </p>
 
 Despite experimenting with various decision tree models and hyperparameter tuning, we were unable to achieve an $R^2$ value that provided any meaningful insights without appearing suspiciously close to 1. This is indicative of potential overfitting and suggests that the dataset itself may have limitations. The high correlations between certain features, ie Total_Duration and Fuel_Consumption_Rate with CO2_Emitted, led us to question the authenticity of the data. If the data were generated synthetically, and therefore lacks or lacked sufficient variability, it would explain the difficulty in deriving meaningful models. This highlights the importance of ensuring that datasets used for machine learning are diverse and representative of real-world findings. Without these properties, even the most sophisticated models will be unable to yield reliable findings.
+
+
+
 
 
 ## References {.page_break_before}
