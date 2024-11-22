@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-22" />
   <meta name="citation_publication_date" content="2024-11-22" />
   <meta property="article:published_time" content="2024-11-22" />
-  <meta name="dc.modified" content="2024-11-22T03:14:13+00:00" />
-  <meta property="article:modified_time" content="2024-11-22T03:14:13+00:00" />
+  <meta name="dc.modified" content="2024-11-22T03:29:10+00:00" />
+  <meta property="article:modified_time" content="2024-11-22T03:29:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/5a3a30a3a94d749c7c42c4244d34614ee68f4365/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/5a3a30a3a94d749c7c42c4244d34614ee68f4365/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/5a3a30a3a94d749c7c42c4244d34614ee68f4365/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/758bc7a7f931f14de30a10f310325c0f30854d68/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/758bc7a7f931f14de30a10f310325c0f30854d68/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/758bc7a7f931f14de30a10f310325c0f30854d68/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/5a3a30a3a94d749c7c42c4244d34614ee68f4365/))
+([permalink](https://uiceds.github.io/project-triples/v/758bc7a7f931f14de30a10f310325c0f30854d68/))
 was automatically generated
-from [uiceds/project-triples@5a3a30a](https://github.com/uiceds/project-triples/tree/5a3a30a3a94d749c7c42c4244d34614ee68f4365)
+from [uiceds/project-triples@758bc7a](https://github.com/uiceds/project-triples/tree/758bc7a7f931f14de30a10f310325c0f30854d68)
 on November 22, 2024.
 </em></small>
 
@@ -539,7 +539,7 @@ Our objective in this study was to develop a price prediction model based on a f
 
 Based on the findings of this report, the machine learning models employed for predicting flight prices did not achieve satisfactory accuracy. Despite using various approaches, including linear regression, polynomial regression, and decision trees, the models consistently delivered suboptimal results, as evidenced by relatively high RMSE values and low R² scores. For instance, the final model using polynomial regression achieved an R² of 0.45, which, although an improvement over earlier models, still indicates that the model explains only a small portion of the variance in flight prices. These performance issues may be attributed to the complex, non-linear relationships among the dataset’s features, which were not fully captured by the models. Additionally, high correlations between certain variables, such as flight duration and fuel consumption, could suggest overfitting or multicollinearity, further hindering predictive accuracy.
 
-The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms, such as Neural Networks, to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, competitor pricing, and economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
+The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, competitor pricing, and economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
 
 
 ## References {.page_break_before}
