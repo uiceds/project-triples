@@ -10,6 +10,7 @@ Champaign
 CSV
 DataFrame
 dataset
+dataset’s
 datasets
 datatset
 DecisionTreeRegressor
@@ -22,7 +23,7 @@ Eid
 Elsevier
 ERDC
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
@@ -41,6 +42,7 @@ Maha
 McGrory
 MLJ
 MSE
+multicollinearity
 Navami
 Nikolaou
 Odoni
@@ -61,7 +63,7 @@ Regressor
 RMSE
 RSME
 sbafan
-scikit
+Scikit
 ScikitLearn
 Shayan
 Sherly
@@ -71,6 +73,7 @@ Springer
 Sreenidhi
 StatsPlots
 stopd
+suboptimal
 supremepandey
 suspuciously
 SVD
