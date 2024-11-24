@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-24" />
   <meta name="citation_publication_date" content="2024-11-24" />
   <meta property="article:published_time" content="2024-11-24" />
-  <meta name="dc.modified" content="2024-11-24T14:16:14+00:00" />
-  <meta property="article:modified_time" content="2024-11-24T14:16:14+00:00" />
+  <meta name="dc.modified" content="2024-11-24T14:36:04+00:00" />
+  <meta property="article:modified_time" content="2024-11-24T14:36:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/7bbf0eeb149fcdfd3720207b78b3ac973b8b9d35/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/7bbf0eeb149fcdfd3720207b78b3ac973b8b9d35/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/7bbf0eeb149fcdfd3720207b78b3ac973b8b9d35/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/))
+([permalink](https://uiceds.github.io/project-triples/v/7bbf0eeb149fcdfd3720207b78b3ac973b8b9d35/))
 was automatically generated
-from [uiceds/project-triples@0f5d7da](https://github.com/uiceds/project-triples/tree/0f5d7da128be5261c28f1d81685fe2bec8ae603c)
+from [uiceds/project-triples@7bbf0ee](https://github.com/uiceds/project-triples/tree/7bbf0eeb149fcdfd3720207b78b3ac973b8b9d35)
 on November 24, 2024.
 </em></small>
 
@@ -575,9 +575,10 @@ Despite experimenting with various decision tree models and hyperparameter tunin
 ## Discussion
 Our objective in this study was to develop a price prediction model based on a flight prediction dataset extracted from Kaggle using a data-driven scientific approach. We investigated how factors such as time of departure, number of stops, choice of airline, and other variables influence flight prices. A secondary objective was to analyze whether certain trends could be linked to broader environmental or policy factors. Additionally, adjustments were made to the dataset to incorporate CO2 emissions into the model, enhancing its practicality and relevance for real-world applications.
 
-Based on the findings of this report, the machine learning models employed for predicting flight prices did not achieve satisfactory accuracy. Despite using various approaches, including linear regression, polynomial regression, and decision trees, the models consistently delivered suboptimal results, as evidenced by relatively high RMSE values and low R² scores. For instance, the final model using polynomial regression achieved an R² of 0.45, which, although an improvement over earlier models, still indicates that the model explains only a small portion of the variance in flight prices. These performance issues may be attributed to the complex, non-linear relationships among the dataset’s features, which were not fully captured by the models. Additionally, high correlations between certain variables, such as flight duration and fuel consumption, could suggest overfitting or multicollinearity, further hindering predictive accuracy.
+Based on the findings of this report, the machine learning models employed for predicting flight prices did not achieve satisfactory accuracy. Despite using various approaches, including linear regression, polynomial regression, decision trees, and neural network the models consistently delivered suboptimal results, as evidenced by relatively high RMSE values and low R² scores. For instance, the final neural network based regression 
+ model achieved an R² of 0.58, which, although an improvement over earlier models, still indicates that the model explains only a small portion of the variance in flight prices. These performance issues may be attributed to the complex, non-linear relationships among the dataset’s features, which were not fully captured by the models. Additionally, high correlations between certain variables, such as flight duration and fuel consumption, could suggest overfitting or multicollinearity, further hindering predictive accuracy.
 
-The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, competitor pricing, and economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
+The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, competitor pricing, seasonality, trends, and external economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
 
 
 ## References {.page_break_before}
