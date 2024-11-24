@@ -133,6 +133,10 @@ content/07.preliminary_predictive_modeling.md:56:RMSE
 content/07.preliminary_predictive_modeling.md:66:MSE
 content/07.preliminary_predictive_modeling.md:66:performence
 content/07.preliminary_predictive_modeling.md:66:RSME
+content/07.preliminary_predictive_modeling.md:74:FFNN
+content/07.preliminary_predictive_modeling.md:74:LeakyRelu
+content/07.preliminary_predictive_modeling.md:74:MSE
+content/07.preliminary_predictive_modeling.md:74:RSME
 content/08.decision_tree.md:3:DecisionTreeRegressor
 content/08.decision_tree.md:3:scikit
 content/08.decision_tree.md:4:dataset

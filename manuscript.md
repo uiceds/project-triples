@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-24" />
   <meta name="citation_publication_date" content="2024-11-24" />
   <meta property="article:published_time" content="2024-11-24" />
-  <meta name="dc.modified" content="2024-11-24T07:57:54+00:00" />
-  <meta property="article:modified_time" content="2024-11-24T07:57:54+00:00" />
+  <meta name="dc.modified" content="2024-11-24T08:33:22+00:00" />
+  <meta property="article:modified_time" content="2024-11-24T08:33:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e4919eb239b9eced6017e154bde480a64a4c9c80/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e4919eb239b9eced6017e154bde480a64a4c9c80/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e4919eb239b9eced6017e154bde480a64a4c9c80/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/e4919eb239b9eced6017e154bde480a64a4c9c80/))
+([permalink](https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/))
 was automatically generated
-from [uiceds/project-triples@e4919eb](https://github.com/uiceds/project-triples/tree/e4919eb239b9eced6017e154bde480a64a4c9c80)
+from [uiceds/project-triples@ccb3882](https://github.com/uiceds/project-triples/tree/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba)
 on November 24, 2024.
 </em></small>
 
@@ -441,7 +441,17 @@ Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Tot
   <strong>Figure 7:</strong> Performance of model 6
 </p>
 
-The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+06 \), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficient.
+The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+06 \), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficients. Therefore, we decided to use neural network on model 7.
+
+<p align="center">
+  <img src="images/Actual_vs_predicted_Price_NNmodel_price_prediction.PNG" alt="Performance of model 7" width="600px">
+  <br>
+  <strong>Figure 7:</strong> Performance of model 7
+</p>
+
+Eventually, we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it's behavior and visualize each features' contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predicting power.
+
+
 
 
 

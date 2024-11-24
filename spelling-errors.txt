@@ -22,8 +22,9 @@ Dussehra
 Eid
 Elsevier
 ERDC
+FFNN
 Fitr
-frenk
+Frenk
 Ganga
 Gillen
 GoAir
@@ -38,6 +39,7 @@ Kaggle
 Kalampokas
 Kaygorodova
 Kolkata
+LeakyRelu
 Maha
 McGrory
 MLJ
