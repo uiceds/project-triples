@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-24" />
   <meta name="citation_publication_date" content="2024-11-24" />
   <meta property="article:published_time" content="2024-11-24" />
-  <meta name="dc.modified" content="2024-11-24T14:07:43+00:00" />
-  <meta property="article:modified_time" content="2024-11-24T14:07:43+00:00" />
+  <meta name="dc.modified" content="2024-11-24T14:16:14+00:00" />
+  <meta property="article:modified_time" content="2024-11-24T14:16:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/))
+([permalink](https://uiceds.github.io/project-triples/v/0f5d7da128be5261c28f1d81685fe2bec8ae603c/))
 was automatically generated
-from [uiceds/project-triples@99c85fd](https://github.com/uiceds/project-triples/tree/99c85fd3d139d51bc662cdacc9618be363a7bd8b)
+from [uiceds/project-triples@0f5d7da](https://github.com/uiceds/project-triples/tree/0f5d7da128be5261c28f1d81685fe2bec8ae603c)
 on November 24, 2024.
 </em></small>
 
@@ -441,20 +441,20 @@ Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Tot
   <strong>Figure 7:</strong> Performance of model 6
 </p>
 
-The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+06 \), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficients. Therefore, we decided to use neural network on model 7.
+The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+06 \), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficients. Therefore, we decided to build neural network based model.
 
 <p align="center">
-  <img src="images/Actual_vs_predicted_Price_NNmodel_price_prediction.PNG" alt="Performance of model 7" width="600px">
+  <img src="images/Actual_vs_predicted_Price_NNmodel_price_prediction.PNG" alt="Performance of FFNN Based Model" width="600px">
   <br>
-  <strong>Figure 8:</strong> Performance of model 7
+  <strong>Figure 8:</strong> Performance of FFNN Based Model
 </p>
 
-Eventually, we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it's behavior and visualize each features' contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predictive power. we will visualize some aspects of our model and analyze this low performane.
+we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing simple feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it's behavior and visualize each features' contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predictive power. we will visualize some aspects of our model and analyze this low performane.
 
 <p align="center">
   <img src="images/residual_plot_NNmodel_Price_prediction.PNG" alt="Residuals Plot" width="600px">
   <br>
-  <strong>Figure 9:</strong> Residuals Plot of model 7
+  <strong>Figure 9:</strong> Residuals Plot
 </p>
 
 The residual plot shows that the model might underfitting the data and there is a complex non-linearity that our model could not capture. Also, the variance of the residuals changes with the predicted prices. To improve the performance we need more complex model.
@@ -473,14 +473,14 @@ From the figure 10, we can observe that the distribution is not perfectly normal
   <strong>Figure 11:</strong> SHAP Summary Plot
 </p>
 
-From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret how the machine learning model predicted basically explains importance of each feature on model prediction - we can observe that the features such as Total_Duration, Total_Stops, Airline type and Fuel_Consumption_normalize highly influence the price prediction while other features moderately contribute and some features do not contribute at all. 
+From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret how the machine learning model predicted, basically explains importance of each feature on model prediction - we can observe that the features such as Total_Duration, Total_Stops, Airline type and Fuel_Consumption_normalize highly influence the price prediction while other features moderately contribute and some features did not contribute at all. 
 
 <p align="center">
   <img src="images/Time_series_Plot_NNmodel_Price_prediction.PNG" alt="Time Series Plot" width="600px">
   <br>
   <strong>Figure 12:</strong> Time Series Plot
 </p>
-Figure 12 demonstrate the actual and predicted prices over a certain period of time. The plot suggests that the price has cyclical pattern with peaks and troughs. We can observe that our model struggles to predict sharp peaks and troughs accurately, especially when the price is highly volatile and fluctuating. Also, we can see that the model is underestimating the peak prices and overestimating the trough prices. Analyzing all these factors, we can conclude that we need more complex model that can capture non-linearity, volatility and temporal dependencies in data. 
+Figure 12 demonstrates the actual and predicted prices over a certain period of time. The plot suggests that the price has cyclical pattern with peaks and troughs. We can observe that our model struggles to predict sharp peaks and troughs accurately, especially when the price is highly volatile and fluctuating. Also, we can see that the model is underestimating the peak prices and overestimating the trough prices. Analyzing all these factors, we can conclude that we need more complex model that can capture non-linearity, volatility and temporal dependencies in the data.
 
 
 

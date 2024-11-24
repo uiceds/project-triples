@@ -133,6 +133,8 @@ content/07.preliminary_predictive_modeling.md:56:RMSE
 content/07.preliminary_predictive_modeling.md:66:MSE
 content/07.preliminary_predictive_modeling.md:66:performence
 content/07.preliminary_predictive_modeling.md:66:RSME
+content/07.preliminary_predictive_modeling.md:69:FFNN
+content/07.preliminary_predictive_modeling.md:71:FFNN
 content/07.preliminary_predictive_modeling.md:74:FFNN
 content/07.preliminary_predictive_modeling.md:74:LeakyRelu
 content/07.preliminary_predictive_modeling.md:74:MSE
