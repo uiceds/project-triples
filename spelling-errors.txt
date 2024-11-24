@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 dataset’s
 datasets
 datatset
@@ -50,9 +50,11 @@ Nikolaou
 Odoni
 OLS
 overfitting
+overpredict
 Pandey
 Papakostas
 PCA
+performane
 performence
 Prakash
 predicion
@@ -62,11 +64,13 @@ Puspha
 Ramanan
 RandomForestRegression
 Regressor
+Risiduals
 RMSE
 RSME
 sbafan
 scikit
 ScikitLearn
+SHAP
 Shayan
 Sherly
 Shivaratri
@@ -81,6 +85,7 @@ suspuciously
 SVD
 Trujet
 Tziridis
+underfitting
 Urbana
 USACE
 Vishu

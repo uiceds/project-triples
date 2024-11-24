@@ -136,7 +136,14 @@ content/07.preliminary_predictive_modeling.md:66:RSME
 content/07.preliminary_predictive_modeling.md:74:FFNN
 content/07.preliminary_predictive_modeling.md:74:LeakyRelu
 content/07.preliminary_predictive_modeling.md:74:MSE
+content/07.preliminary_predictive_modeling.md:74:performane
 content/07.preliminary_predictive_modeling.md:74:RSME
+content/07.preliminary_predictive_modeling.md:82:underfitting
+content/07.preliminary_predictive_modeling.md:87:Risiduals
+content/07.preliminary_predictive_modeling.md:90:overpredict
+content/07.preliminary_predictive_modeling.md:93:SHAP
+content/07.preliminary_predictive_modeling.md:95:SHAP
+content/07.preliminary_predictive_modeling.md:98:SHAP
 content/08.decision_tree.md:3:DecisionTreeRegressor
 content/08.decision_tree.md:3:scikit
 content/08.decision_tree.md:4:dataset

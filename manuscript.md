@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-24" />
   <meta name="citation_publication_date" content="2024-11-24" />
   <meta property="article:published_time" content="2024-11-24" />
-  <meta name="dc.modified" content="2024-11-24T08:33:22+00:00" />
-  <meta property="article:modified_time" content="2024-11-24T08:33:22+00:00" />
+  <meta name="dc.modified" content="2024-11-24T09:39:55+00:00" />
+  <meta property="article:modified_time" content="2024-11-24T09:39:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba/))
+([permalink](https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/))
 was automatically generated
-from [uiceds/project-triples@ccb3882](https://github.com/uiceds/project-triples/tree/ccb3882c44c9bdad2c199d1a6676a1e55e8c83ba)
+from [uiceds/project-triples@603433b](https://github.com/uiceds/project-triples/tree/603433b156dbfb5a171c3079c0dd76976fbdd4a5)
 on November 24, 2024.
 </em></small>
 
@@ -446,11 +446,34 @@ The RSME, MSE and R^2 values we observed from this model are 3344.02, \( 1.11 e+
 <p align="center">
   <img src="images/Actual_vs_predicted_Price_NNmodel_price_prediction.PNG" alt="Performance of model 7" width="600px">
   <br>
-  <strong>Figure 7:</strong> Performance of model 7
+  <strong>Figure 8:</strong> Performance of model 7
 </p>
 
-Eventually, we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it's behavior and visualize each features' contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predicting power.
+Eventually, we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it's behavior and visualize each features' contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predictive power. we will visualize some aspects of our model and analyze this low performane.
 
+<p align="center">
+  <img src="images/residual_plot_NNmodel_Price_prediction.PNG" alt="Residuals Plot" width="600px">
+  <br>
+  <strong>Figure 9:</strong> Residuals Plot of model 7
+</p>
+
+The residual plot shows that the model might underfitting the data and there is a complex non-linearity that our model could not capture. Also, the variance of the residuals changes with the predicted prices. To improve the performance we need more complex model.
+
+<p align="center">
+  <img src="images/Distribution_Residual_NNmodel_Price_prediction.PNG" alt="Distribution of Residuals Plot" width="600px">
+  <br>
+  <strong>Figure 10:</strong> Distribution of Risiduals
+</p>
+
+From the figure 10, we can observe that the distribution is not perfectly normal and it is right skewed - more residuals towards right and less residuals towards left - which suggests that this model can overpredict the price because of larger positive residuals.
+
+<p align="center">
+  <img src="images/SHAP_plot_NNmodel_price_prediction.PNG" alt="SHAP Summary Plot" width="600px">
+  <br>
+  <strong>Figure 11:</strong> SHAP Summary Plot
+</p>
+
+From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret how the machine learning model predicted basically explains importance of each feature on model prediction - we can observe that the features such as Total_Duration, Total_Stops, Airline type and Fuel_Consumption_normalize highly influence the price prediction while other features moderately contribute and some features do not contribute at all. 
 
 
 
