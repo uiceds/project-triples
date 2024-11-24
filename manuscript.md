@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-24" />
   <meta name="citation_publication_date" content="2024-11-24" />
   <meta property="article:published_time" content="2024-11-24" />
-  <meta name="dc.modified" content="2024-11-24T09:39:55+00:00" />
-  <meta property="article:modified_time" content="2024-11-24T09:39:55+00:00" />
+  <meta name="dc.modified" content="2024-11-24T14:07:43+00:00" />
+  <meta property="article:modified_time" content="2024-11-24T14:07:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/603433b156dbfb5a171c3079c0dd76976fbdd4a5/))
+([permalink](https://uiceds.github.io/project-triples/v/99c85fd3d139d51bc662cdacc9618be363a7bd8b/))
 was automatically generated
-from [uiceds/project-triples@603433b](https://github.com/uiceds/project-triples/tree/603433b156dbfb5a171c3079c0dd76976fbdd4a5)
+from [uiceds/project-triples@99c85fd](https://github.com/uiceds/project-triples/tree/99c85fd3d139d51bc662cdacc9618be363a7bd8b)
 on November 24, 2024.
 </em></small>
 
@@ -475,7 +475,12 @@ From the figure 10, we can observe that the distribution is not perfectly normal
 
 From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret how the machine learning model predicted basically explains importance of each feature on model prediction - we can observe that the features such as Total_Duration, Total_Stops, Airline type and Fuel_Consumption_normalize highly influence the price prediction while other features moderately contribute and some features do not contribute at all. 
 
-
+<p align="center">
+  <img src="images/Time_series_Plot_NNmodel_Price_prediction.PNG" alt="Time Series Plot" width="600px">
+  <br>
+  <strong>Figure 12:</strong> Time Series Plot
+</p>
+Figure 12 demonstrate the actual and predicted prices over a certain period of time. The plot suggests that the price has cyclical pattern with peaks and troughs. We can observe that our model struggles to predict sharp peaks and troughs accurately, especially when the price is highly volatile and fluctuating. Also, we can see that the model is underestimating the peak prices and overestimating the trough prices. Analyzing all these factors, we can conclude that we need more complex model that can capture non-linearity, volatility and temporal dependencies in data. 
 
 
 
