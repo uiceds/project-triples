@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 dataset’s
 datasets
 datatset
@@ -24,7 +24,7 @@ Elsevier
 ERDC
 FFNN
 Fitr
-frenk
+Frenk
 Ganga
 Gillen
 GoAir
