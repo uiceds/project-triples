@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-26" />
   <meta name="citation_publication_date" content="2024-11-26" />
   <meta property="article:published_time" content="2024-11-26" />
-  <meta name="dc.modified" content="2024-11-26T18:21:49+00:00" />
-  <meta property="article:modified_time" content="2024-11-26T18:21:49+00:00" />
+  <meta name="dc.modified" content="2024-11-26T18:23:07+00:00" />
+  <meta property="article:modified_time" content="2024-11-26T18:23:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/dda8919631be38a1fe2d5851eea9ac84de5ae0ee/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/dda8919631be38a1fe2d5851eea9ac84de5ae0ee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/dda8919631be38a1fe2d5851eea9ac84de5ae0ee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ba3652166ea18bbfba81a0416f96bab86f709e33/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ba3652166ea18bbfba81a0416f96bab86f709e33/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ba3652166ea18bbfba81a0416f96bab86f709e33/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/dda8919631be38a1fe2d5851eea9ac84de5ae0ee/))
+([permalink](https://uiceds.github.io/project-triples/v/ba3652166ea18bbfba81a0416f96bab86f709e33/))
 was automatically generated
-from [uiceds/project-triples@dda8919](https://github.com/uiceds/project-triples/tree/dda8919631be38a1fe2d5851eea9ac84de5ae0ee)
+from [uiceds/project-triples@ba36521](https://github.com/uiceds/project-triples/tree/ba3652166ea18bbfba81a0416f96bab86f709e33)
 on November 26, 2024.
 </em></small>
 
@@ -572,6 +572,17 @@ The histogram below also shows that the variable Fuel_Usage_Rate is also binomia
 Despite experimenting with various decision tree models and hyperparameter tuning, we were unable to achieve an $R^2$ value that provided any meaningful insights without appearing suspiciously close to 1. This is indicative of potential overfitting and suggests that the dataset itself may have limitations. The high correlations between certain features, ie Total_Duration and Fuel_Consumption_Rate with CO2_Emitted, led us to question the authenticity of the data. If the data were generated synthetically, and therefore lacks or lacked sufficient variability, it would explain the difficulty in deriving meaningful models. This highlights the importance of ensuring that datasets used for machine learning are diverse and representative of real-world findings. Without these properties, even the most sophisticated models will be unable to yield reliable findings.
 
 
+# Neural Network Analysis
+
+This section explains the output of the neural network model created for this project. For the neural network model development, tensorflow, Sequential from tensorflow.keras.models, Dense from tensorflow.keras.layers, and Adam from tensorflow.keras.optimizers were employed.
+The MSE returned from running the model was $7.919958*(1/10^5)$. This MSE value is suspiciously low, and, just as in the previous section "Decision Tree Analysis", the graphs created from the model analysis also indicate a near-perfect correlation between the model and the actual values. These findings once again point towards the possibility of the data being artificially designed, leading to very low variability.
+Below is a graph showing the correlation between the training and testing data.
+
+<p align="center">
+  <img src="images/training_validation_plot2.png" alt="Training vs validation plot" width="600px">
+  <br>
+  <strong>Figure 17:</strong> Training vs validation plot
+</p>
 
 
 ## References {.page_break_before}

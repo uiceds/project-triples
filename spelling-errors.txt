@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 dataset’s
 datasets
 datatset
@@ -24,7 +24,7 @@ Elsevier
 ERDC
 FFNN
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
@@ -68,7 +68,7 @@ Risiduals
 RMSE
 RSME
 sbafan
-scikit
+Scikit
 ScikitLearn
 SHAP
 Shayan
