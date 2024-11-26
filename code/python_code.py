@@ -293,8 +293,14 @@ plt.show()
 
 df_modified2 = df_modified.copy()
 
+print("Total Duration:")
+print(df_modified2['Total_Duration'].values)
+
 df_modified2['CO2_Emitted/Hour'] = df_modified2['CO2_Emitted (US Ton)'] / df_modified2['Total_Duration']
 df_modified2 = df_modified2.drop(columns=['CO2_Emitted (US Ton)', 'Total_Duration'])
+
+print("CO2 Emitted per Hour:")
+print(df_modified2['CO2_Emitted/Hour'].values)
 
 plt.figure(figsize=(10, 5))
 plt.hist(df_modified2['CO2_Emitted/Hour'], bins=30, color='skyblue', edgecolor='black')
@@ -656,26 +662,42 @@ frequent_routes = set((row['Source'], row['Destination']) for _, row in od_pairs
 df_neural_network['Frequent_Route'] = df_neural_network.apply(lambda row: 1 if (row['Source'], row['Destination']) in frequent_routes else 0, axis=1)
 df_neural_network.drop(columns=['Source', 'Destination', 'Adjusted_Date'], inplace=True)
 
+print("df_neural_network head:")
+df_neural_network.head()
+
 df_neural_network = pd.get_dummies(df_neural_network, columns=['Airline', 'Fleet'], drop_first=True)
-airline_columns_neural_network = [value for value in df_neural_network.columns if 'Airline_' in value]
-fleet_columns_neural_network = [value for value in df_neural_network.columns if 'Fleet_' in value]
 
-print("Airline columns after one-hot encoding:", airline_columns_neural_network)
-print("Fleet columns after one-hot encoding:", fleet_columns_neural_network)
-
-print("df_neural_network:")
-print(df_neural_network.head()) 
-
-X_neural_network = df_neural_network.drop(columns=['CO2_Emitted (US Ton)']).values
+#X_neural_network = df_neural_network.drop(columns=['CO2_Emitted (US Ton)']).values
+X_neural_network = pd.DataFrame(df_neural_network.drop(columns=['CO2_Emitted (US Ton)']))
 y_neural_network = df_neural_network['CO2_Emitted (US Ton)'].values
+
+#X_neural_network cleaning
+X_neural_network = X_neural_network.apply(pd.to_numeric, errors='coerce')
+X_neural_network = X_neural_network.fillna(X_neural_network.mean())
+
+
+#convert boolean types to ints for consistency
+bool_cols = X_neural_network.select_dtypes(include=['bool']).columns
+X_neural_network[bool_cols] = X_neural_network[bool_cols].astype(int)
+X_neural_network = X_neural_network.astype(float)
+
+#Identify columns with zero standard deviation and drop them
+std_dev = X_neural_network.std(axis=0)
+zero_std_cols = std_dev[std_dev == 0].index
+X_neural_network.drop(columns=zero_std_cols, inplace=True)
 
 #Split the data
 X_train_neural_network, X_test_neural_network, y_train_neural_network, y_test_neural_network = train_test_split(X_neural_network, y_neural_network, test_size=0.2, random_state=42)
 
 #Normalize the data
-X_train_neural_norm = (X_train_neural_network - X_train_neural_network.mean(axis=0)) / X_train_neural_network.std(axis=0)
-X_test_norm = (X_test_neural_network - X_train_neural_network.mean(axis=0)) / X_train_neural_network.std(axis=0)
+X_train_neural_norm = ((X_train_neural_network - X_train_neural_network.mean(axis=0)) / X_train_neural_network.std(axis=0)).astype(np.float64)
+X_test_neural_norm = (X_test_neural_network - X_train_neural_network.mean(axis=0)) / X_train_neural_network.std(axis=0)
 
+y_mean = y_train_neural_network.mean()
+y_std = y_train_neural_network.std()
+
+y_train_neural_norm = (y_train_neural_network - y_mean) / y_std
+y_test_neural_norm = (y_test_neural_network - y_mean) / y_std
 
 #build layered model
 model = Sequential()
@@ -687,8 +709,52 @@ model.add(Dense(1))
 model.compile(optimizer=Adam(learning_rate=0.001), loss='mean_squared_error')
 
 #Train the model
-model.fit(X_train_neural_network, y_train_neural_network, epochs=50, batch_size=32, validation_data=(X_test_neural_network, y_test_neural_network))
+model.fit(X_train_neural_norm, y_train_neural_norm, epochs=50, batch_size=32, validation_data=(X_test_neural_norm, y_test_neural_norm))
 
 #Evaluate the model
-loss = model.evaluate(X_test_neural_network, y_test_neural_network)
+loss = model.evaluate(X_test_neural_norm, y_test_neural_norm)
 print(f"Test Loss (MSE): {loss}")
+
+#Training vs Validation code
+history = model.fit(
+    X_train_neural_norm,
+    y_train_neural_norm,
+    validation_data=(X_test_neural_norm, y_test_neural_norm),
+    epochs=50,
+    batch_size=32,
+    verbose=1
+)
+
+# Plot Training vs. Validation Loss
+plt.figure(figsize=(10, 6))
+plt.plot(history.history['loss'], label='Training Loss')
+plt.plot(history.history['val_loss'], label='Validation Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss (MSE)')
+plt.title('Training vs. Validation Loss')
+plt.legend()
+plt.show()
+
+# Predict and denormalize
+y_pred_norm = model.predict(X_test_neural_norm)
+y_pred = y_pred_norm * y_std + y_mean
+
+# Predicted vs. Actual Values
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test_neural_network, y_pred, alpha=0.6)
+plt.plot([y_test_neural_network.min(), y_test_neural_network.max()],
+         [y_test_neural_network.min(), y_test_neural_network.max()], 'r--')
+plt.xlabel('Actual Values')
+plt.ylabel('Predicted Values')
+plt.title('Predicted vs. Actual Values')
+plt.show()
+
+# Residual Plot
+residuals = y_test_neural_network - y_pred.flatten()
+plt.figure(figsize=(10, 6))
+plt.scatter(y_pred, residuals, alpha=0.6)
+plt.axhline(0, color='r', linestyle='--')
+plt.xlabel('Predicted Values')
+plt.ylabel('Residuals')
+plt.title('Residual Plot')
+plt.show()
