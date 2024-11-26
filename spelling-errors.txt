@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 dataset’s
 datasets
 datatset
