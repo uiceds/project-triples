@@ -24,7 +24,7 @@ Elsevier
 ERDC
 FFNN
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
