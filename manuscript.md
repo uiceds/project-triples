@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-27" />
   <meta name="citation_publication_date" content="2024-11-27" />
   <meta property="article:published_time" content="2024-11-27" />
-  <meta name="dc.modified" content="2024-11-27T06:42:58+00:00" />
-  <meta property="article:modified_time" content="2024-11-27T06:42:58+00:00" />
+  <meta name="dc.modified" content="2024-11-27T06:58:30+00:00" />
+  <meta property="article:modified_time" content="2024-11-27T06:58:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/214b3677c94d4b7e16427c227535e8013ad6b1f0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/214b3677c94d4b7e16427c227535e8013ad6b1f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/214b3677c94d4b7e16427c227535e8013ad6b1f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/214b3677c94d4b7e16427c227535e8013ad6b1f0/))
+([permalink](https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/))
 was automatically generated
-from [uiceds/project-triples@214b367](https://github.com/uiceds/project-triples/tree/214b3677c94d4b7e16427c227535e8013ad6b1f0)
+from [uiceds/project-triples@aa8a8d7](https://github.com/uiceds/project-triples/tree/aa8a8d7bcf628050b195e6c033b1eec88c0c9993)
 on November 27, 2024.
 </em></small>
 
@@ -584,11 +584,15 @@ Below is a graph showing the correlation between the training and testing data.
   <strong>Figure 17:</strong> Training vs validation plot
 </p>
 
+It is clear to see that the training loss almost perfectly mirrors the validation loss. The following graphs also provide evidence for the possibility that the data was fabricated rather than collected in the real world. Below, in Figure 18, we see how, except for just two data points, all predicted values lie almost perfectly  along the line representing the actual values.
+
 <p align="center">
   <img src="images/predicted_vs_actual2.png" alt="Predicted vs actual values plot" width="600px">
   <br>
   <strong>Figure 18:</strong> Predicted vs actual values plot
 </p>
+
+Lastly, as with Figure 18, Figure 19 shows just two outliers while the rest of the data points lie on the line representing the 0 residual value. Residuals are the output of the subtraction between predicted and actual values, and they show how far the predicted values are from the actual ones. The fact that almost all the points are so close to 0 would indicate that there is almost no error between predicted and actual values. This outcome is very unlikely to happen in data with a normal amout of variability, which once again points to the conclusion that the data may have been artificially created.
 
 <p align="center">
   <img src="images/residual_neural_network2.png" alt="Residual plot" width="600px">
