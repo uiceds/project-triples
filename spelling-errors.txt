@@ -68,7 +68,7 @@ Risiduals
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 SHAP
 Shayan
