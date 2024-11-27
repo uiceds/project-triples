@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-11-27" />
   <meta name="citation_publication_date" content="2024-11-27" />
   <meta property="article:published_time" content="2024-11-27" />
-  <meta name="dc.modified" content="2024-11-27T06:58:30+00:00" />
-  <meta property="article:modified_time" content="2024-11-27T06:58:30+00:00" />
+  <meta name="dc.modified" content="2024-11-27T07:00:30+00:00" />
+  <meta property="article:modified_time" content="2024-11-27T07:00:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/da450ad39266d27dfb9b199c077938c0397b67c3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/da450ad39266d27dfb9b199c077938c0397b67c3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/da450ad39266d27dfb9b199c077938c0397b67c3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/aa8a8d7bcf628050b195e6c033b1eec88c0c9993/))
+([permalink](https://uiceds.github.io/project-triples/v/da450ad39266d27dfb9b199c077938c0397b67c3/))
 was automatically generated
-from [uiceds/project-triples@aa8a8d7](https://github.com/uiceds/project-triples/tree/aa8a8d7bcf628050b195e6c033b1eec88c0c9993)
+from [uiceds/project-triples@da450ad](https://github.com/uiceds/project-triples/tree/da450ad39266d27dfb9b199c077938c0397b67c3)
 on November 27, 2024.
 </em></small>
 
@@ -575,7 +575,7 @@ Despite experimenting with various decision tree models and hyperparameter tunin
 # Neural Network Analysis
 
 This section explains the output of the neural network model created for this project. For the neural network model development, tensorflow, Sequential from tensorflow.keras.models, Dense from tensorflow.keras.layers, and Adam from tensorflow.keras.optimizers were employed.
-The MSE returned from running the model was $7.919958*(1/10^5)$. This MSE value is suspiciously low, and, just as in the previous section "Decision Tree Analysis", the graphs created from the model analysis also indicate a near-perfect correlation between the model and the actual values. These findings once again point towards the possibility of the data being artificially designed, leading to very low variability.
+The MSE returned from running the model was $7.919958*(1/10^5)$. This MSE value is suspiciously low, and, just as in the previous section, "Decision Tree Analysis", the graphs created from the model analysis also indicate a near-perfect correlation between the model and the actual values. These findings once again point towards the possibility of the data being artificially designed, leading to very low variability.
 Below is a graph showing the correlation between the training and testing data.
 
 <p align="center">
@@ -584,7 +584,7 @@ Below is a graph showing the correlation between the training and testing data.
   <strong>Figure 17:</strong> Training vs validation plot
 </p>
 
-It is clear to see that the training loss almost perfectly mirrors the validation loss. The following graphs also provide evidence for the possibility that the data was fabricated rather than collected in the real world. Below, in Figure 18, we see how, except for just two data points, all predicted values lie almost perfectly  along the line representing the actual values.
+It is clear to see that the training loss almost perfectly mirrors the validation loss. The following graphs also provide evidence for the possibility that the data was fabricated rather than collected in the real world. Below, in Figure 18, we see how, except for just two data points, all predicted values lie almost perfectly  along the line representing the actual values. This is a similar graph to Figures 7 and 15 from this project's portion called "Decision Tree Analysis".
 
 <p align="center">
   <img src="images/predicted_vs_actual2.png" alt="Predicted vs actual values plot" width="600px">
