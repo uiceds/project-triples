@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-12-01'
+date-meta: '2024-12-03'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-12-01" />
-  <meta name="citation_publication_date" content="2024-12-01" />
-  <meta property="article:published_time" content="2024-12-01" />
-  <meta name="dc.modified" content="2024-12-01T10:45:41+00:00" />
-  <meta property="article:modified_time" content="2024-12-01T10:45:41+00:00" />
+  <meta name="dc.date" content="2024-12-03" />
+  <meta name="citation_publication_date" content="2024-12-03" />
+  <meta property="article:published_time" content="2024-12-03" />
+  <meta name="dc.modified" content="2024-12-03T15:46:59+00:00" />
+  <meta property="article:modified_time" content="2024-12-03T15:46:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/e42eec1f67739067e7fb7ebbc3b3c0e4524e54de/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/e42eec1f67739067e7fb7ebbc3b3c0e4524e54de/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/e42eec1f67739067e7fb7ebbc3b3c0e4524e54de/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/a013f99e626e450c48e8d8cef37e1e8cf582c850/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/a013f99e626e450c48e8d8cef37e1e8cf582c850/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/a013f99e626e450c48e8d8cef37e1e8cf582c850/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/e42eec1f67739067e7fb7ebbc3b3c0e4524e54de/))
+([permalink](https://uiceds.github.io/project-triples/v/a013f99e626e450c48e8d8cef37e1e8cf582c850/))
 was automatically generated
-from [uiceds/project-triples@e42eec1](https://github.com/uiceds/project-triples/tree/e42eec1f67739067e7fb7ebbc3b3c0e4524e54de)
-on December 1, 2024.
+from [uiceds/project-triples@a013f99](https://github.com/uiceds/project-triples/tree/a013f99e626e450c48e8d8cef37e1e8cf582c850)
+on December 3, 2024.
 </em></small>
 
 
@@ -473,7 +473,7 @@ From the figure 11, we can observe that the distribution is not perfectly normal
   <strong>Figure 12:</strong> SHAP Summary Plot
 </p>
 
-From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret how the machine learning model predicted, basically explains importance of each feature on model prediction - we can observe that the features such as Total_Duration, Total_Stops, Airline type and Fuel_Consumption_normalize highly influence the price prediction while other features moderately contribute and some features did not contribute at all. 
+From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret how the machine learning model predicted, basically explains importance of each feature on model prediction - we can observe that the features such as Total_Duration, Total_Stops, Airline type and Fuel_Consumption_normalize highly influence on the price prediction while other features moderately contributed and some features did not contribute at all. 
 
 <p align="center">
   <img src="images/Time_series_Plot_NNmodel_Price_prediction.PNG" alt="Time Series Plot" width="600px">
