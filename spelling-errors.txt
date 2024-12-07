@@ -10,7 +10,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 dataset’s
 datasets
 datatset
@@ -69,7 +69,7 @@ Risiduals
 RMSE
 RSME
 sbafan
-scikit
+Scikit
 ScikitLearn
 SHAP
 Shayan
