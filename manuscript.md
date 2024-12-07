@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-07" />
   <meta name="citation_publication_date" content="2024-12-07" />
   <meta property="article:published_time" content="2024-12-07" />
-  <meta name="dc.modified" content="2024-12-07T02:44:00+00:00" />
-  <meta property="article:modified_time" content="2024-12-07T02:44:00+00:00" />
+  <meta name="dc.modified" content="2024-12-07T02:54:07+00:00" />
+  <meta property="article:modified_time" content="2024-12-07T02:54:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/044871a526a80019df7f1ce97e09922b4ba26f91/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/044871a526a80019df7f1ce97e09922b4ba26f91/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/044871a526a80019df7f1ce97e09922b4ba26f91/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/36a27a56c801c2bb6cbe834c1f3a0a29d99eb32b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/36a27a56c801c2bb6cbe834c1f3a0a29d99eb32b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/36a27a56c801c2bb6cbe834c1f3a0a29d99eb32b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/044871a526a80019df7f1ce97e09922b4ba26f91/))
+([permalink](https://uiceds.github.io/project-triples/v/36a27a56c801c2bb6cbe834c1f3a0a29d99eb32b/))
 was automatically generated
-from [uiceds/project-triples@044871a](https://github.com/uiceds/project-triples/tree/044871a526a80019df7f1ce97e09922b4ba26f91)
+from [uiceds/project-triples@36a27a5](https://github.com/uiceds/project-triples/tree/36a27a56c801c2bb6cbe834c1f3a0a29d99eb32b)
 on December 7, 2024.
 </em></small>
 
@@ -487,8 +487,8 @@ Figure 13 demonstrates the actual and predicted prices over a certain period of 
 # Decision Tree Analysis
 
 This section is dedicated to decision tree analysis. Because the dependent variable is not categorical, the DecisionTreeRegressor from scikit-learn was employed. 
-After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.999977. This value seemed suspuciously close to perfect. 
-The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted values, and as can easily be seen, the predicted values fall almost perfectly along the actual values. This is also evidenced by the very small RMSE value, 0.3913489.
+After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.99. This value seemed suspuciously close to perfect. 
+The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted values, and as can easily be seen, the predicted values fall almost perfectly along the actual values. This is also evidenced by the very small RMSE value, 0.39.
 
 <p align="center">
   <img src="images/Actual_Predicted_Vals_Original_Data.png" alt="Actual vs predicted values for the original dataset" width="600px">
@@ -507,7 +507,7 @@ To understand the origins of this $R^2$ value, firstly, a correlation plot was c
 As can be seen from the figure above, the highest correlation appears between Total_Duration and CO2_Emitted (US Ton), the depenent variable. This makes sense, of course, because the longer the plane is in flight, the more $CO_2$ will be emitted. 
 
 In order to question this highly suspicious result, we divided the original dependent variable, CO2_Emitted (US Ton), by Total_Duration to create a new dependent variable called CO2_Emitted/Hour. We created a second decision tree and plotted the actual and predicted values, as seen in Figure 15. We then noticed the appearance of two clusters, which indicates that there must be a variable(s) that is causing a binomial distribution.
-The $R^2$ value for the second decision tree was  0.999268, which is lower than the original but still very close to perfect. The RMSE value was also very low, at 0.003494. 
+The $R^2$ value for the second decision tree was  0.99, which is lower than the original but still very close to perfect. The RMSE value was also very low, at 0.0034. 
 
 <p align="center">
   <img src="images/Screenshot_Actual_Predicted_Hour.png" alt="Actual vs predicted values using CO2_Emitted per Hour as a dependent variable" width="600px">
@@ -555,7 +555,7 @@ This is also confirmed by the correlation matrix below, as we see a high correla
   <strong>Figure 21:</strong> Correlation matrix created using CO2_Emitted/Fuel_Usage_Rate as a dependent variable.
 </p>
 
-However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.999987, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at $9.193469*(1/10^5)$. This is a very small value and significantly smaller that the previous RMSE values. The RMSE value for this last model was $10^4$ times smaller than the RMSE for the first decision tree and $10^2$ times smaller than the RMSE value for the second decision tree.
+However, we also see a suspiciously perfect match between the actual and predicted values when CO2_Emitted/Fuel_Usage_Rate is used as the dependent variable. The $R^2$ value for this decision tree was 0.99, which is slightly higher value than the original $R^2$ value. The RMSE value, however, was the highest of all three decision trees at $9.193469*(1/10^5)$. This is a very small value and significantly smaller that the previous RMSE values. The RMSE value for this last model was $10^4$ times smaller than the RMSE for the first decision tree and $10^2$ times smaller than the RMSE value for the second decision tree.
 <p align="center">
   <img src="images/Actual_Predicted_CO2_Emissions_Fuel.png" alt="Actual vs predicted values using CO2_Emitted/Fuel_Usage_Rate as a dependent variable" width="600px">
   <br>
