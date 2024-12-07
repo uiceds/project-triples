@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-07" />
   <meta name="citation_publication_date" content="2024-12-07" />
   <meta property="article:published_time" content="2024-12-07" />
-  <meta name="dc.modified" content="2024-12-07T02:58:22+00:00" />
-  <meta property="article:modified_time" content="2024-12-07T02:58:22+00:00" />
+  <meta name="dc.modified" content="2024-12-07T03:03:26+00:00" />
+  <meta property="article:modified_time" content="2024-12-07T03:03:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/94768ddfde6bd403e38d562217d844d50d198530/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/94768ddfde6bd403e38d562217d844d50d198530/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/94768ddfde6bd403e38d562217d844d50d198530/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/39264cc36e7b788167802539f29f9dd1ae5b4fde/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/39264cc36e7b788167802539f29f9dd1ae5b4fde/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/39264cc36e7b788167802539f29f9dd1ae5b4fde/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/94768ddfde6bd403e38d562217d844d50d198530/))
+([permalink](https://uiceds.github.io/project-triples/v/39264cc36e7b788167802539f29f9dd1ae5b4fde/))
 was automatically generated
-from [uiceds/project-triples@94768dd](https://github.com/uiceds/project-triples/tree/94768ddfde6bd403e38d562217d844d50d198530)
+from [uiceds/project-triples@39264cc](https://github.com/uiceds/project-triples/tree/39264cc36e7b788167802539f29f9dd1ae5b4fde)
 on December 7, 2024.
 </em></small>
 
@@ -575,7 +575,7 @@ Despite experimenting with various decision tree models and hyperparameter tunin
 # Neural Network Analysis
 
 This section explains the output of the neural network model created for this project. For the neural network model development, tensorflow, Sequential from tensorflow.keras.models, Dense from tensorflow.keras.layers, and Adam from tensorflow.keras.optimizers were employed.
-The MSE returned from running the model was $7.919958*(1/10^5)$. This MSE value is suspiciously low, and just as in the previous section, "Decision Tree Analysis", the graphs created from the model analysis also indicate a near-perfect correlation between the model and the actual values. These findings once again point towards the possibility of the data being artificially designed, leading to very low variability.
+The MSE returned from running the model was 7.91x10<sup>-5</sup>. This MSE value is suspiciously low, and just as in the previous section, "Decision Tree Analysis", the graphs created from the model analysis also indicate a near-perfect correlation between the model and the actual values. These findings once again point towards the possibility of the data being artificially designed, leading to very low variability.
 Below is a graph showing the relationship between the training and testing data, and it is easy to see that the training loss almost perfectly mirrors the validation loss.
 
 <p align="center">
