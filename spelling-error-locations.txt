@@ -1,6 +1,4 @@
 content/01.abstract.md:3:dataset
-content/02.proposal.md:2:dataset
-content/02.proposal.md:2:Kaggle
 content/03.dataset_description.md:1:Dataset
 content/03.dataset_description.md:3:dataset
 content/03.dataset_description.md:3:datasets
