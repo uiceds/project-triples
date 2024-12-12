@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-12-07'
+date-meta: '2024-12-12'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-12-07" />
-  <meta name="citation_publication_date" content="2024-12-07" />
-  <meta property="article:published_time" content="2024-12-07" />
-  <meta name="dc.modified" content="2024-12-07T03:05:28+00:00" />
-  <meta property="article:modified_time" content="2024-12-07T03:05:28+00:00" />
+  <meta name="dc.date" content="2024-12-12" />
+  <meta name="citation_publication_date" content="2024-12-12" />
+  <meta property="article:published_time" content="2024-12-12" />
+  <meta name="dc.modified" content="2024-12-12T05:55:53+00:00" />
+  <meta property="article:modified_time" content="2024-12-12T05:55:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/d7f961fac7f45d80d3306a49535d589b2f533c17/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/d7f961fac7f45d80d3306a49535d589b2f533c17/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/d7f961fac7f45d80d3306a49535d589b2f533c17/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/557965f435247115d739075599e0f29e19dbf341/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/557965f435247115d739075599e0f29e19dbf341/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/557965f435247115d739075599e0f29e19dbf341/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/d7f961fac7f45d80d3306a49535d589b2f533c17/))
+([permalink](https://uiceds.github.io/project-triples/v/557965f435247115d739075599e0f29e19dbf341/))
 was automatically generated
-from [uiceds/project-triples@d7f961f](https://github.com/uiceds/project-triples/tree/d7f961fac7f45d80d3306a49535d589b2f533c17)
-on December 7, 2024.
+from [uiceds/project-triples@557965f](https://github.com/uiceds/project-triples/tree/557965f435247115d739075599e0f29e19dbf341)
+on December 12, 2024.
 </em></small>
 
 
@@ -633,5 +633,5 @@ Our objective in this study was to develop a price prediction model based on a f
 Based on the findings of this report, the machine learning models employed for predicting flight prices did not achieve satisfactory accuracy. Despite using various approaches, including linear regression, polynomial regression, decision trees, and neural network the models consistently delivered suboptimal results, as evidenced by relatively high RMSE values and low R² scores. For instance, the final neural network based regression 
  model achieved an R² of 0.58, which, although an improvement over earlier models, still indicates that the model explains only a small portion of the variance in flight prices. These performance issues may be attributed to the complex, non-linear relationships among the dataset’s features, which were not fully captured by the models. Additionally, high correlations between certain variables, such as flight duration and fuel consumption, could suggest overfitting or multicollinearity, further hindering predictive accuracy.
 
-The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, competitor pricing, seasonality, trends, and external economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
+The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, demand and seat availability, competitor pricing, time of booking, weather and seasonal climate, ticket refundability, route distances, recent airline performance, marketing promotions and regional/external economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
 

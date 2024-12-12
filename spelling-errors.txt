@@ -10,7 +10,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 dataset’s
 datasets
 datatset
@@ -25,7 +25,7 @@ Elsevier
 ERDC
 FFNN
 Fitr
-frenk
+Frenk
 Ganga
 Gillen
 GoAir
@@ -64,12 +64,13 @@ Purnima
 Puspha
 Ramanan
 RandomForestRegression
+refundability
 Regressor
 Risiduals
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 SHAP
 Shayan
