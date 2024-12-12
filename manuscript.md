@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-12" />
   <meta name="citation_publication_date" content="2024-12-12" />
   <meta property="article:published_time" content="2024-12-12" />
-  <meta name="dc.modified" content="2024-12-12T06:11:38+00:00" />
-  <meta property="article:modified_time" content="2024-12-12T06:11:38+00:00" />
+  <meta name="dc.modified" content="2024-12-12T06:13:26+00:00" />
+  <meta property="article:modified_time" content="2024-12-12T06:13:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/cc36e0ae1492787d03e6fad66b09689686b9cc67/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/cc36e0ae1492787d03e6fad66b09689686b9cc67/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/cc36e0ae1492787d03e6fad66b09689686b9cc67/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/0081959a903063084ad96ee85c3dd7cbf60486bc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/0081959a903063084ad96ee85c3dd7cbf60486bc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/0081959a903063084ad96ee85c3dd7cbf60486bc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/cc36e0ae1492787d03e6fad66b09689686b9cc67/))
+([permalink](https://uiceds.github.io/project-triples/v/0081959a903063084ad96ee85c3dd7cbf60486bc/))
 was automatically generated
-from [uiceds/project-triples@cc36e0a](https://github.com/uiceds/project-triples/tree/cc36e0ae1492787d03e6fad66b09689686b9cc67)
+from [uiceds/project-triples@0081959](https://github.com/uiceds/project-triples/tree/0081959a903063084ad96ee85c3dd7cbf60486bc)
 on December 12, 2024.
 </em></small>
 
@@ -359,7 +359,7 @@ As we only have 2 numerical variables, it makes sense that most of the data poin
 </p>
 
 
-## Predictive Model Planning
+## Predictive Modeling Planning
 
 
 To start with, we will build a simple linear regression model having the most correlated features with the flight prices in our dataset. The gradient boosting algorithm (XGBoost Regressor) and/or Random Forest Regressor will be employed to capture complex patterns and perform predictive tasks. In cases of non-linearity and high interaction between features, PCA (Principal Component Analysis) and/or neural networks will be used to enhance performance. To measure the difference between actual and predicted prices, RMSE (Root Mean Square Error) or MSE (Mean Square Error) will be utilized. R-Squared (R², the coefficient of determination) will evaluate how well the independent variables explain the variance in flight prices. While building this model, we will use packages such as DataFrame.jl, StatsPlots.jl, Statistics.jl, and MLJ.jl from the Julia library. If needed, ScikitLearn.jl (providing access to Python's Scikit-learn models in Julia) will also be implemented.
