@@ -8,10 +8,8 @@ content/02.dataset_description.md:3:Kaggle
 content/02.dataset_description.md:5:CSV
 content/02.dataset_description.md:5:dataset
 content/02.dataset_description.md:7:dataset
-content/02.dataset_description.md:7:predicion
 content/02.dataset_description.md:8:dataset
-content/02.dataset_description.md:12:stopd
-content/02.dataset_description.md:13:presententing
+content/02.dataset_description.md:13:presentencing
 content/03.introduction.md:4:Belobaba
 content/03.introduction.md:4:Belobaba
 content/03.introduction.md:4:Borenstein

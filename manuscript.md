@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T16:11:51+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T16:11:51+00:00" />
+  <meta name="dc.modified" content="2024-12-13T16:29:28+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T16:29:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/))
+([permalink](https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/))
 was automatically generated
-from [uiceds/project-triples@ec8a412](https://github.com/uiceds/project-triples/tree/ec8a41216f38ca11a0066740b80eb048b770666b)
+from [uiceds/project-triples@152b653](https://github.com/uiceds/project-triples/tree/152b6536a7b5c0fa308e5f6ca7a241a448612ad2)
 on December 13, 2024.
 </em></small>
 
@@ -155,17 +155,17 @@ The aviation industry is a critical component of the global transportation netwo
   It was used to help build a predictive model for flight price prediction using the data that will be explained below.
   - Format: The dataset is in CSV format, which is commonly used for tabular data storage. Each row represents a specific data point, with columns detailing various features that might impact flight prices.
   - Contents: 
-    The dataset serves as a basis for training machine learning models for predicion of flight costs.
+    The dataset serves as a basis for training machine learning models for prediction of flight costs.
     More specifically, the dataset includes the following columns:
     1) Airline: A String value representing the name of the Indian airline company included in the study
     2) Source: Another String value representing the city from which the airline departs
     3) Destination: Yet another String value representing the arrival city
-    4) Total_Stops: a ternary integer variable between 0 and 2 that represents the number of of stopd from the city of departure to the arrival
-    5) Price: An integer variable presententing the cost, in rupees, for each ticket
+    4) Total_Stops: a ternary integer variable between 0 and 2 that represents the number of stops from the city of departure to the arrival
+    5) Price: An integer variable presentencing the cost, in rupees, for each ticket
     6) Day/Month/Year: Three columns containing integer variables representing the date when the flight took place. Note that the year column contains only the year 2019, so we may remove this column
     7) Dep_hours/Dep_min: Two columns containing integer numbers representing the hour, in military time, and minute at which the flight departed
-    8) Arrival_hours/Arrival_min: Similar to the Dep_hours/Dep_min columns, but for the the arrival time of the flight
-    9) Duration_hours/Duration_min: Two columns with integer values representing the number of hours and minuted a flight lasted
+    8) Arrival_hours/Arrival_min: Similar to the Dep_hours/Dep_min columns, but for the arrival time of the flight
+    9) Duration_hours/Duration_min: Two columns with integer values representing the number of hours and minutes a flight lasted
 
 
 ## Introduction

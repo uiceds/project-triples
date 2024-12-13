@@ -10,7 +10,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 dataset’s
 datasets
 datatset
@@ -58,8 +58,7 @@ PCA
 performane
 performence
 Prakash
-predicion
-presententing
+presentencing
 Purnima
 Puspha
 Ramanan
@@ -79,7 +78,6 @@ SpiceJet
 Springer
 Sreenidhi
 StatsPlots
-stopd
 suboptimal
 supremepandey
 suspuciously
