@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T16:29:28+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T16:29:28+00:00" />
+  <meta name="dc.modified" content="2024-12-13T16:33:12+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T16:33:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/152b6536a7b5c0fa308e5f6ca7a241a448612ad2/))
+([permalink](https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/))
 was automatically generated
-from [uiceds/project-triples@152b653](https://github.com/uiceds/project-triples/tree/152b6536a7b5c0fa308e5f6ca7a241a448612ad2)
+from [uiceds/project-triples@acaa381](https://github.com/uiceds/project-triples/tree/acaa381ad8b5aa24a0014ac598f69e69dbdaea92)
 on December 13, 2024.
 </em></small>
 
@@ -335,7 +335,7 @@ It is worth noting that there is limited data available for multiple-carrier fli
 
 ### Singular Value Decomposition (SVD) and Principal Components Analysis (PCA):
 
-Before beginning with SVD or even PCA, we must normalize the data. Since most of out variables are categorical, only two variables needed to be normalized. These two variables are Fuel_Consumption_normalized and CO2_Emitted_normalized, and their normalization values are shown in the bar chart below, in **Figure 3**. This provided a preview that perhaps SVD and PCA would not be needed, given the small number of numerical variables. 
+Before beginning with SVD or even PCA, we must normalize the data. Since most of our variables are categorical, only two variables needed to be normalized. These two variables are Fuel_Consumption_normalized and CO2_Emitted_normalized, and their normalization values are shown in the bar chart below, in **Figure 3**. This provided a preview that perhaps SVD and PCA would not be needed, given the small number of numerical variables. 
 
 <p align="center">
   <img src="images/05.data-analysis-PCA-plot1.png" alt="Normalized Numerical Data" width="600px">
@@ -343,7 +343,7 @@ Before beginning with SVD or even PCA, we must normalize the data. Since most of
   <strong>Figure 3:</strong> Bar chat showing the normalization of our two numerical variables.
 </p>
 
-Since there are only two numerical variables to be analysed in this dataset, only two singular values were created, as can be seen below in **Figure 4**.
+Since there are only two numerical variables to be analyzed in this dataset, only two singular values were created, as can be seen below in **Figure 4**.
 
 <p align="center">
   <img src="images/05.data-analysis-PCA-plot2.png" alt="Plot of Singular Values" width="600px">
