@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T17:28:14+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T17:28:14+00:00" />
+  <meta name="dc.modified" content="2024-12-13T17:34:09+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T17:34:09+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/))
+([permalink](https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/))
 was automatically generated
-from [uiceds/project-triples@537a142](https://github.com/uiceds/project-triples/tree/537a142df9a78dbe2bf236404e8d2af7ff3fb4af)
+from [uiceds/project-triples@ad148d5](https://github.com/uiceds/project-triples/tree/ad148d5831d45764c3a398b2cabb71e50765637d)
 on December 13, 2024.
 </em></small>
 
@@ -173,6 +173,7 @@ The aviation industry is a critical component of the global transportation netwo
 
 
 ## Introduction
+<div style="text-align: justify;">
 _The dynamics of flight price predictions_
 
 Flight pricing models have long been of interest to researchers, airline companies, and consumers alike [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013). As global air travel expands, so do the complexities involved in predicting flight prices due to the dynamic nature of factors such as fuel costs, demand fluctuations, and the regulatory environment [Sun et al.](https://doi.org/10.1016/j.jatrs.2024.100013); [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Borenstein et al.](doi.org/10.1086/261950). Predicting flight prices accurately allows both passengers and airlines to optimize travel schedules, with potential economic and environmental benefits [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC). In recent years, machine learning techniques have been widely adopted in various industries, including aviation, to model complex relationships and predict outcomes such as pricing [Annabel et al.](https://link.springer.com/chapter/10.1007/978-981-19-6634-7_65); [Kalampokas et al.](https://api.semanticscholar.org/CorpusID:258629132); [Xu et al.](https://www.sciencedirect.com/science/article/pii/S0969699720305524?via%3Dihub). For this project, we propose a machine learning-based predictive model designed to estimate future flight prices based on historical data from domestic flight routes to and from India.
@@ -188,6 +189,7 @@ This project utilizes a Kaggle dataset on domestic flights in India, covering va
 _Multidisciplinary implications_
 
 By developing this predictive model, the research bridges the gap between economics, machine learning, and environmental sustainability. Future applications of this work could extend beyond pricing into areas like route optimization and emission reduction strategies [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf). As flight prices are a key variable in both economic and environmental calculations, understanding their underlying dynamics can contribute to more sustainable and cost-effective air travel in the future [Belobaba et al.](https://books.google.com/books?id=BRtDl0CJpQIC); [International Air Transport Association](https://www.iata.org/contentassets/f88f0ceb28b64b7e9b46de44b917b98f/iata-economic-performance-of-the-industry-end-year-2018-report.pdf); [Gillen & Morrison](https://doi.org/10.1016/j.jairtraman.2004.11.003).
+</div>
 
 
 ## Exploratory Data Analysis of Indian Domestic Flights (March - June 2019)

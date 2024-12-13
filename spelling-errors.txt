@@ -62,7 +62,7 @@ Regressor
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 SHAP
 Shayan
