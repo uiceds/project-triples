@@ -7,7 +7,7 @@ keywords:
 - Emissions
 - Data Analysis
 lang: en-US
-date-meta: '2024-12-12'
+date-meta: '2024-12-13'
 author-meta:
 - Shayan Bafandkar
 - Sofia Frenk
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Flight Price Predictions" />
   <meta property="og:title" content="Flight Price Predictions" />
   <meta property="twitter:title" content="Flight Price Predictions" />
-  <meta name="dc.date" content="2024-12-12" />
-  <meta name="citation_publication_date" content="2024-12-12" />
-  <meta property="article:published_time" content="2024-12-12" />
-  <meta name="dc.modified" content="2024-12-12T06:15:17+00:00" />
-  <meta property="article:modified_time" content="2024-12-12T06:15:17+00:00" />
+  <meta name="dc.date" content="2024-12-13" />
+  <meta name="citation_publication_date" content="2024-12-13" />
+  <meta property="article:published_time" content="2024-12-13" />
+  <meta name="dc.modified" content="2024-12-13T16:11:51+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T16:11:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/9218fa5f774cfe3e20a020edc278420f7a556405/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/9218fa5f774cfe3e20a020edc278420f7a556405/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/9218fa5f774cfe3e20a020edc278420f7a556405/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/9218fa5f774cfe3e20a020edc278420f7a556405/))
+([permalink](https://uiceds.github.io/project-triples/v/ec8a41216f38ca11a0066740b80eb048b770666b/))
 was automatically generated
-from [uiceds/project-triples@9218fa5](https://github.com/uiceds/project-triples/tree/9218fa5f774cfe3e20a020edc278420f7a556405)
-on December 12, 2024.
+from [uiceds/project-triples@ec8a412](https://github.com/uiceds/project-triples/tree/ec8a41216f38ca11a0066740b80eb048b770666b)
+on December 13, 2024.
 </em></small>
 
 
@@ -457,7 +457,7 @@ The residual plot shows that the model might underfitting the data and there is 
 <p align="center">
   <img src="images/Distribution_Residual_NNmodel_Price_prediction.PNG" alt="Distribution of Residuals Plot" width="600px">
   <br>
-  <strong>Figure 11:</strong> Distribution of Risiduals
+  <strong>Figure 11:</strong> Distribution of Residuals
 </p>
 
 From the figure 11, we can observe that the distribution is not perfectly normal and it is right skewed - more residuals towards right and less residuals towards left - which suggests that this model can overpredict the price because of larger positive residuals.
