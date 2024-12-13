@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T17:22:37+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T17:22:37+00:00" />
+  <meta name="dc.modified" content="2024-12-13T17:28:14+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T17:28:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/))
+([permalink](https://uiceds.github.io/project-triples/v/537a142df9a78dbe2bf236404e8d2af7ff3fb4af/))
 was automatically generated
-from [uiceds/project-triples@5778375](https://github.com/uiceds/project-triples/tree/577837507c87b091368ceab9732123ce5344892e)
+from [uiceds/project-triples@537a142](https://github.com/uiceds/project-triples/tree/537a142df9a78dbe2bf236404e8d2af7ff3fb4af)
 on December 13, 2024.
 </em></small>
 
@@ -151,7 +151,8 @@ The aviation industry is a critical component of the global transportation netwo
 </div>
 
 
-## Dataset Description 
+## Dataset Description
+<div style="text-align: justify;">
   - Source: 
   The dataset used for this project can be found on Kaggle, at this link: [Kaggle](https://www.kaggle.com/datasets/viveksharmar/flight-price-data)
   It was used to help build a predictive model for flight price prediction using the data that will be explained below.
@@ -168,6 +169,7 @@ The aviation industry is a critical component of the global transportation netwo
     7) Dep_hours/Dep_min: Two columns containing integer numbers representing the hour, in military time, and minute at which the flight departed
     8) Arrival_hours/Arrival_min: Similar to the Dep_hours/Dep_min columns, but for the arrival time of the flight
     9) Duration_hours/Duration_min: Two columns with integer values representing the number of hours and minutes a flight lasted
+</div>
 
 
 ## Introduction

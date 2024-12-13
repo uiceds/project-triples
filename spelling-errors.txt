@@ -9,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-Dataset
+dataset
 dataset’s
 datasets
 DecisionTreeRegressor
@@ -21,7 +21,7 @@ Elsevier
 ERDC
 FFNN
 Fitr
-Frenk
+frenk
 Ganga
 Gillen
 GoAir
@@ -62,7 +62,7 @@ Regressor
 RMSE
 RSME
 sbafan
-scikit
+Scikit
 ScikitLearn
 SHAP
 Shayan
