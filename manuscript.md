@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T17:34:09+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T17:34:09+00:00" />
+  <meta name="dc.modified" content="2024-12-13T17:35:57+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T17:35:57+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/ad148d5831d45764c3a398b2cabb71e50765637d/))
+([permalink](https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/))
 was automatically generated
-from [uiceds/project-triples@ad148d5](https://github.com/uiceds/project-triples/tree/ad148d5831d45764c3a398b2cabb71e50765637d)
+from [uiceds/project-triples@3e7d2a9](https://github.com/uiceds/project-triples/tree/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1)
 on December 13, 2024.
 </em></small>
 
@@ -193,7 +193,7 @@ By developing this predictive model, the research bridges the gap between econom
 
 
 ## Exploratory Data Analysis of Indian Domestic Flights (March - June 2019)
-
+<div style="text-align: justify;">
 The dataset includes domestic flights of Indian airlines from March 2019 to June 2019, and is derived from [Kaggle](https://www.kaggle.com/datasets/viveksharmar/flight-price-data/). Each column in the dataset corresponds to a specific variable, and each row represents an observation. The dataset is clean, with consistent measurement units and no missing values.
 
 ### Dataset Variables:
@@ -356,7 +356,8 @@ Since there are only two numerical variables to be analyzed in this dataset, onl
   <br>
   <strong>Figure 4:</strong> Line plot with two points representing two singular values.
 </p>
-As we only have 2 numerical variables, it makes sense that most of the data points are concentrated around the first and second principal components, because they correspond to the two numerical variables. This can be seen below in **Figure 5**. Of course, there are the only two principal components. Because we have such few numerical variables, if we were to use PCA, we might lose valuable information. Hence, we will proceed with regression analysis in the next section of our project. 
+As we only have 2 numerical variables, it makes sense that most of the data points are concentrated around the first and second principal components, because they correspond to the two numerical variables. This can be seen below in **Figure 5**. Of course, there are the only two principal components. Because we have such few numerical variables, if we were to use PCA, we might lose valuable information. Hence, we will proceed with regression analysis in the next section of our project.
+<div style="text-align: justify;">
 
 <p align="center">
   <img src="images/05.data-analysis-PCA-plot3.png" alt="PCA Plot" width="600px">
@@ -367,14 +368,14 @@ As we only have 2 numerical variables, it makes sense that most of the data poin
 
 ## Predictive Modeling Planning
 
-
+<div style="text-align: justify;">
 To start with, we will build a simple linear regression model having the most correlated features with the flight prices in our dataset. The gradient boosting algorithm (XGBoost Regressor) and/or Random Forest Regressor will be employed to capture complex patterns and perform predictive tasks. In cases of non-linearity and high interaction between features, PCA (Principal Component Analysis) and/or neural networks will be used to enhance performance. To measure the difference between actual and predicted prices, RMSE (Root Mean Square Error) or MSE (Mean Square Error) will be utilized. R-Squared (R², the coefficient of determination) will evaluate how well the independent variables explain the variance in flight prices. While building this model, we will use packages such as DataFrame.jl, StatsPlots.jl, Statistics.jl, and MLJ.jl from the Julia library. If needed, ScikitLearn.jl (providing access to Python's Scikit-learn models in Julia) will also be implemented.
 
 Our model will be able to predict the seasonal spikes in flight prices because of the factors such as festivals, holidays or high demand periods so that airlines can adjust the pricing and offer more competitive pricing. Additionally, Expensive (with higher mean ticket prices) airlines can be benefited by understanding the price elasticity and regulating accordingly. Furthermore, we can explore the environmental sustainability factors such as carbon emission by adopting environmentally sustainable options like fewer layover routes, energy efficient airlines, etc.
 
  <div style="page-break-before: always;"></div>
 
-
+</div>
 
 
 # Implementing Linear Regression Models for Price Prediction
@@ -602,12 +603,14 @@ Lastly, as with Figure 25, Figure 26 shows just two outliers while the rest of t
 
 
 ## Discussion
+<div style="text-align: justify;">
 Our objective in this study was to develop a price prediction model based on a flight prediction dataset extracted from Kaggle using a data-driven scientific approach. We investigated how factors such as time of departure, number of stops, choice of airline, and other variables influence flight prices. A secondary objective was to analyze whether certain trends could be linked to broader environmental or policy factors. Additionally, adjustments were made to the dataset to incorporate CO2 emissions into the model, enhancing its practicality and relevance for real-world applications.
 
 Based on the findings of this report, the machine learning models employed for predicting flight prices did not achieve satisfactory accuracy. Despite using various approaches, including linear regression, polynomial regression, decision trees, and neural network the models consistently delivered suboptimal results, as evidenced by relatively high RMSE values and low R² scores. For instance, the final neural network based regression 
  model achieved an R² of 0.58, which, although an improvement over earlier models, still indicates that the model explains only a small portion of the variance in flight prices. These performance issues may be attributed to the complex, non-linear relationships among the dataset’s features, which were not fully captured by the models. Additionally, high correlations between certain variables, such as flight duration and fuel consumption, could suggest overfitting or multicollinearity, further hindering predictive accuracy.
 
 The results of this study indicate that, while the approach provides some insight into the factors affecting flight prices, the developed models are not yet reliable enough for real-world applications, such as dynamic pricing or route optimization. Future research should focus on employing more advanced algorithms to better capture the non-linearity and complex interactions between variables. Consistent application of cross-validation is essential to prevent overfitting and improve generalization. Incorporating a more exhaustive dataset and integrating external factors such as fuel prices, demand and seat availability, competitor pricing, time of booking, weather and seasonal climate, ticket refundability, route distances, recent airline performance, marketing promotions and regional/external economic indicators could enhance the model’s predictive performance under varying market conditions. Furthermore, exploring the environmental impact of flight pricing strategies—such as incorporating sustainability metrics like carbon emissions into pricing decisions—could provide stakeholders with a tool for not only economic optimization but also more sustainable airline operations, thereby increasing the model's commercial appeal.
+</div>
 
 
 ## References {.page_break_before}
