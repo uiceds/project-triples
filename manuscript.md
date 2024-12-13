@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T17:35:57+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T17:35:57+00:00" />
+  <meta name="dc.modified" content="2024-12-13T17:37:53+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T17:37:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1/))
+([permalink](https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/))
 was automatically generated
-from [uiceds/project-triples@3e7d2a9](https://github.com/uiceds/project-triples/tree/3e7d2a9d098b1866f571ed3e5042e784b9a5a4c1)
+from [uiceds/project-triples@850894e](https://github.com/uiceds/project-triples/tree/850894ecaf9ce2e6ad93ffb4ff25fe4783975158)
 on December 13, 2024.
 </em></small>
 
@@ -379,7 +379,7 @@ Our model will be able to predict the seasonal spikes in flight prices because o
 
 
 # Implementing Linear Regression Models for Price Prediction
-
+<div style="text-align: justify;">
 In this section, we first implemented a simple linear regression model for price prediction based on our dataset, to better understand the independent variables and their influence on the results. Then, we proceeded to enhance the model based on our findings.
 
 To begin with, we developed a simple linear regression model using the `LinearRegression` module from the `scikit-learn` package. This package fits a linear model with coefficients (w = (w_1, ..., w_p)) using the ordinary least squares (OLS) method to minimize the residual sum of squares between the observed targets in the dataset and the targets predicted by the linear approximation, as shown in Equation (1) [(scikit-learn documentation)](https://scikit-learn.org/stable/modules/linear_model.html\#ordinary-least-squares).
@@ -484,10 +484,11 @@ From the SHapely Additive exPlanation (SHAP) plot - A framework that interpret h
 </p>
 Figure 13 demonstrates the actual and predicted prices over a certain period of time. The plot suggests that the price has cyclical pattern with peaks and troughs. We can observe that our model struggles to predict sharp peaks and troughs accurately, especially when the price is highly volatile and fluctuating. Also, we can see that the model is underestimating the peak prices and overestimating the trough prices. Analyzing all these factors, we can conclude that we need more complex model that can capture non-linearity, volatility and temporal dependencies in the data.
 
+</div>
 
 
 # Decision Tree Analysis
-
+<div style="text-align: justify;">
 This section is dedicated to decision tree analysis. Because the dependent variable is not categorical, the DecisionTreeRegressor from scikit-learn was employed. 
 After the first decision tree was created, using the original dataset (with Duration_hours and Duration_min combined into a single variable Total_Duration), the $R^2$ value was 0.99. This value seemed suspiciously close to perfect. 
 The effect of the high correlation value can also be seen in the figure below, which is a plot of the actual vs predicted values, and as can easily be seen, the predicted values fall almost perfectly along the actual values. This is also evidenced by the very small RMSE value, 0.39.
@@ -572,10 +573,11 @@ The histogram below also shows that the variable Fuel_Usage_Rate is also binomia
 </p>
 
 Despite experimenting with various decision tree models and hyperparameter tuning, we were unable to achieve an $R^2$ value that provided any meaningful insights without appearing suspiciously close to 1. This is indicative of potential overfitting and suggests that the dataset itself may have limitations. The high correlations between certain features, ie Total_Duration and Fuel_Consumption_Rate with CO2_Emitted, led us to question the authenticity of the data. If the data were generated synthetically, and therefore lacks or lacked sufficient variability, it would explain the difficulty in deriving meaningful models. This highlights the importance of ensuring that datasets used for machine learning are diverse and representative of real-world findings. Without these properties, even the most sophisticated models will be unable to yield reliable findings.
+</div>
 
 
 # Neural Network Analysis
-
+<div style="text-align: justify;">
 This section explains the output of the neural network model created for this project. For the neural network model development, tensorflow, Sequential from tensorflow.keras.models, Dense from tensorflow.keras.layers, and Adam from tensorflow.keras.optimizers were employed.
 The MSE returned from running the model was 7.91x10<sup>-5</sup>. This MSE value is suspiciously low, and just as in the previous section, "Decision Tree Analysis", the graphs created from the model analysis also indicate a near-perfect correlation between the model and the actual values. These findings once again point towards the possibility of the data being artificially designed, leading to very low variability.
 Below is a graph showing the relationship between the training and testing data, and it is easy to see that the training loss almost perfectly mirrors the validation loss.
@@ -600,6 +602,7 @@ Lastly, as with Figure 25, Figure 26 shows just two outliers while the rest of t
   <br>
   <strong>Figure 26:</strong> Residual plot
 </p>
+</div>
 
 
 ## Discussion
@@ -614,7 +617,7 @@ The results of this study indicate that, while the approach provides some insigh
 
 
 ## References {.page_break_before}
-
+<div style="text-align: justify;">
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 1.  Sun, X., Zheng, C., Wandelt, S., & Zhang, A. (2024). Airline competition: A comprehensive review of recent research. Journal of the Air Transport Research Society, 100013. Elsevier.
@@ -638,4 +641,5 @@ The results of this study indicate that, while the approach provides some insigh
 10.  Brueckner, J. K., & Abreu, C. (2017). Airline fuel usage and carbon emissions: Determining factors. Journal of Air Transport Management, 62, 10–17. Elsevier.
 
 11.  scikit-learn developers (2023). Ordinary Least Squares. Retrieved October 30, 2024, from https://scikit-learn.org/stable/modules/linear_model.html#ordinary-least-squares.
+</div>
 
