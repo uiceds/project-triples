@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T16:46:59+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T16:46:59+00:00" />
+  <meta name="dc.modified" content="2024-12-13T17:22:37+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T17:22:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/fbfa856b759481140873995c23b5e710d244bdaf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/fbfa856b759481140873995c23b5e710d244bdaf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/fbfa856b759481140873995c23b5e710d244bdaf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/fbfa856b759481140873995c23b5e710d244bdaf/))
+([permalink](https://uiceds.github.io/project-triples/v/577837507c87b091368ceab9732123ce5344892e/))
 was automatically generated
-from [uiceds/project-triples@fbfa856](https://github.com/uiceds/project-triples/tree/fbfa856b759481140873995c23b5e710d244bdaf)
+from [uiceds/project-triples@5778375](https://github.com/uiceds/project-triples/tree/577837507c87b091368ceab9732123ce5344892e)
 on December 13, 2024.
 </em></small>
 
@@ -144,9 +144,11 @@ Sofia Frenk \<sofiaf6@illinois.edu\>.
 
 
 ## Abstract
+<div style="text-align: justify;">
 The primary goal of our project is to build a machine learning model that can estimate changes in future flight prices based on historical data by using regression techniques. We will investigate how factors such as time of departure, number of stops, and the choice of airline influence flight prices. The secondary objective is to analyze if certain trends can be linked to broader environmental, economic and/or policy factors.
 The dataset includes columns for departure and destination locations, total stops, travel duration, and price information. The model will be trained using machine learning techniques, with a focus on determining which features contribute most to price variations. 
 The aviation industry is a critical component of the global transportation network, impacting not only the economy but also the environment due to its significant carbon footprint. By developing accurate flight price prediction models, we can contribute to better planning and optimization of air travel routes, which is essential for both transportation engineering and environmental sustainability. If airlines and passengers can anticipate future price trends, it enables more efficient scheduling, potentially increasing the efficiency of flight operation and possibly minimizing unnecessary emissions.
+</div>
 
 
 ## Dataset Description 
@@ -586,7 +588,7 @@ The following graphs also provide evidence for the possibility that the data was
   <strong>Figure 25:</strong> Predicted vs actual values plot
 </p>
 
-Lastly, as with Figure 25, Figure 26 shows just two outliers while the rest of the data points lie on the line representing the 0 residual value. Residuals are the output of the subtraction between predicted and actual values, and they show how far the predicted values are from the actual ones. The fact that almost all the points are so close to 0 would indicate that there is almost no error between predicted and actual values. This outcome is very unlikely to happen in data with a normal amout of variability, which once again points to the conclusion that the data may have been artificially created.
+Lastly, as with Figure 25, Figure 26 shows just two outliers while the rest of the data points lie on the line representing the 0 residual value. Residuals are the output of the subtraction between predicted and actual values, and they show how far the predicted values are from the actual ones. The fact that almost all the points are so close to 0 would indicate that there is almost no error between predicted and actual values. This outcome is very unlikely to happen in data with a normal amount of variability, which once again points to the conclusion that the data may have been artificially created.
 
 <p align="center">
   <img src="images/residual_neural_network2.png" alt="Residual plot" width="600px">

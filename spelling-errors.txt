@@ -1,5 +1,4 @@
 Abreu
-amout
 Bafandkar
 Baisakhi
 Barnhart
@@ -10,7 +9,7 @@ CERL
 Champaign
 CSV
 DataFrame
-dataset
+Dataset
 dataset’s
 datasets
 DecisionTreeRegressor

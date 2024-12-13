@@ -1,4 +1,4 @@
-content/01.abstract.md:3:dataset
+content/01.abstract.md:4:dataset
 content/02.dataset_description.md:1:Dataset
 content/02.dataset_description.md:3:dataset
 content/02.dataset_description.md:3:datasets
@@ -159,7 +159,6 @@ content/07.decision_tree.md:86:hyperparameter
 content/07.decision_tree.md:86:overfitting
 content/08.neural-network.md:4:MSE
 content/08.neural-network.md:4:MSE
-content/08.neural-network.md:20:amout
 content/09.discussion.md:2:dataset
 content/09.discussion.md:2:dataset
 content/09.discussion.md:2:Kaggle
