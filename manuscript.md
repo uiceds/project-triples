@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T17:37:53+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T17:37:53+00:00" />
+  <meta name="dc.modified" content="2024-12-13T18:07:30+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T18:07:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/dac1e8fb144091f28d059445e594f2f1d088ade5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/dac1e8fb144091f28d059445e594f2f1d088ade5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/dac1e8fb144091f28d059445e594f2f1d088ade5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/project-triples/v/850894ecaf9ce2e6ad93ffb4ff25fe4783975158/))
+([permalink](https://uiceds.github.io/project-triples/v/dac1e8fb144091f28d059445e594f2f1d088ade5/))
 was automatically generated
-from [uiceds/project-triples@850894e](https://github.com/uiceds/project-triples/tree/850894ecaf9ce2e6ad93ffb4ff25fe4783975158)
+from [uiceds/project-triples@dac1e8f](https://github.com/uiceds/project-triples/tree/dac1e8fb144091f28d059445e594f2f1d088ade5)
 on December 13, 2024.
 </em></small>
 
@@ -587,7 +587,7 @@ Below is a graph showing the relationship between the training and testing data,
   <br>
   <strong>Figure 24:</strong> Training vs validation plot
 </p>
-The following graphs also provide evidence for the possibility that the data was fabricated rather than collected in the real world. In Figure 18 below, we see how, except for just two data points, all predicted values lie almost perfectly along the line representing the actual values. This is a similar graph to Figures 14 and 22 from this project's portion called "Decision Tree Analysis".
+The following graphs also provide evidence for the possibility that the data was fabricated rather than collected in the real world. In Figure 25 below, we see how, except for just two data points, all predicted values lie almost perfectly along the line representing the actual values. This is a similar graph to Figures 14 and 22 from this project's portion called "Decision Tree Analysis".
 
 <p align="center">
   <img src="images/predicted_vs_actual2.png" alt="Predicted vs actual values plot" width="600px">
