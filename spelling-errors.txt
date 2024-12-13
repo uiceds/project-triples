@@ -13,10 +13,8 @@ DataFrame
 dataset
 dataset’s
 datasets
-datatset
 DecisionTreeRegressor
 Dep
-depenent
 Diggs
 Dussehra
 Eid
@@ -65,7 +63,7 @@ Regressor
 RMSE
 RSME
 sbafan
-Scikit
+scikit
 ScikitLearn
 SHAP
 Shayan
@@ -77,7 +75,6 @@ Sreenidhi
 StatsPlots
 suboptimal
 supremepandey
-suspuciously
 SVD
 Trujet
 Tziridis

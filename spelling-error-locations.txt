@@ -140,13 +140,11 @@ content/06.preliminary_predictive_modeling.md:98:SHAP
 content/07.decision_tree.md:3:DecisionTreeRegressor
 content/07.decision_tree.md:3:scikit
 content/07.decision_tree.md:4:dataset
-content/07.decision_tree.md:4:suspuciously
 content/07.decision_tree.md:5:RMSE
 content/07.decision_tree.md:8:dataset
-content/07.decision_tree.md:10:datatset
+content/07.decision_tree.md:10:dataset
 content/07.decision_tree.md:16:dataset
 content/07.decision_tree.md:18:dataset
-content/07.decision_tree.md:21:depenent
 content/07.decision_tree.md:24:RMSE
 content/07.decision_tree.md:32:RandomForestRegression
 content/07.decision_tree.md:32:scikit
