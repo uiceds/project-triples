@@ -1,30 +1,40 @@
 ---
-title: "Manuscript Title"
+title: "Flight Price Predictions"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - Flight Price
+  - Prediction Model
+  - Future Trends
+  - Emissions
+  - Data Analysis
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
-    mastodon-server: mastodon.social
-    email: john.doe@something.com
+  - github: sbafan
+    name: Shayan Bafandkar
+    orcid: 0009-0009-8172-5751
+    email: sbafan2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
+  - github: sofia-frenk
+    name: Sofia Frenk
+    orcid: 0009-0001-8099-4900
+    email: sofiaf6@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
     corresponding: true
+  - github: supremepandey
+    name: Supreme Pandey
+    orcid: 0000-0003-0775-6313
+    email: supreme2@illinois.edu
+    affiliations:
+      - Department of Civil and Environmental Engineering, University of illinois Urbana-Champaign
+  - github: iloveheat
+    name: Brandy Diggs-McGee
+    orcid: 0000-0003-2052-0946
+    email: Brandyd2@illinois.edu
+    affiliations:
+      - Department of Civil & Environmental Engineering, University of Illinois Urbana-Champaign
+      - USACE ERDC CERL, Illinois
+
+bibliography:
+  - content/references.json
