@@ -56,8 +56,8 @@
   <meta name="dc.date" content="2024-12-13" />
   <meta name="citation_publication_date" content="2024-12-13" />
   <meta property="article:published_time" content="2024-12-13" />
-  <meta name="dc.modified" content="2024-12-13T16:33:12+00:00" />
-  <meta property="article:modified_time" content="2024-12-13T16:33:12+00:00" />
+  <meta name="dc.modified" content="2024-12-13T16:42:10+00:00" />
+  <meta property="article:modified_time" content="2024-12-13T16:42:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -83,9 +83,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/project-triples/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/project-triples/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/project-triples/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/project-triples/v/21129d6097a7efd108dd9150f135c848a2a0537a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/project-triples/v/21129d6097a7efd108dd9150f135c848a2a0537a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/project-triples/v/21129d6097a7efd108dd9150f135c848a2a0537a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -102,9 +102,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/project-triples/v/acaa381ad8b5aa24a0014ac598f69e69dbdaea92/">permalink</a>)
+(<a href="https://uiceds.github.io/project-triples/v/21129d6097a7efd108dd9150f135c848a2a0537a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/project-triples/tree/acaa381ad8b5aa24a0014ac598f69e69dbdaea92">uiceds/project-triples@acaa381</a>
+from <a href="https://github.com/uiceds/project-triples/tree/21129d6097a7efd108dd9150f135c848a2a0537a">uiceds/project-triples@21129d6</a>
 on December 13, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -609,7 +609,7 @@ Price = 5869.27 + 3701.61 x Total Stops - 930.98 x Holiday + 1.01 x Flight Durat
 <br>
 <strong>Figure 7:</strong> Performance of model 5
 </p>
-<p>The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3502.70, ( 1.22 e+07 ), and 0.41 respectively. We noticed that the performance has slightly improved, Although we could not get the satisfactory results. We ran the model using K-fold (k=5) cross-validation but we do not see any improvement rather we notice the R<sup>2</sup> value decreses. The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, In Model 6, we evaluated the performance with the polynomial (Quadratic) regression model. This time we eliminated the two features “Holiday” and “Attractive Destination”, Because “Holiday” has negative correlation with the price and “Attractive Destination” has approximately 8.7% correlation. Likewise, we divided the data into 80% training and 20% testing.</p>
+<p>The performance metrics RMSE, MSE and R<sup>2</sup> observed from this model are 3502.70, ( 1.22 e+07 ), and 0.41 respectively. We noticed that the performance has slightly improved, Although we could not get the satisfactory results. We ran the model using K-fold (k=5) cross-validation but we do not see any improvement rather we notice that the R<sup>2</sup> value decreases. The relatively low performance of linear models suggests that the relationships between the variables in the dataset may be non-linear or involve complex interactions between variables. Therefore, In Model 6, we evaluated the performance with the polynomial (Quadratic) regression model. This time we eliminated the two features “Holiday” and “Attractive Destination”, Because “Holiday” has negative correlation with the price and “Attractive Destination” has approximately 8.7% correlation. Likewise, we divided the data into 80% training and 20% testing.</p>
 <strong>Equation (6):</strong>
 Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Total Stops)<sup>2</sup> - 0.001 x (Flight Duration)<sup>2</sup> - 1.30(Noise)
 <p align="center">
@@ -617,19 +617,19 @@ Price = 4319.73 + 4712.88 x Total Stops + 5.12 x Flight Duration - 466.97 x (Tot
 <br>
 <strong>Figure 8:</strong> Performance of model 6
 </p>
-<p>The RSME, MSE and R^2 values we observed from this model are 3344.02, ( 1.11 e+06 ), and 0.45, respectively. You can observed that the model performence have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficients. Therefore, we decided to build neural network based model.</p>
+<p>The RSME, MSE and R^2 values we observed from this model are 3344.02, ( 1.11 e+06 ), and 0.45, respectively. You can have observed that the model performance have improved than the last model but still it has low performance. Also, we iterate the model with polynomial regression model with degree 3 but the performance of the model did not improve and we decided not to make the model too complex with many coefficients. Therefore, we decided to build neural network based model.</p>
 <p align="center">
 <img src="images/Actual_vs_predicted_Price_NNmodel_price_prediction.PNG" alt="Performance of FFNN Based Model" width="600px">
 <br>
 <strong>Figure 9:</strong> Performance of FFNN Based Model
 </p>
-<p>we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing simple feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it’s behavior and visualize each features’ contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predictive power. we will visualize some aspects of our model and analyze this low performane.</p>
+<p>we built a feed-forward neural network (FFNN) based regression model with sequential architecture to perform regression on input data. This model was built using input layer, 4-hidden layers- 64,64,32,32 neurons respectively with LeakyRelu as activation function, and output layer with single neuron with a linear activation. By implementing simple feature engineering and normalization, we included all the usable data such as Holiday, Fleet type, Airline type, Attractive destination, CO2 emitted, fuel consumption rate etc. to understand it’s behavior and visualize each features’ contribution on our model for price prediction. As a result, we got RSME, MSE, and R<sup>2</sup> values of 2981.51, 8889402.0, and 0.58 respectively. This shows that the model performance has improved than the last model and has moderate price predictive power. we will visualize some aspects of our model and analyze this low performance.</p>
 <p align="center">
 <img src="images/residual_plot_NNmodel_Price_prediction.PNG" alt="Residuals Plot" width="600px">
 <br>
 <strong>Figure 10:</strong> Residuals Plot
 </p>
-<p>The residual plot shows that the model might underfitting the data and there is a complex non-linearity that our model could not capture. Also, the variance of the residuals changes with the predicted prices. To improve the performance we need more complex model.</p>
+<p>The residual plot shows that the model might underfitting the data and there is a complex non-linearity that our model could not capture. Also, the variance of the residuals changes with the predicted prices. To improve the performance, we need more complex model.</p>
 <p align="center">
 <img src="images/Distribution_Residual_NNmodel_Price_prediction.PNG" alt="Distribution of Residuals Plot" width="600px">
 <br>

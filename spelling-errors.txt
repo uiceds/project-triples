@@ -15,7 +15,6 @@ dataset’s
 datasets
 datatset
 DecisionTreeRegressor
-decreses
 Dep
 depenent
 Diggs
@@ -55,8 +54,6 @@ overpredict
 Pandey
 Papakostas
 PCA
-performane
-performence
 Prakash
 presentencing
 Purnima
@@ -68,7 +65,7 @@ Regressor
 RMSE
 RSME
 sbafan
-scikit
+Scikit
 ScikitLearn
 SHAP
 Shayan
